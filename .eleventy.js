@@ -42,6 +42,7 @@ const {slugifyString} = require('./config/utils');
 const {escape} = require('lodash');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = eleventyConfig => {
   // 	--------------------- Custom Watch Targets -----------------------
@@ -103,7 +104,7 @@ module.exports = eleventyConfig => {
   ['src/assets/fonts/', 'src/assets/images/'].forEach(path =>
     eleventyConfig.addPassthroughCopy(path)
   );
-
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
   // social icons to root directory
   eleventyConfig.addPassthroughCopy({
     'src/assets/images/favicon/*': '/'
