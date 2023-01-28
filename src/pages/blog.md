@@ -1,6 +1,6 @@
 ---
-title: Blog
-description: 'All blog posts can be found here'
+title: Storie
+description: 'Storie per sogni fantastici'
 layout: blog
-permalink: /blog/index.html
+permalink: /storie/index.html
 ---

@@ -8,10 +8,7 @@ blog:
   intro: "I'm showing the last 4 blog posts, but there might be more!"
 ---
 
-## An Eleventy starter
+## Sogni degli Unicorni
 
-This (opiniated) [Eleventy](https://www.11ty.dev/) starter is based on [Andy Bell's](https://mastodon.social/@andy@bell.bz) talk 'Be the browser’s mentor, not its micromanager' and it's companion website buildexcellentwebsit.es.
-
-In his words, it's about hinting the browser rather than micromanaging it, using progressive enhancement, CSS layout, fluid type & spacing, as well as modern CSS features.
-
-This way we can shape frontends that look good to everyone, regardless of device, connection speed or context.
+Una raccolta di tante storie fantastiche, per far passare delle serene serate ai vostri piccoli cuccioli.
+Le storie spaziano da fantasie surreali a momenti di riflessione e di empatia, ed affondano la loro struttura nell'idea di "fantastica" di [Gianni Rodari](https://www.amazon.it/s?k=gianni+rodari&__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2HMIT9T46F2V1&sprefix=gianni+rodari%2Caps%2C139&ref=nb_sb_noss_1).
