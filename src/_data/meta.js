@@ -1,14 +1,14 @@
 module.exports = {
-  url: process.env.URL || 'http://localhost:8080',
-  siteName: 'Eleventy Excellent',
+  url: process.env.URL || 'https://sogniunicorni.it',
+  siteName: 'I Sogni degli Unicorni',
   siteDescription:
-    'Eleventy starter based on the workflow suggested by buildexcellentwebsit.es.',
+    'Una raccolta di racconti per bambini, prima della ninna o per passare qualche momento felice e sereno.',
   siteType: 'Person', // schema
-  locale: 'en_EN',
-  lang: 'en',
-  skipContent: 'Skip to content',
-  author: 'Lene Saile', // i.e. Lene Saile - author's name. Must be set.
-  authorEmail: '', // i.e. hola@lenesaile.com - email of the author
+  locale: 'it_IT',
+  lang: 'it',
+  skipContent: 'Salta al contenuto',
+  author: 'Uga Buga', // i.e. Lene Saile - author's name. Must be set.
+  authorEmail: 'aceroanalytics@gmail.com', // i.e. hola@lenesaile.com - email of the author
   authorWebsite: '', // i.e. https.://www.lenesaile.com - the personal site of the author
   themeColor: '#DD4462', //  Manifest: defines the default theme color for the application
   themeBgColor: '#F3F3F3', // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
@@ -20,23 +20,23 @@ module.exports = {
   },
   blog: {
     // this is for the rss feed
-    name: 'My great Web Development Blog',
+    name: 'I Sogni degli Unicorni',
     description:
-      'Tell the word what you are writing about in your blog! It will show up on feed readers.'
+      'Una raccolta di storie per bambini, prima della ninna o per passare qualche momento di felicità'
   },
   pagination: {
     itemsPerPage: 20
   },
   address: {
     // edit all presets or leave empty. They are being used in the pages for privacy.md and imprint.md
-    firma: 'Organization name',
-    street: '123 Main St.',
-    city: 'Ciudad',
-    state: 'Estado',
-    zip: '12345',
-    mobileDisplay: '+34 1234567',
-    mobileCall: ' +341234567',
-    email: 'hola@yoursite.com',
+    firma: '',
+    street: '',
+    city: '',
+    state: '',
+    zip: '',
+    mobileDisplay: '',
+    mobileCall: '',
+    email: '',
     cif: ''
   },
   menu: {
