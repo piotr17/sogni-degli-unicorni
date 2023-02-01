@@ -5,9 +5,6 @@ category: Racconto Fantastico
 tags: []
 author: Luca Ricci 
 ---
-
-
-## Text
 C'era una volta un unicorno che viveva in fondo al mare.
 Il mare è ricco di montagne, che partono dal profondo e arrivano fino alla superficie, trasformandosi in isole.
 Il nostro unicorno si era fatto una casetta in basso, aveva trovato una bella grotta e si era sistemato bene.

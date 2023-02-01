@@ -6,6 +6,4 @@ tags: []
 author: Luca Ricci 
 ---
 
-
-## Text
 Probabilmente sarebbe un vero disastro! L'unicorno di zucchero sarebbe troppo dolce da resistere e gli abitanti dei dintorni si sentirebbero attirati da lui. Si potrebbe correre il rischio di vederlo scomparire a causa di tutti quelli che avrebbero voglia di assaggiarlo!

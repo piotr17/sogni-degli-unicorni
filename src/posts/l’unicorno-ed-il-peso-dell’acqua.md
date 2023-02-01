@@ -5,9 +5,6 @@ category: Racconto Fantastico
 tags: []
 author: Luca Ricci 
 ---
-
-
-## Text
 Una volta, in un mare profondo, viveva un unicorno d’acqua.
 Tutti gli unicorni che vivono nell’acqua, camminano nel fondo. Quando l’acqua non è molto profonda, possono ammirare i riflessi del sole, che dentro l’acqua si separano mostrando tanti colori dell’arcobaleno.
 Quando l’acqua è un pochino più profonda, l’unicorno vede solo una luce bianca ed il suo mondo diventa sempre più blu. Corre sul fondo più lento, perchè l’acqua sopra di lui è più spessa, ed apprezza le sfumature di un solo colore.

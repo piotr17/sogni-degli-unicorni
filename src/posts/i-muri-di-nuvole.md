@@ -5,9 +5,6 @@ category: Cosa succederebbe se
 tags: []
 author: Luca Ricci 
 ---
-
-
-## Text
 C'era una volta una piccola città in cui le case avevano i muri fatti di nuvole.
 
 Tutta la gente della città era entusiasta di questo fatto unico, ma non potevano fare a meno di chiedersi cosa sarebbe successo se non avessero avuto più energia.

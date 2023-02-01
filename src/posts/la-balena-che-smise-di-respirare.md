@@ -5,9 +5,6 @@ category: Cosa succederebbe se
 tags: []
 author: Luca Ricci 
 ---
-
-
-## Text
 C'era una volta una balena, e tutti i giorni, respirando sott'acqua andava alla ricerca di cibo. Era divertente e gioiosa come qualsiasi balena. Ma un giorno, improvvisamente decise di smettere di respirare. Non si sa esattamente perché.
 
 Gli altri pesci e creature sottomarine cominciarono a chiedersi cos'era successo e decisero di parlare con lei. Ma la balena nonostante i loro sforzi non poteva dir loro cosa aveva in mente. La sua decisione era rimasta un mistero.

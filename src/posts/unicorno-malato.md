@@ -6,8 +6,6 @@ tags: []
 author: Luca Ricci 
 ---
 
-
-## Text
 Un giorno, sul bassofondo di un fiume, viveva un unicorno d’acqua. Come tutti gli unicorni d’acqua, passava la maggior parte del tempo sotto la superficie, ed il suo mondo era fatto di acqua che sopra di lui scorreva veloce, mentre il fondo rimaneva sempre fermo.
 Trotterellava allegro tra le alghe e le pietre, affondando gli zoccoli dove la sabbia diventa melma.
 Quel giorno però, il nostro amico non riusciva a correre come sempre. Doveva farsi venire un gran fiatone per stare al passo con i suoi amici. Sentiva le gambe diventare piccole e dure, gli sembrava che tutto fosse melma, anche un fondale di solida roccia.

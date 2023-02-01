@@ -5,9 +5,6 @@ category: Racconto Fantastico
 tags: []
 author: Luca Ricci 
 ---
-
-
-## Text
 Un giorno un piccolo Unicorno, fece visita al saggio zio.
 Lo zio viveva in una montagna più alta delle altre e grazie a questo privilegio, vedeva parti del mondo agli altri precluse.
 Il nostro piccolo unicorno era sempre felice di vedere lo zio, anche se viveva solo nel bosco alto e freddo del monte.
