@@ -1,10 +1,6 @@
 module.exports = {
   top: [
     {
-      text: 'About',
-      url: '/about/'
-    },
-    {
       text: 'Storie',
       url: '/storie/'
     },
@@ -14,10 +10,6 @@ module.exports = {
     }
   ],
   bottom: [
-    {
-      text: 'Imprint',
-      url: '/imprint/'
-    },
     {
       text: 'Privacy',
       url: '/privacy/'
