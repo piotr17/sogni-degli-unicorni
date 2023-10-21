@@ -1,10 +1,10 @@
 ---
 layout: post
-title: L'unicorno solitario
+title: L'unicorno e il peso dell'acqua
 date: 2023-10-15T11:29:07.767347
 tags: [unicorno, solitudine, amicizia, bosco, avventura]  
 metatitle: La storia dell'unicorno solitario che fa amicizia con una fanciulla
-metadescription: Racconto fantastico di un unicorno solitario che vive nel bosco e fa amicizia con una fanciulla smarrita, aprendo il suo cuore all'amore e all'amicizia.
+description: Racconto fantastico di un unicorno solitario che vive nel bosco e fa amicizia con una fanciulla smarrita, aprendo il suo cuore all'amore e all'amicizia.
 style: Altro
 temp: 0.4
 ---

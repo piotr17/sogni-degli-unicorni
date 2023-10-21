@@ -4,7 +4,7 @@ date: 2023-06-24T16:30:55.844766Z
 category: post
 tags: [unicorni, amicizia, condivisione, rispetto, crescita]
 metatitle: Le sfide dell'amicizia tra le giovani unicornine Viola, Rosa e Fucsia
-metadescription: Racconto per bambini su tre unicornine, Viola, Rosa e Fucsia, e le difficoltà nella loro amicizia. Una storia sull'importanza di comunicare, condividere e circondarsi di amici che ci rispettano.
+description: Racconto per bambini su tre unicornine, Viola, Rosa e Fucsia, e le difficoltà nella loro amicizia. Una storia sull'importanza di comunicare, condividere e circondarsi di amici che ci rispettano.
 author: Luca Ricci
 ---
 

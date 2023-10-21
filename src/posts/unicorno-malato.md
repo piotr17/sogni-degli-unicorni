@@ -5,7 +5,7 @@ category: Racconto Fantastico
 tags: [unicorno, malattia, amicizia, guarigione]
 author: Luca Ricci
 metatitle: La storia dell'unicorno d'acqua che si ammala e ritrova l'amicizia 
-metadescription: Racconto fantastico di un unicorno d'acqua che si ammala, teme di perdersi le avventure con gli amici, ma poi guarisce e ritrova il loro affetto.
+description: Racconto fantastico di un unicorno d'acqua che si ammala, teme di perdersi le avventure con gli amici, ma poi guarisce e ritrova il loro affetto.
 ---
 
 Un giorno, sul bassofondo di un fiume, viveva un unicorno d’acqua. Come tutti gli unicorni d’acqua, passava la maggior parte del tempo sotto la superficie, ed il suo mondo era fatto di acqua che sopra di lui scorreva veloce, mentre il fondo rimaneva sempre fermo.

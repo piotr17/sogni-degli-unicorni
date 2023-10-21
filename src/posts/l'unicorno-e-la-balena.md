@@ -5,7 +5,7 @@ category: Racconto Fantastico
 tags: [unicorno, balena, avventura, mare, amicizia]
 author: Luca Ricci
 metatitle: L'incontro tra l'unicorno che vive in fondo al mare e una balena gigante
-metadescription: Racconto fantasy dell'incontro tra un unicorno che vive sul fondo del mare e una balena gigantesca, dando il via ad un'avventura che li porterà a diventare amici.
+description: Racconto fantasy dell'incontro tra un unicorno che vive sul fondo del mare e una balena gigantesca, dando il via ad un'avventura che li porterà a diventare amici.
 ---
 C'era una volta un unicorno che viveva in fondo al mare.
 Il mare è ricco di montagne, che partono dal profondo e arrivano fino alla superficie, trasformandosi in isole.
