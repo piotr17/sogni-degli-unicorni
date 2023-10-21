@@ -2,13 +2,13 @@
 layout: post
 title: L'unicorno solitario
 date: 2023-10-15T11:29:07.767347
-tags: TAGS_MISSING
-metatitle: METATITLE_MISSING
-metadescription: METADESCRIPTION_MISSING
+tags: [unicorno, solitudine, amicizia, bosco, avventura]
+metatitle: La storia dell'unicorno solitario che trova un'amica nel bosco
+description: Racconto fantastico di un unicorno solitario che vive nel bosco e fa amicizia con una fanciulla smarrita, scoprendo il calore dell'amicizia.
 style: Altro
-
-temp: 0.4
+temp: 0.4  
 ---
+
 # Un unicorno solitario nel bosco
 
 Un unicorno solitario viveva nella parte più remota del bosco. Preferiva stare da solo, lontano dagli altri animali e dagli umani. Pascolava tra i fiori e si godeva la sua tranquillità. Era un animale misterioso e affascinante, con la sua criniera fluente e il suo corno lucente.
