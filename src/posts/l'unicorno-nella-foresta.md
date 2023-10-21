@@ -7,7 +7,7 @@ metatitle: La storia del solitario unicorno che trova un puledro da accudire
 metadescription: Racconto fantasy sull'incontro in foresta tra un unicorno solitario e un puledro unicorno da accudire, dando vita ad un'amicizia sincera tra difficoltà e magia.
 style: Altro
 temp: 0.3
----
+--- 
 Un unicorno solitario si aggira nella foresta, con il suo splendido mantello bianco e la sua lunga criniera colorata. Viveva da solo, senza compagnia, ma un giorno, mentre esplorava il bosco, trovò qualcosa di straordinario. Un puledro unicorno abbandonato, tremante e spaventato, si nascondeva tra gli alberi.
 
 Il cuore del unicorno solitario si riempì di compassione e decise di prendersi cura del piccolo unicorno. Lo portò nella sua dimora segreta e iniziò ad accudirlo con amore e dedizione. Il puledro, chiamato Arcobaleno per le sue bellissime striature colorate sulla criniera, si sentì finalmente al sicuro e protetto.

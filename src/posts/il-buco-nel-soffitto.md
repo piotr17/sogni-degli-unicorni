@@ -2,8 +2,10 @@
 title: Il buco nel soffitto
 date: 2023-01-21T00:00:00.000000Z
 category: Favola
-tags: []
-author: Luca Ricci 
+tags: [neve, pupazzo, magia, felicità]  
+author: Luca Ricci
+metatitle: La storia del buco nel soffitto che porta la neve in casa
+description: Racconto di fantasia su una bambina che, grazie ad un buco fatto dal padre nel soffitto, può vedere nevicare in casa e costruire un pupazzo di neve gigante, portando felicità nella sua vita.
 ---
 
 C'era una volta una bambina che viveva con suo papà in una casetta di campagna. La bambina amava fare escursioni nella neve, ma purtroppo quell'anno non nevicava. Quindi la bambina con suo papà decisero di fare qualcosa di speciale per fare in modo che nevicasse dentro casa.

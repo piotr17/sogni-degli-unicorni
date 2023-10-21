@@ -1,9 +1,11 @@
 ---
-title: il sogno di un piccolo unicorno nel suo lettino
-date: 2023-03-17T00:00:00.000000Z
+title: Il sogno di un piccolo unicorno nel suo lettino
+date: 2023-03-17T00:00:00.000000Z  
 category: Unicorni
-tags: []
-author: Luca Ricci 
+tags: [unicorno, sogno, avventura, natura, felicità]
+author: Luca Ricci
+metatitle: Il viaggio onirico di un unicorno alla ricerca della felicità
+description: Racconto fantastico su un unicorno che sogna di essere un bambino felice e vive un'avventura alla ricerca della gioia, tra natura incontaminata e incontri magici, imparando a vivere con serenità.
 ---
 C'era una volta un unicorno meraviglioso che viveva in un grande prato, circondato da alberi pieni di fiori colorati. Forse perché non voleva diventare come tutti gli unicorni pagani, che si divertivano a correre insieme, saltare e giocare a nascondino, quella sera decise di andare a dormire.
 
