@@ -1,12 +1,11 @@
 ---
 layout: post
 title: L'unicorno nella foresta
-date: 2023-10-15T11:29:07.763312
-tags: TAGS_MISSING
-metatitle: METATITLE_MISSING
-metadescription: METADESCRIPTION_MISSING
+date: 2023-10-15T11:29:07.763312  
+tags: [unicorno, foresta, amicizia, avventura, compassione]
+metatitle: La storia del solitario unicorno che trova un puledro da accudire
+metadescription: Racconto fantasy sull'incontro in foresta tra un unicorno solitario e un puledro unicorno da accudire, dando vita ad un'amicizia sincera tra difficoltà e magia.
 style: Altro
-
 temp: 0.3
 ---
 Un unicorno solitario si aggira nella foresta, con il suo splendido mantello bianco e la sua lunga criniera colorata. Viveva da solo, senza compagnia, ma un giorno, mentre esplorava il bosco, trovò qualcosa di straordinario. Un puledro unicorno abbandonato, tremante e spaventato, si nascondeva tra gli alberi.

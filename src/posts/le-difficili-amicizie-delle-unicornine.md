@@ -2,10 +2,10 @@
 title: "Le difficili amicizie delle unicornine"
 date: 2023-06-24T16:30:55.844766Z
 category: post
-metaTitle: ""
-metaDescription: ""
-tags: 
-author: Luca Ricci 
+tags: [unicorni, amicizia, condivisione, rispetto, crescita]
+metatitle: Le sfide dell'amicizia tra le giovani unicornine Viola, Rosa e Fucsia
+metadescription: Racconto per bambini su tre unicornine, Viola, Rosa e Fucsia, e le difficoltà nella loro amicizia. Una storia sull'importanza di comunicare, condividere e circondarsi di amici che ci rispettano.
+author: Luca Ricci
 ---
 
 C'era una volta una piccola unicornina di nome Viola che aveva un'amica speciale, Rosa. Viola e Rosa erano cresciute insieme, giocando e imparando nel magico mondo degli unicorni. A volte erano felici, a volte tristi, ma erano sempre lì l'una per l'altra, proprio come le amiche dovrebbero essere.

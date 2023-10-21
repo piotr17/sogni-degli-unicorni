@@ -1,9 +1,11 @@
 ---
-title: La Balena che smise di respirare
+title: La balena che smise di respirare
 date: 2023-01-30T00:00:00.000000Z
 category: Cosa succederebbe se
-tags: []
-author: Luca Ricci 
+tags: [balena, respiro, amicizia, solitudine, festa]
+author: Luca Ricci
+metatitle: Cosa succederebbe se una balena smettesse improvvisamente di respirare?
+metadescription: Racconto fantasy su una balena che smette di respirare misteriosamente e viene aiutata da un granchio e una tartaruga a ritrovare la felicità e ricominciare a vivere.
 ---
 C'era una volta una balena, e tutti i giorni, respirando sott'acqua andava alla ricerca di cibo. Era divertente e gioiosa come qualsiasi balena. Ma un giorno, improvvisamente decise di smettere di respirare. Non si sa esattamente perché.
 

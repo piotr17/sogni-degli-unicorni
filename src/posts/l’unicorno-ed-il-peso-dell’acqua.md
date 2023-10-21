@@ -1,9 +1,12 @@
 ---
-title: L’unicorno ed il peso dell’acqua
-date: 2023-01-30T00:00:00.000000Z
-category: Racconto Fantastico
-tags: []
-author: Luca Ricci 
+layout: post
+title: L'unicorno solitario
+date: 2023-10-15T11:29:07.767347
+tags: [unicorno, solitudine, amicizia, bosco, avventura]  
+metatitle: La storia dell'unicorno solitario che fa amicizia con una fanciulla
+metadescription: Racconto fantastico di un unicorno solitario che vive nel bosco e fa amicizia con una fanciulla smarrita, aprendo il suo cuore all'amore e all'amicizia.
+style: Altro
+temp: 0.4
 ---
 Una volta, in un mare profondo, viveva un unicorno d’acqua.
 Tutti gli unicorni che vivono nell’acqua, camminano nel fondo. Quando l’acqua non è molto profonda, possono ammirare i riflessi del sole, che dentro l’acqua si separano mostrando tanti colori dell’arcobaleno.

@@ -2,9 +2,9 @@
 layout: post
 title: La principessa e l'unicorno
 date: 2023-10-15T11:29:07.765537
-tags: TAGS_MISSING
-metatitle: METATITLE_MISSING
-metadescription: METADESCRIPTION_MISSING
+tags: [principessa, unicorno, amicizia, avventura, magia]
+metatitle: La storia della principessa Sofia e dell'unicorno Arcobaleno
+description: Racconto fantasy di amicizia tra la principessa Sofia e l'unicorno parlante Arcobaleno, uniti per sconfiggere con la magia dell'amicizia la strega malvagia Morgana.
 style: Rodari
 temp: 0.8
 ---

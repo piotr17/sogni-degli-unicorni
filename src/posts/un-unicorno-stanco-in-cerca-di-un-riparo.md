@@ -1,13 +1,12 @@
 ---
-title: Un Unicorno stanco in cerca di un riparo
+title: Un unicorno stanco in cerca di un riparo
 date: 2023-03-17T00:00:00.000000Z
 category: Unicorni
-tags: []
-author: Luca Ricci 
+tags: [unicorno, viaggio, casa, rifugio, speranza]  
+author: Luca Ricci
+metatitle: Il viaggio di un unicorno stanco alla ricerca di un riparo
+description: Racconto di un unicorno esausto che intraprende un lungo viaggio nella foresta per ritrovare la propria casa, non arrendendosi mai finché non la ritrova.
 ---
-
-.
-
 C'era una volta un bellissimo unicorno che viveva in una magnifica foresta. Aveva una lunga criniera argentata, gli zoccoli bianchi come la neve e una lunga corna dorata. Era un unicorno felice e libero, ma ultimamente aveva perso la forza che lo aveva sempre accompagnato. Era diventato molto stanco e non riusciva a trovare la sua casa.
 
 Per cercare di riprendersi, ogni mattina usciva a fare una passeggiata nella foresta. Si incamminava con esitazione e andava avanti, guardando gli alberi, le foglie e gli uccellini che cinguettavano. Per lui era una bella sensazione, ma non aveva alcune speranza di trovare la sua casa.

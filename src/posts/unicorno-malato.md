@@ -1,9 +1,11 @@
 ---
-title: Unicorno Malato
+title: Unicorno Malato 
 date: 2023-01-30T00:00:00.000000Z
 category: Racconto Fantastico
-tags: []
-author: Luca Ricci 
+tags: [unicorno, malattia, amicizia, guarigione]
+author: Luca Ricci
+metatitle: La storia dell'unicorno d'acqua che si ammala e ritrova l'amicizia 
+metadescription: Racconto fantastico di un unicorno d'acqua che si ammala, teme di perdersi le avventure con gli amici, ma poi guarisce e ritrova il loro affetto.
 ---
 
 Un giorno, sul bassofondo di un fiume, viveva un unicorno d’acqua. Come tutti gli unicorni d’acqua, passava la maggior parte del tempo sotto la superficie, ed il suo mondo era fatto di acqua che sopra di lui scorreva veloce, mentre il fondo rimaneva sempre fermo.

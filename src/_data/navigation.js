@@ -1,7 +1,7 @@
 module.exports = {
   top: [
     {
-      text: 'Storie',
+      text: 'Storie degli Unicorni',
       url: '/storie/'
     },
     {

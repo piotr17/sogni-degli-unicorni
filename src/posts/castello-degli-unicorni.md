@@ -1,9 +1,11 @@
 ---
-title: Il Castello degli Unicorni
+title: Il Castello degli Unicorni  
 date: 2023-03-04T00:00:00.000000Z
 category: Unicorni
-tags: []
-author: Luca Ricci 
+metatitle: La storia di una famiglia di unicorni che vive in un castello dorato 
+description: Racconto fantastico su una regina unicorna e la sua famiglia che vivono in un castello dorato, affrontando una tempesta ma infine rinnovati dalla luce del sole.
+tags: [unicorni, famiglia, castello, sole, speranza]
+author: Luca Ricci
 ---
 Era un'epoca di meraviglie e incanto, di creature uniche e di paesaggi incontaminati. A governare questo mondo di sogno c'era una famiglia di unicorni che viveva in un castello dorato. La regina era l'unicorno con il corno più grande e luminoso, i cui colori variopinti si riflettono come stelle in una notte d'estate. La sua figlioletta era sempre allegra e birichina, con un corno arcobaleno che brillava intensamente, mentre suo figlio, il piccolo unicornetto, aveva un corno dorato e impetuoso. Infine, c'era anche una piccola unicornina, delicata e sognante, dal corno bianco come la neve. Questa era la famiglia Unicorno.
 
