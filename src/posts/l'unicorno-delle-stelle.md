@@ -2,10 +2,7 @@
 layout: post
 title: L'unicorno delle stelle
 date: 2023-11-04T15:53:54.257913
-tags: 1. #UnicornoMagico (Magical Unicorn)
-2. #StellaCadente (Falling Star)
-3. #AmiciziaSpeciale (Special Friendship)
-4. #MagiaNotturna (Night Magic)
+tags: 
 metatitle: "L'unicorno delle stelle: una magica avventura per i piccoli lettori"
 description: "Un Piccolo Unicorno e una Stella Cadente: Un'Avventura Magica nella Foresta degli Arcobaleni
 
