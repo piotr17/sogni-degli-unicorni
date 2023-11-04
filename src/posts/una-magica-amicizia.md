@@ -4,7 +4,7 @@ title: Una magica amicizia
 date: 2023-11-04T15:53:48.965916
 tags: #FiabePerBambini #AmiciziaSpeciale #RegnoIncantato #CreatureFantastiche
 metatitle: "Una magica amicizia: Un racconto per bambini che insegna importanti valori"
-description: L'incontro tra un unicorno e un pegaso: Un'amicizia speciale che illumina il regno incantato. Scopri la magia di Arcobaleno e Albatros, due creature fantastiche che insegnano l'importanza dell'amicizia e dell'aiuto reciproco. Un racconto emozionante che trasmette valori positivi ai più piccoli.
+description: "L'incontro tra un unicorno e un pegaso: Un'amicizia speciale che illumina il regno incantato. Scopri la magia di Arcobaleno e Albatros, due creature fantastiche che insegnano l'importanza dell'amicizia e dell'aiuto reciproco. Un racconto emozionante che trasmette valori positivi ai più piccoli."
 style: Gianni Rodari
 temp: 0.1
 ---
