@@ -11,7 +11,6 @@ temp: 0.9
 ---
 # Una caccia al tesoro tra unicorni in cui vince l'amicizia
 
-_In the style of Charles Peanut_
 
 Benvenuti, ragazzi e ragazze, a una storia magica e piena di avventure! Oggi vi porterò nel meraviglioso mondo delle creature mitiche e degli amici speciali. Siete pronti per una caccia al tesoro emozionante tra unicorni?
 

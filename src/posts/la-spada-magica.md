@@ -4,9 +4,7 @@ title: La spada magica
 date: 2023-11-04T15:53:48.090786
 tags: #Fiorellino #UnicornoCoraggioso #SpadaFatata #CoraggioEDeterminazione
 metatitle: "La spada magica: Un'avventura incantata per i piccoli lettori"
-description: Un unicorno coraggioso: una storia di speranza e coraggio
-
-Scopri la storia di Fiorellino, un unicorno diverso dagli altri. Con la sua spada fatata, affronta il malvagio stregone Oscuro per proteggere il suo regno. Una storia che insegna che anche le creature più piccole possono diventare eroi e che l'amore e la determinazione possono cambiare il mondo. Scopri di più su questa avvincente avventura!
+description: "Un unicorno coraggioso: una storia di speranza e coraggio. Scopri la storia di Fiorellino, un unicorno diverso dagli altri. Con la sua spada fatata, affronta il malvagio stregone Oscuro per proteggere il suo regno."
 style: Hans Cristian Handersen
 
 temp: 0.3

@@ -5,9 +5,8 @@ date: 2023-11-04T15:53:54.851861
 tags: #UnicornoGeneroso #Gentilezza #Generosità #AiutoReciproco
 metatitle: "L'unicorno generoso: una meravigliosa storia per bambini che insegna importanti valori"
 description: "Un unicorno generoso: una storia che insegna l'importanza della gentilezza e della generosità
-
 Scopri la magnifica foresta abitata da tanti animali diversi, tra cui un unicorno dal manto bianco come la neve e la criniera lucente come l'oro. Questo unicorno è speciale perché ha un cuore gentile e generoso."
-style: Hans Cristian Handersen
+style: Hans Cristian Handersen"
 
 temp: 0.3
 ---
