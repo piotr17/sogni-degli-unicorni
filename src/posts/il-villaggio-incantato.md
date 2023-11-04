@@ -6,7 +6,7 @@ tags: #FiabePerBambini
 #UnicorniMagici
 #StorieDiMagia
 #AmorePerLaNatura
-metatitle: Il villaggio incantato: Una magica avventura per i piccoli lettori
+metatitle: Il villaggio incantato, Una magica avventura per i piccoli lettori
 description: Esplora il magico bosco dei unicorni e scopri una storia di gentilezza, magia e guarigione. Un capo saggio guida gli unicorni nel loro compito di aiutare gli animali e le piante del bosco. Scopri come la loro magia ha portato felicità e armonia a tutti. Un racconto che ispira i bambini a essere gentili e generosi verso gli altri. Benvenuti nel bosco magico dei unicorni, dove tutti vivono felici e contenti.
 style: Gianni Rodari
 temp: 0.4
