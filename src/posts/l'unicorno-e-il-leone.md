@@ -2,10 +2,7 @@
 layout: post
 title: L'Unicorno e il Leone
 date: 2023-11-04T15:31:17.738864
-tags: 1. Amicizia (Friendship)
-2. Accettazione (Acceptance)
-3. Differenze (Differences)
-4. Bosco incantato (Enchanted forest)
+tags: 
 metatitle: "L'Unicorno e il Leone: Una storia magica per i bambini che insegna importanti valori"
 description: Un unicorno e un leone imparano a superare le loro differenze e diventano amici. Scopri l'importanza dell'amicizia e dell'accettazione nel bosco incantato. Una storia magica che insegna ai bambini il valore dell'apertura mentale e della volontà di superare le differenze.
 style: Charles Peanut
