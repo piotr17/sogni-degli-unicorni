@@ -6,8 +6,8 @@ tags: #UnicorniMagici
 #AmiciziaEAccettazione
 #DiversitàColori
 #LezioneDiAmicizia
-metatitle: "L'arcobaleno dell'amicizia: Un racconto per bambini che insegna importanti valori di crescita"
-description: Un gruppo di unicorni impara l'importanza dell'amicizia: una storia magica sulla diversità e l'accettazione delle differenze. Scopri come gli unicorni hanno superato le loro divergenze per ritrovare l'armonia nella foresta incantata. Una lezione preziosa sull'importanza dell'amicizia e dell'accettazione delle differenze.
+metatitle: "L'arcobaleno dell'amicizia, Un racconto per bambini che insegna importanti valori di crescita"
+description: "Un gruppo di unicorni impara l'importanza dell'amicizia: una storia magica sulla diversità e l'accettazione delle differenze. Scopri come gli unicorni hanno superato le loro divergenze per ritrovare l'armonia nella foresta incantata. Una lezione preziosa sull'importanza dell'amicizia e dell'accettazione delle differenze."
 style: Gianni Rodari
 temp: 0.3
 ---
