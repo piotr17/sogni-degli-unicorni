@@ -1,6 +1,6 @@
 ---
 layout: post
-title: L'Unicorno e la Farfalla: Una Storia di Coraggio
+title: L'Unicorno e la Farfalla - Una Storia di Coraggio
 date: 2023-11-11T18:28:41.216000
 tags: #UnicornoTimido #FarfallaCoraggiosa #Amicizia #Coraggio
 metatitle: "Storia per Bambini: L'Unicorno e la Farfalla - Un Racconto di Coraggio | Libri Educativi per Bambini"

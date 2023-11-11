@@ -1,6 +1,6 @@
 ---
 layout: post
-title: L'Unicorno e il Leone: Un'Amicizia Inaspettata
+title: L'Unicorno e il Leone Un'Amicizia Inaspettata
 date: 2023-11-11T18:28:46.454694
 tags: #StoriaDiAmicizia #UnicornoELeone #ValoreDellAmicizia #SolidarietàECoraggio
 metatitle: "Storia per Bambini: L'Unicorno e il Leone - Un'Amicizia Inaspettata | Racconto Educativo"
