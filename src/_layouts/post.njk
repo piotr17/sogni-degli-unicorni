@@ -14,8 +14,14 @@ preloads:
     {% set definedDate = date %} {% include "partials/date.njk" %}
 
     {{ content | safe }}
+  
+  <div>
+    {%- include "partials/post-image.njk" %}
   </div>
+  
 </article>
 
 <!-- include blogpost schema  -->
 {%- include "schemas/blogpost-schema.njk" %}
+
+
