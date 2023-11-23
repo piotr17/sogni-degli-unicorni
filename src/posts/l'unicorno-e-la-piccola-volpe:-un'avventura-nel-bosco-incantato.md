@@ -3,8 +3,8 @@ layout: post
 title: "L'Unicorno e la Piccola Volpe: Un'avventura nel Bosco Incantato"
 date: 2023-11-23T13:28:27.848566
 tags: "#ViaggioUnicornoVolpe, #AmiciziaLuceFiamma, #AvventureBoscoIncantato, #ValoreDellAmicizia"
-metatitle: ""Unicorno e Piccola Volpe: Avventura nel Bosco Incantato | Storie per Bambini Educativi""
-description: ""Scopri la magica storia di Luce, l'unicorno solitario, e Fiamma, la volpe avventurosa. Un viaggio nel bosco incantato, ricco di avventure e insegnamenti sul valore dell'amicizia e della collaborazione. Un racconto per bambini che esalta la diversità e la forza dell'unione.""
+metatitle: "Unicorno e Piccola Volpe: Avventura nel Bosco Incantato | Storie per Bambini Educativi"
+description: "Scopri la magica storia di Luce, l'unicorno solitario, e Fiamma, la volpe avventurosa. Un viaggio nel bosco incantato, ricco di avventure e insegnamenti sul valore dell'amicizia e della collaborazione. Un racconto per bambini che esalta la diversità e la forza dell'unione."
 style: Antoine de Saint-Exupéry
 temp: 0.4
 ---

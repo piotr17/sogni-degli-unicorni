@@ -3,10 +3,9 @@ layout: post
 title: "Un'Avventura Arcobaleno"
 date: 2023-11-23T13:28:33.546341
 tags: "#PiccoloUnicorno #ArcobalenoPerduto #Amicizia #Famiglia"
-metatitle: ""Un'Avventura Arcobaleno: Storia Educativa e Divertente per Bambini | Racconti per l'Infanzia""
+metatitle: "Un'Avventura Arcobaleno: Storia Educativa e Divertente per Bambini | Racconti per l'Infanzia"
 description: "Scopri la magica storia di Stella, un piccolo unicorno solitario alla ricerca dell'arcobaleno perduto. Un'avventura emozionante che insegna l'importanza dell'amicizia, della famiglia e dell'appartenenza. Un racconto per bambini che incanta e commuove, ricco di insegnamenti preziosi."
-style: 
-Brothers Grimm (Jakob e Wilhelm Grimm)
+style: Brothers Grimm (Jakob e Wilhelm Grimm)
 
 temp: 0.5
 ---

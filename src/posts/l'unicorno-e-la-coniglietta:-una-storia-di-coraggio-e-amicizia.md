@@ -3,8 +3,8 @@ layout: post
 title: "L'Unicorno e la Coniglietta: Una storia di coraggio e amicizia"
 date: 2023-11-23T13:28:32.222442
 tags: "#UnicornoSolitario #ConigliettaTimida #Amicizia #SuperarePaure"
-metatitle: ""Unicorno e Coniglietta: Storia di Coraggio e Amicizia per Bambini | Racconti Educativi""
-description: ""Scopri la magica storia di Biancore, l'unicorno solitario, e Pellicciotta, la coniglietta timida. Un racconto incantevole che insegna l'importanza dell'amicizia e come può superare qualsiasi ostacolo. Perfetto per insegnare ai bambini il valore del coraggio e della compagnia.""
+metatitle: "Unicorno e Coniglietta: Storia di Coraggio e Amicizia per Bambini | Racconti Educativi"
+description: "Scopri la magica storia di Biancore, l'unicorno solitario, e Pellicciotta, la coniglietta timida. Un racconto incantevole che insegna l'importanza dell'amicizia e come può superare qualsiasi ostacolo. Perfetto per insegnare ai bambini il valore del coraggio e della compagnia."
 style: Roald Dahl
 temp: 0.9
 ---

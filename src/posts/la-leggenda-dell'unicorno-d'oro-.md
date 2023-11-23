@@ -3,7 +3,7 @@ layout: post
 title: "La leggenda dell'unicorno d'oro "
 date: 2023-11-23T13:28:31.546126
 tags: "#UnicornoDorato #ReAvido #LezioneDiGenerosità #BoscoIncantato"
-metatitle: ""La Leggenda dell'Unicorno d'Oro - Storia Fantastica per Bambini | Racconti Educativi""
+metatitle: "La Leggenda dell'Unicorno d'Oro - Storia Fantastica per Bambini | Racconti Educativi"
 description: "Scopri la magica storia dell'unicorno dal corno dorato, un simbolo di gentilezza e generosità. Un racconto che insegna l'importanza di fare del bene e resistere all'avidità, ricco di avventure e lezioni preziose. Ideale per stimolare l'immaginazione dei bambini e insegnare loro valori importanti."
 style: A.A. Milne
 temp: 0.7

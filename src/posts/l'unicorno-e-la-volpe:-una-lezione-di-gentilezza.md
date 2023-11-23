@@ -3,8 +3,8 @@ layout: post
 title: "L'Unicorno e la Volpe: Una lezione di gentilezza"
 date: 2023-11-23T13:28:30.097798
 tags: "#StoriaPerBambini #Amicizia #Gentilezza #UnicornoEVolpe"
-metatitle: ""Lezione di Gentilezza per Bambini: L'Unicorno e la Volpe - Storie Educative per Bambini""
-description: ""Scopri la magica storia dell'Unicorno Bianco e della Volpe Rosso nel loro viaggio nel bosco. Un racconto che insegna l'importanza dell'amicizia, della gentilezza e dell'aiuto reciproco. Ideale per insegnare ai bambini i valori fondamentali della vita.""
+metatitle: "Lezione di Gentilezza per Bambini: L'Unicorno e la Volpe - Storie Educative per Bambini"
+description: "Scopri la magica storia dell'Unicorno Bianco e della Volpe Rosso nel loro viaggio nel bosco. Un racconto che insegna l'importanza dell'amicizia, della gentilezza e dell'aiuto reciproco. Ideale per insegnare ai bambini i valori fondamentali della vita."
 style: Dr. Seuss (Theodor Seuss Geisel)
 temp: 0.4
 ---
