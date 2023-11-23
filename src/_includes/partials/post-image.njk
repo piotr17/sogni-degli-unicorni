@@ -1,30 +1,29 @@
 <button id="openPopup">Immagine da colorare</button>
 
-<div id="popup" class="popup">
+<div id="popup" class="popup" style="display:none">
   <div class="popup-content">
     <span id="closePopup">&times;</span>
-    <img id="coloringImage" src="path/your-image.jpg" alt="Image to color">
+    <img id="coloringImage" src="unicorn.jpg" alt="Immagine da colorare">
     <button onclick="window.print();">Stampa</button>
   </div>
 </div>
 
 <script>
-  var popup = document.getElementById("popup");
-  var btn = document.getElementById("openPopup");
-  var span = document.getElementById("closePopup");
+var popup = document.getElementById("popup");
+var btn = document.getElementById("openPopup"); 
+var span = document.getElementById("closePopup");
 
-  btn.onclick = function() {
-    console.log("Click on button");
-    popup.style.display = "block";
-  };
+btn.onclick = function() {
+  popup.style.display = "block"; 
+}
 
-  span.onclick = function() {
+span.onclick = function() {
+  popup.style.display = "none";
+}  
+
+window.onclick = function(event) {
+  if (event.target == popup) {
     popup.style.display = "none";
-  };
-
-  window.onclick = function(event) {
-    if (event.target == popup) {
-      popup.style.display = "none";
-    }
-  };
+  }
+}
 </script>

@@ -1,0 +1,31 @@
+---
+layout: base
+---
+
+<article>
+
+  <div class="review-cover-image">
+    <img src="{{ page.data.coverImage }}">
+  </div>
+
+  <div class="review-content">
+
+    <h1>{{ title }}</h1>
+
+    <div class="affiliate-button-top">
+      <a href="{{ page.data.affiliateLink }}" target="_blank" rel="noopener">
+        <button>Acquista su {{ page.data.affiliateName }}</button>
+      </a>
+    </div>
+
+    {{ content | safe }}
+
+    <div class="affiliate-button-bottom">
+      <a href="{{ page.data.affiliateLink }}" target="_blank" rel="noopener">
+        <button>Acquista su {{ page.data.affiliateName }}</button>  
+      </a>
+    </div>
+
+  </div>
+
+</article>
