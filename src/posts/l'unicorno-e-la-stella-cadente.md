@@ -2,8 +2,8 @@
 layout: post
 title: "L'Unicorno e la Stella Cadente"
 date: 2023-12-10T21:41:28.810714
-tags: "["unicorno solitario", "stella cadente", "amicizia", "avventura"]"
-metatitle: ""La Magica Storia dell'Unicorno e la Stella Cadente - Racconto Educativo per Bambini""
+tags: ["unicorno solitario", "stella cadente", "amicizia", "avventura"]
+metatitle: "La Magica Storia dell'Unicorno e la Stella Cadente - Racconto Educativo per Bambini"
 description: "Scopri la magica storia di Bianco, l'unicorno solitario, e la sua amica stella cadente. Un racconto incantato che esplora il valore dell'amicizia e l'importanza di non sentirsi mai soli. Perfetto per insegnare ai bambini l'importanza dell'amicizia e dell'amore."
 style: Roald Dahl
 temp: 0.1

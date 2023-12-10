@@ -2,8 +2,8 @@
 layout: post
 title: "L'Unicorno e la Stellina"
 date: 2023-12-10T21:41:27.808610
-tags: "["Storia per bambini", "Unicorno e stellina cadente", "Amicizia e condivisione", "Avventure magiche"]"
-metatitle: ""Storie per Bambini: L'Unicorno e la Stellina - Racconti Educativi e Divertenti""
+tags: ["Storia per bambini", "Unicorno e stellina cadente", "Amicizia e condivisione", "Avventure magiche"]
+metatitle: "Storie per Bambini: L'Unicorno e la Stellina - Racconti Educativi e Divertenti"
 description: "Scopri la magica storia dell'unicorno Bianco e della stellina cadente Luce. Un racconto incantato che insegna l'importanza dell'amicizia e della condivisione, ambientato in un bosco fatato. Un'avventura quotidiana che illumina le vite dei nostri protagonisti."
 style: A.A. Milne
 temp: 0.2
