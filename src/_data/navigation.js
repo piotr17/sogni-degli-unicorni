@@ -7,6 +7,10 @@ module.exports = {
     {
       text: 'Recensioni',
       url: '/recensioni/'
+    },
+    {
+      text: 'Unicorni da colorare',
+      url: '/unicorni-da-colorare/'
     }
   ],
   bottom: [
