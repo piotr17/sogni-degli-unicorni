@@ -1,6 +1,6 @@
 ---
 layout: post
-title: l'unicorno-e-il-coniglio:-un'avventura-di-amicizia da colorare
+title: L'unicorno ed il coniglio, una storia da colorare
 date: 2023-12-14T14:30:43.504066
 tags: unicornidacolorare
 metatitle: l'unicorno-e-il-coniglio:-un'avventura-di-amicizia da colorare
