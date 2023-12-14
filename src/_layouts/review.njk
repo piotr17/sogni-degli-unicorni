@@ -2,30 +2,27 @@
 layout: base
 ---
 
-<article>
+<article class="region">
+  <div class="wrapper flow prose">
+    <h1 class="gradient-text">{{ title }}</h1>
+    <div class="review-image">
 
-  <div class="review-cover-image">
-    <img src="{{ page.data.coverImage }}">
-  </div>
-
-  <div class="review-content">
-
-    <h1>{{ title }}</h1>
+      <img src="{{coverImage}}" alt="title" />
+    </div>
 
     <div class="affiliate-button-top">
-      <a href="{{ page.data.affiliateLink }}" target="_blank" rel="noopener">
-        <button>Acquista su {{ page.data.affiliateName }}</button>
+      <a href="{{ affiliateLink }}" target="_blank" rel="noopener">
+        <button>Acquista su {{affiliateName }}</button>
       </a>
     </div>
 
     {{ content | safe }}
 
     <div class="affiliate-button-bottom">
-      <a href="{{ page.data.affiliateLink }}" target="_blank" rel="noopener">
-        <button>Acquista su {{ page.data.affiliateName }}</button>  
+      <a href="{{ affiliateLink }}" target="_blank" rel="noopener">
+        <button>Acquista su {{ affiliateName }}</button>  
       </a>
     </div>
 
   </div>
-
 </article>

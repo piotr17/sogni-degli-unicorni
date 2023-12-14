@@ -8,16 +8,12 @@ const getAllPosts = collection => {
  * Returns all reviews as a collection.
 */
 const getAllReviews = collection => {
-  const recensioni = collection.getFilteredByGlob('./src/recensioni/*.md');
-  return recensioni.reverse(); 
+  const projects = collection.getFilteredByGlob('./src/recensioni/*.md');
+  return projects.reverse(); 
 }
-const getAllUnicorniDaColorare = collection => {
-  const unicornidacolorare = collection.getFilteredByGlob('../src/unicorni-da-colorare/*.md');
-  return unicornidacolorare.reverse(); 
-}
+
 
 module.exports = {
   getAllReviews,
-  getAllUnicorniDaColorare,
   getAllPosts
 };
