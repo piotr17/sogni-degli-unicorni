@@ -7,5 +7,4 @@ metatitle: La danza della luna da colorare
 description: Scarica un bellissimo disegno da colorare basato sulla storia La danza della luna
 image: /assets/images/la-danza-della-luna-da-colorare.png
 ---
-Scarica stampa e colora l'immagine del racconto
-        
+Scarica stampa e colora l'immagine del racconto.
