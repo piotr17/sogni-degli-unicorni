@@ -1,29 +1,5 @@
-<button id="openPopup">Immagine da colorare</button>
+ <div><a href="{{ linkdisegno }}">Immagine da Colorare </a></div>
 
-<div id="popup" class="popup" style="display:none">
-  <div class="popup-content">
-    <span id="closePopup">&times;</span>
-    <img id="coloringImage" src="unicorn.jpg" alt="Immagine da colorare">
-    <button onclick="window.print();">Stampa</button>
-  </div>
-</div>
 
-<script>
-var popup = document.getElementById("popup");
-var btn = document.getElementById("openPopup"); 
-var span = document.getElementById("closePopup");
 
-btn.onclick = function() {
-  popup.style.display = "block"; 
-}
 
-span.onclick = function() {
-  popup.style.display = "none";
-}  
-
-window.onclick = function(event) {
-  if (event.target == popup) {
-    popup.style.display = "none";
-  }
-}
-</script>

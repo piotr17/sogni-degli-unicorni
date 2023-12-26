@@ -7,7 +7,7 @@ metatitle: "Scopri Il Viaggio Magico dell'Unicorno: Favola Educativa per Bambini
 description: "Scopri la magica storia del piccolo unicorno Luna e il suo viaggio alla scoperta del valore dell'amicizia. Un'avventura incantata tra creature fantastiche e paesaggi meravigliosi, un racconto che insegna l'importanza di condividere e creare legami. Perfetto per i più piccoli."
 style: Antoine de Saint-Exupéry
 temp: 0.6
-link-disegno : /blog/il-viaggio-magico-dell'unicorno-da-colorare/
+linkdisegno : /blog/il-viaggio-magico-dell'unicorno-da-colorare/
 ---
 # Il piccolo unicorno e il valore dell'amicizia
 

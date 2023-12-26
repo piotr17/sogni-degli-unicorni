@@ -2,14 +2,10 @@
 layout: post
 title: Un desiderio per la luna
 date: 2023-11-04T15:53:56.065397
-tags: #Fiaba
-#Unicorno
-#Sogni
-#Magia
+tags: storie
 metatitle: "Un desiderio per la luna: Una meravigliosa storia per bambini che insegna importanti valori"
 description: Scopri la magica storia dell'unicorno e di Luca, un bambino coraggioso che ha cambiato il mondo. Un unicorno solitario chiede alla luna di esaudire i sogni di tutti gli esseri viventi. Con la sua magia, trasforma i sogni in realtà, portando gioia e felicità ovunque vada. Insieme, l'unicorno e Luca trasformano il sogno di Luca di aiutare i bambini del mondo in una realtà. Scopri come anche un piccolo sogno può fare la differenza e portare amore e speranza nella vita di chiunque.
 style: Hans Cristian Handersen
-
 temp: 0.3
 ---
 # Il sogno dell'unicorno
