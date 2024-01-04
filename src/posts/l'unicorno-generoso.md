@@ -8,7 +8,7 @@ description: Scopri la magica storia di Luce, l'unicorno che condivide i colori 
 style: Charles Peanut
 
 temp: 0.6
-permalink: /storie/l'unicorno-generoso
+permalink: /storie/l'unicorno-generoso.html
 ---
 # Un unicorno condivide la sua coda arcobaleno con gli animali della foresta che non hanno colori
 
