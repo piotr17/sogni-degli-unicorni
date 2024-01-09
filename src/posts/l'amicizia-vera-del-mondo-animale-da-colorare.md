@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pagina-da-colorare
 title: L'amicizia vera del mondo animale da colorare
 date: 2023-12-26T14:56:27.125101
 tags: unicornidacolorare

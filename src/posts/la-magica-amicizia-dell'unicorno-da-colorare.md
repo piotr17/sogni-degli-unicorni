@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pagina-da-colorare
 title: La magica amicizia dell'Unicorno da colorare
 date: 2023-12-26T14:55:49.155858
 tags: unicornidacolorare

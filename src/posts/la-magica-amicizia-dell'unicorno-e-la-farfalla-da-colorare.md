@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pagina-da-colorare
 title: La magica amicizia dell'Unicorno e la Farfalla da colorare
 date: 2023-12-26T14:56:01.781775
 tags: unicornidacolorare

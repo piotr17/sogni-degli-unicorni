@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pagina-da-colorare
 title: Il Viaggio Magico dell'Unicorno da colorare
 date: 2023-12-20T15:23:52.939644
 tags: unicornidacolorare

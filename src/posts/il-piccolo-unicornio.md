@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Il Piccolo Unicornio"
+title: "Il Piccolo Unicorno"
 date: 2024-01-04T16:30:23.514012
 tags: ["storia per bambini", "unicorno", "coraggio", "gentilezza"]
-metatitle: "Il Piccolo Unicornio: Favola Incantevole per Bambini | Racconti Educativi per la Crescita dei Bambini"
-description: Scopri la magica storia del Piccolo Unicornio di nome Luce, un eroe nonostante la sua piccola statura. Un racconto che insegna l'importanza del coraggio e della gentilezza, dimostrando che la grandezza si misura nel cuore.
+metatitle: "Il Piccolo Unicorno: Favola Incantevole per Bambini | Racconti Educativi per la Crescita dei Bambini"
+description: Scopri la magica storia del Piccolo Unicorno di nome Luce, un eroe nonostante la sua piccola statura. Un racconto che insegna l'importanza del coraggio e della gentilezza, dimostrando che la grandezza si misura nel cuore.
 style: Charles Peanut
 
 temp: 0.1
-permalink: /storie/il-piccolo-unicornio.html
+permalink: /storie/il-piccolo-unicorno.html
 ---
-# Il Piccolo Unicornio
+# Il Piccolo Unicorno
 
 C'era una volta, in un mondo lontano e magico, un piccolo unicornio di nome Luce. Luce era un unicornio molto speciale, non solo perché era l'unico unicornio nel suo villaggio, ma anche perché era il più piccolo di tutti. Nonostante la sua piccola statura, Luce aveva un cuore grande e gentile, e un coraggio che non conosceva limiti.
 

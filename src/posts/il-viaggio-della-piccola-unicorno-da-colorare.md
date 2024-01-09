@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pagina-da-colorare
 title: Il viaggio della piccola unicorno da colorare
 date: 2023-12-20T15:23:38.611013
 tags: unicornidacolorare
