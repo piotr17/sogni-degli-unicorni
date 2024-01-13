@@ -96,5 +96,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.4.0/lite-youtube.min.js"
     ></script>
     {% endif %}
+    <script>
+      var tempValue = document.querySelector('article').dataset.temp;
+      console.log(tempValue);
+      function sendGA4Event() {
+      // Valore da passare alla dimensione personalizzata
+      // Invia l'evento a GA4
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        'event': 'customEvent',
+        'temp': tempValue  // 'temp' è il nome della tua dimensione personalizzata
+      });
+    }
+
+    // Invia l'evento al caricamento della pagina
+    document.addEventListener('DOMContentLoaded', function() {
+      sendGA4Event();
+    });
+    </script>
   </body>
 </html>

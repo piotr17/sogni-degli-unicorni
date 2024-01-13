@@ -7,7 +7,7 @@ preloads:
   crossorigin: true
 ---
 
-<article class="region blog">
+<article class="region blog" data-temp="{{ temp }} ">
   <div class="wrapper flow prose">
     <h1 class="gradient-text">{{ title }}</h1>
 
@@ -20,7 +20,5 @@ preloads:
   </div>
 </article>
 
-<!-- include blogpost schema  -->
-{%- include "schemas/blogpost-schema.njk" %}
 
 
