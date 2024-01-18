@@ -98,7 +98,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {% endif %}
     <script>
       var tempValue = document.querySelector('article').dataset.temp;
-      console.log(tempValue);
+      
       function sendGA4Event() {
       // Valore da passare alla dimensione personalizzata
       // Invia l'evento a GA4
@@ -113,6 +113,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     document.addEventListener('DOMContentLoaded', function() {
       sendGA4Event();
     });
+    console.log(dataLayer);
     </script>
   </body>
 </html>
