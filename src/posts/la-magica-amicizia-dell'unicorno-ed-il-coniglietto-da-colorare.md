@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: pagina-da-colorare
 title: La Magica Amicizia dell'Unicorno ed il Coniglietto da colorare
 date: 2023-12-26T14:56:14.493205
 tags: unicornidacolorare
