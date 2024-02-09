@@ -7,7 +7,7 @@ metatitle: "Scopri l'Amicizia Vera nel Mondo Animale - Storie Educativi per Bamb
 description: "Scopri la magica storia del Piccolo Unicorno Luce nella Foresta Incantata. Un'avventura ricca di amicizia e gentilezza che insegna ai bambini l'importanza di aiutarsi a vicenda. Sognate con Luce e i suoi nuovi amici. Buonanotte."
 style: A.A. Milne
 temp: 0.3
-linkdisegno : /blog/l'amicizia-vera-del-mondo-animale-da-colorare/
+permalink: /storie/l'amicizia-vera-del-mondo-animale.html
 ---
 # Il Piccolo Unicorno nella Foresta Incantata
 

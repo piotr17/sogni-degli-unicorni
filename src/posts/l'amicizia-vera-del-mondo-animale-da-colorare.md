@@ -1,11 +1,11 @@
 ---
 layout: pagina-da-colorare
-title: L'amicizia vera del mondo animale da colorare
-date: 2023-12-26T14:56:27.125101
+title: L'Amicizia Vera Del Mondo Animale
+date: 2024-02-09T18:30:53.005882
 tags: unicornidacolorare
-metatitle: L'amicizia vera del mondo animale da colorare
-description: Scarica un bellissimo disegno da colorare basato sulla storia L'amicizia vera del mondo animale
+metatitle: L'Amicizia Vera Del Mondo Animale da colorare
+description: Scarica un bellissimo disegno da colorare basato sulla storia L'Amicizia Vera Del Mondo Animale
 image: /assets/images/l'amicizia-vera-del-mondo-animale.png
+permalink: /unicorni-da-colorare/l'amicizia-vera-del-mondo-animale.html
 ---
-Scarica stampa e colora l'immagine del racconto
-        
+Scarica stampa e colora l'immagine del racconto L'Amicizia Vera Del Mondo Animale

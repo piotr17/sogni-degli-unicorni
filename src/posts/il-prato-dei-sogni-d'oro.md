@@ -7,6 +7,7 @@ metatitle: "Prato dei Sogni d'Oro: Storie per Bambini Ricche di Insegnamenti ed 
 description: Scopri la magica storia di Pietro e il suo viaggio per trovare l'unicorno e il prato dorato. Un racconto che insegna il rispetto per la natura e le sue creature, pieno di sogni meravigliosi e sereni. Un'avventura incantevole per i più piccoli.
 style: Brothers Grimm (Jakob e Wilhelm Grimm)
 temp: 0.3
+permalink: /storie/il-prato-dei-sogni-doro.html
 ---
 # Il Prato Magico dell'Unicorno
 

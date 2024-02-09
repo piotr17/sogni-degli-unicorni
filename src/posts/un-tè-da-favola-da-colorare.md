@@ -1,11 +1,11 @@
 ---
 layout: pagina-da-colorare
-title: Un tè da favola da colorare
-date: 2023-12-16T09:34:32.201556
+title: Un Tè Da Favola
+date: 2024-02-09T18:30:53.006153
 tags: unicornidacolorare
-metatitle: Un tè da favola da colorare
-description: Scarica un bellissimo disegno da colorare basato sulla storia Un tè da favola
+metatitle: Un Tè Da Favola da colorare
+description: Scarica un bellissimo disegno da colorare basato sulla storia Un Tè Da Favola
 image: /assets/images/un-tè-da-favola.png
+permalink: /unicorni-da-colorare/un-tè-da-favola.html
 ---
-Scarica stampa e colora l'immagine del racconto
-        
+Scarica stampa e colora l'immagine del racconto Un Tè Da Favola

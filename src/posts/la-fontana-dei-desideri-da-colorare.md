@@ -1,11 +1,11 @@
 ---
 layout: pagina-da-colorare
-title: La fontana dei desideri da colorare
-date: 2023-12-16T09:35:48.192650
+title: La Fontana Dei Desideri
+date: 2024-02-09T18:30:53.000189
 tags: unicornidacolorare
-metatitle: La fontana dei desideri da colorare
-description: Scarica un bellissimo disegno da colorare basato sulla storia La fontana dei desideri
+metatitle: La Fontana Dei Desideri da colorare
+description: Scarica un bellissimo disegno da colorare basato sulla storia La Fontana Dei Desideri
 image: /assets/images/la-fontana-dei-desideri.png
+permalink: /unicorni-da-colorare/la-fontana-dei-desideri.html
 ---
-Scarica stampa e colora l'immagine del racconto
-        
+Scarica stampa e colora l'immagine del racconto La Fontana Dei Desideri

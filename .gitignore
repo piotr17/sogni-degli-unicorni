@@ -15,3 +15,6 @@ src/_includes/scripts
 
 # Local Netlify folder
 .netlify
+
+#DS
+.DS_Store

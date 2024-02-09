@@ -7,6 +7,7 @@ metatitle: "Storia per Bambini: L'Unicorno e il Coniglio Solitario - Racconto Ed
 description: "Scopri la magica storia di Lucio, l'unicorno amichevole, e Roberto, il coniglio solitario. Un'avventura incantata che celebra l'amicizia e l'esplorazione, ricca di scoperte e momenti preziosi. Un viaggio indimenticabile nel mondo della fantasia per grandi e piccini."
 style: Antoine de Saint-Exupéry
 temp: 0.6
+permalink: /storie/unicorno-e-il-coniglio-solitario.html
 ---
 # Un Unicorno Amichevole e un Coniglio Solitario
 

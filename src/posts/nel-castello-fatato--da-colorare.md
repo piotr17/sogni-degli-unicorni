@@ -1,11 +1,11 @@
 ---
 layout: pagina-da-colorare
-title: Nel castello fatato da colorare
-date: 2023-12-16T09:32:54.144606
+title: Nel Castello Fatato 
+date: 2024-02-09T18:30:53.002417
 tags: unicornidacolorare
-metatitle: Nel castello fatato  da colorare
-description: Scarica un bellissimo disegno da colorare basato sulla storia Nel castello fatato 
-image: /assets/images/nel-castello-fatato--da.png
+metatitle: Nel Castello Fatato  da colorare
+description: Scarica un bellissimo disegno da colorare basato sulla storia Nel Castello Fatato 
+image: /assets/images/nel-castello-fatato-.png
+permalink: /unicorni-da-colorare/nel-castello-fatato-.html
 ---
-Scarica stampa e colora l'immagine del racconto
-        
+Scarica stampa e colora l'immagine del racconto Nel Castello Fatato 

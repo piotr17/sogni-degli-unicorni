@@ -1,12 +1,11 @@
 ---
 layout: pagina-da-colorare
-title: Il Piccolo Unicorno e l'Amicizia Magica da colorare
-date: 2023-12-20T15:24:40.132936
+title: Il Piccolo Unicorno E L'Amicizia Magica
+date: 2024-02-09T18:30:53.002901
 tags: unicornidacolorare
-metatitle: Il Piccolo Unicorno e l'Amicizia Magica da colorare
-description: Scarica un bellissimo disegno da colorare basato sulla storia Il Piccolo Unicorno e l'Amicizia Magica
+metatitle: Il Piccolo Unicorno E L'Amicizia Magica da colorare
+description: Scarica un bellissimo disegno da colorare basato sulla storia Il Piccolo Unicorno E L'Amicizia Magica
 image: /assets/images/il-piccolo-unicorno-e-l'amicizia-magica.png
-permalink: /unicorni-da-colorare/il-piccolo-unicorno-e-l'amicizia-magica-da-colorare.html
+permalink: /unicorni-da-colorare/il-piccolo-unicorno-e-l'amicizia-magica.html
 ---
-Scarica stampa e colora l'immagine del racconto
-        
+Scarica stampa e colora l'immagine del racconto Il Piccolo Unicorno E L'Amicizia Magica

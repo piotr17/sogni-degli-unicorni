@@ -1,11 +1,11 @@
 ---
 layout: pagina-da-colorare
-title: Il viaggio della piccola unicorno da colorare
-date: 2023-12-20T15:23:38.611013
+title: Il Viaggio Della Piccola Unicorno
+date: 2024-02-09T18:30:53.003014
 tags: unicornidacolorare
-metatitle: Il viaggio della piccola unicorno da colorare
-description: Scarica un bellissimo disegno da colorare basato sulla storia Il viaggio della piccola unicorno
+metatitle: Il Viaggio Della Piccola Unicorno da colorare
+description: Scarica un bellissimo disegno da colorare basato sulla storia Il Viaggio Della Piccola Unicorno
 image: /assets/images/il-viaggio-della-piccola-unicorno.png
+permalink: /unicorni-da-colorare/il-viaggio-della-piccola-unicorno.html
 ---
-Scarica stampa e colora l'immagine del racconto
-        
+Scarica stampa e colora l'immagine del racconto Il Viaggio Della Piccola Unicorno

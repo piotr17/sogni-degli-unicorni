@@ -1,11 +1,11 @@
 ---
 layout: pagina-da-colorare
-title: Un tuffo nell'arcobaleno da colorare
-date: 2023-12-16T09:36:13.138398
+title: Un Tuffo Nell'Arcobaleno
+date: 2024-02-09T18:30:53.002785
 tags: unicornidacolorare
-metatitle: Un tuffo nell'arcobaleno da colorare
-description: Scarica un bellissimo disegno da colorare basato sulla storia Un tuffo nell'arcobaleno
+metatitle: Un Tuffo Nell'Arcobaleno da colorare
+description: Scarica un bellissimo disegno da colorare basato sulla storia Un Tuffo Nell'Arcobaleno
 image: /assets/images/un-tuffo-nell'arcobaleno.png
+permalink: /unicorni-da-colorare/un-tuffo-nell'arcobaleno.html
 ---
-Scarica stampa e colora l'immagine del racconto
-        
+Scarica stampa e colora l'immagine del racconto Un Tuffo Nell'Arcobaleno

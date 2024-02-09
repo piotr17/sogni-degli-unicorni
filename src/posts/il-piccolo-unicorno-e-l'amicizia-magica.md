@@ -7,7 +7,7 @@ metatitle: "Il Piccolo Unicorno e l'Amicizia Magica: Storia Educativa per Bambin
 description: "Scopri la magica avventura del Piccolo Unicorno Leo nella Foresta Incantata. Un racconto che celebra l'amicizia, l'accettazione e il coraggio, insegnando che il vero valore di una persona non si misura dalle apparenze, ma dal cuore."
 style: Beatrix Potter
 temp: 0.7
-link-image : /unicorni-da-colorare/il-piccolo-unicorno-e-l'amicizia-magica-da-colorare.html
+permalink : /storie/il-piccolo-unicorno-e-l'amicizia-magica.html
 ---
 # Il Piccolo Unicorno nella Foresta Incantata
 

@@ -4,7 +4,8 @@ date: 2023-01-30T00:00:00.000000Z
 category: Cosa succederebbe se
 tags: []
 description: Immergiti in una favolosa città in cui le case sono costruite con muri di nuvole, ma dove l'energia è essenziale per il comfort abitativo. Segui l'entusiasmante viaggio di questa comunità mentre scoprono soluzioni creative per mantenere i loro muri nuvolosi caldi o freschi. Una storia affascinante di innovazione e felicità. 
-author: Luca Ricci 
+author: Luca Ricci
+layout: post
 ---
 C'era una volta una piccola città in cui le case avevano i muri fatti di nuvole.
 

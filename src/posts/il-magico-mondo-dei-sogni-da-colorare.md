@@ -1,12 +1,11 @@
 ---
 layout: pagina-da-colorare
-title: Il magico mondo dei sogni da colorare
-date: 2023-12-16T09:33:06.203020
+title: Il Magico Mondo Dei Sogni
+date: 2024-02-09T18:30:53.008946
 tags: unicornidacolorare
-metatitle: Il magico mondo dei sogni da colorare
-description: Scarica un bellissimo disegno da colorare basato sulla storia Il magico mondo dei sogni
+metatitle: Il Magico Mondo Dei Sogni da colorare
+description: Scarica un bellissimo disegno da colorare basato sulla storia Il Magico Mondo Dei Sogni
 image: /assets/images/il-magico-mondo-dei-sogni.png
-permalink: /unicorni-da-colorare/il-magico-mondo-dei-sogni-da-colorare.html
+permalink: /unicorni-da-colorare/il-magico-mondo-dei-sogni.html
 ---
-Scarica stampa e colora l'immagine del racconto
-        
+Scarica stampa e colora l'immagine del racconto Il Magico Mondo Dei Sogni
