@@ -13,7 +13,7 @@ layout: base
 
   {% include 'svg/divider-edgy.svg' %}
 </header>
-
+Sono io?
 <article class="wrapper region">
 
   <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
@@ -21,11 +21,11 @@ layout: base
   {% set postslist = collections.recensioni %}
   
   {% for post in postslist %}
-
+ciao
     <li class="card flow clickable-card overflow-hidden">
 
-      <h2>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+      <h2> 
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
       </h2>
 
       {% set definedDate = post.date %}
