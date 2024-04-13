@@ -1,14 +1,11 @@
 ---
 layout: post
-title: "La corsa tra le nuvole"
-date: 2024-04-13T16:06:34.856526
-tags: TAGS_MISSING
+title: "la-corsa-tra-le-nuvole"
+date: 2024-04-13T17:49:16.705554
+tags: unicornidacolorare
 metatitle: METATITLE_MISSING
-description: METADESCRIPTION_MISSING
-style: Dr. Seuss (Theodor Seuss Geisel)
-temp: 0.8
-permalink: /storie/la-corsa-tra-le-nuvole.html
+description: Disegno da Colorare - la-corsa-tra-le-nuvole
+permalink: /unicorni-da-colorare/la-corsa-tra-le-nuvole.html
 ---
-BODY\_MISSING
-
+Scarica stampa e colora l'immagine del racconto
         

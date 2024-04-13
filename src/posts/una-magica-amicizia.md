@@ -1,16 +1,11 @@
 ---
 layout: post
-title: "Una magica amicizia"
-date: 2024-04-13T16:06:19.716122
-tags: TAGS_MISSING
+title: "una-magica-amicizia"
+date: 2024-04-13T17:41:41.388424
+tags: unicornidacolorare
 metatitle: METATITLE_MISSING
-description: METADESCRIPTION_MISSING
-style: 
-Brothers Grimm (Jakob e Wilhelm Grimm)
-
-temp: 0.9
-permalink: /storie/una-magica-amicizia.html
+description: Disegno da Colorare - una-magica-amicizia
+permalink: /unicorni-da-colorare/una-magica-amicizia.html
 ---
-BODY\_MISSING
-
+Scarica stampa e colora l'immagine del racconto
         

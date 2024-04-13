@@ -1,14 +1,11 @@
 ---
 layout: post
-title: "Un'Avventura Arcobaleno"
-date: 2024-04-13T16:06:34.088100
-tags: TAGS_MISSING
+title: "un'avventura-arcobaleno"
+date: 2024-04-13T17:48:56.151031
+tags: unicornidacolorare
 metatitle: METATITLE_MISSING
-description: METADESCRIPTION_MISSING
-style: Dr. Seuss (Theodor Seuss Geisel)
-temp: 0.9
-permalink: /storie/un'avventura-arcobaleno.html
+description: Disegno da Colorare - un'avventura-arcobaleno
+permalink: /unicorni-da-colorare/un'avventura-arcobaleno.html
 ---
-BODY\_MISSING
-
+Scarica stampa e colora l'immagine del racconto
         
