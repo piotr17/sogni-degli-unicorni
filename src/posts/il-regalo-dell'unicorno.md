@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "L'Unicorno e la Stellina"
-date: 2024-04-13T16:06:30.026088
+title: "Il Regalo dell'Unicorno"
+date: 2024-04-13T16:06:32.683921
 tags: TAGS_MISSING
 metatitle: METATITLE_MISSING
 description: METADESCRIPTION_MISSING
-style: A.A. Milne
+style: Charles Peanut
+
 temp: 0.8
-permalink: /storie/l'unicorno-e-la-stellina.html
+permalink: /storie/il-regalo-dell'unicorno.html
 ---
 BODY\_MISSING
 
