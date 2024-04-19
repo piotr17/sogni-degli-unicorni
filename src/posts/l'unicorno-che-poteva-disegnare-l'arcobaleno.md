@@ -1,6 +1,5 @@
 ---
 title: "L'Unicorno che poteva disegnare l'arcobaleno"
-date: 2023-04-08T13:33:33.303568Z
 category: 
 description: "Scopri la magica storia dell'unicorno viola, capace di volare e riempire il cielo di brillanti colori, che intraprende una straordinaria avventura alla ricerca di altri unicorni per creare insieme un'opera d'arte sorprendente: l'arcobaleno. Unisciti al viaggio di amicizia e fantastici paesaggi in questo mondo incantato!"
 tags: ["unicorno viola", "arte nel cielo", "ricerca di altri unicorni", "unicorni multicolori", "arcobaleno"]

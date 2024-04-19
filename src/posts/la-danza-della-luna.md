@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "La danza della luna"
-date: 2023-12-16T09:34:19.850723
 tags: ["Storie per bambini", "Unicorni", "Mondo incantato", "Messaggi positivi"]
 metatitle: "La Danza della Luna: Storia per Bambini Ricca di Insegnamenti e Valori"
 description: Scopri il mondo incantato di Arcobaleno, dove gli unicorni danzano sotto i raggi argentei della luna e sognano di un mondo pieno di amore e felicità. Un racconto magico che parla di amicizia, speranza e sogni, perfetto per i più piccoli.

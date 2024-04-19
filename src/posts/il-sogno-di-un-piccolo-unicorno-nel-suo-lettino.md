@@ -1,6 +1,5 @@
 ---
 title: Il sogno di un piccolo unicorno nel suo lettino
-date: 2023-03-17T00:00:00.000000Z  
 category: Unicorni
 tags: [unicorno, sogno, avventura, natura, felicità]
 author: Luca Ricci

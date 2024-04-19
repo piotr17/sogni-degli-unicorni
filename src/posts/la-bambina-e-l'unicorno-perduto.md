@@ -1,7 +1,6 @@
 ---
 layout: post
 title: La bambina e l'unicorno perduto
-date: 2023-11-04T15:31:47.847368
 tags: #Magia, #Unicorno, #Fiducia #Meraviglia
 metatitle: "La bambina e l'unicorno perduto: una magica avventura per i piccoli lettori"
 description: "Una scoperta magica nel bosco: la storia di Sofia e il suo unicorno

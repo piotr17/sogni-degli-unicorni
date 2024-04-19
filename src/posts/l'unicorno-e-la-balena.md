@@ -1,6 +1,5 @@
 ---
 title: L'unicorno e la balena  
-date: 2023-01-30T00:00:00.000000Z
 category: Racconto Fantastico
 tags: [unicorno, balena, avventura, mare, amicizia]
 author: Luca Ricci

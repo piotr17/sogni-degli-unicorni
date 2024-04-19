@@ -1,6 +1,5 @@
 ---
 title: La balena che smise di respirare
-date: 2023-01-30T00:00:00.000000Z
 category: Cosa succederebbe se
 tags: [balena, respiro, amicizia, solitudine, festa]
 author: Luca Ricci

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Il timido mago unicorno
-date: 2023-10-15T11:29:07.765996
 tags: [unicorno, magia, coraggio, crescita, autostima]
 metatitle: La storia del timido unicorno mago che trova il coraggio dentro di sé 
 description: Il racconto di Filippo, un giovane unicorno magico insicuro che grazie al proprio coraggio riesce a salvare la scuola di magia da un drago, guadagnandosi il rispetto di tutti.

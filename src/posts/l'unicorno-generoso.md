@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "L'Unicorno Generoso"
-date: 2024-01-02T12:32:10.728029
 tags: ["Storia per bambini", "Unicorno", "Condivisione", "Colori"]
 metatitle: "La Magia dell'Unicorno Generoso: Storia Educativa per Bambini | Migliori Racconti per l'Infanzia"
 description: Scopri la magica storia di Luce, l'unicorno che condivide i colori della sua coda arcobaleno con gli animali della foresta. Un racconto incantato che insegna il valore della condivisione e dell'amicizia, perfetto per i più piccoli.

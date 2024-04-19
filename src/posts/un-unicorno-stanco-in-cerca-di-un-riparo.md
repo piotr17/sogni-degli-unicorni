@@ -1,6 +1,5 @@
 ---
 title: Un unicorno stanco in cerca di un riparo
-date: 2023-03-17T00:00:00.000000Z
 category: Unicorni
 tags: [unicorno, viaggio, casa, rifugio, speranza]  
 author: Luca Ricci

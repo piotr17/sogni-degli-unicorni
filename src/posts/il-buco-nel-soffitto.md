@@ -1,6 +1,5 @@
 ---
 title: Il buco nel soffitto
-date: 2023-01-21T00:00:00.000000Z
 category: Favola
 tags: [neve, pupazzo, magia, felicità]  
 author: Luca Ricci

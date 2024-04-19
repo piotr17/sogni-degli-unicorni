@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "L'amicizia vera del mondo animale"
-date: 2023-12-26T14:56:27.129080
 tags: storie
 metatitle: "Scopri l'Amicizia Vera nel Mondo Animale - Storie Educativi per Bambini"
 description: "Scopri la magica storia del Piccolo Unicorno Luce nella Foresta Incantata. Un'avventura ricca di amicizia e gentilezza che insegna ai bambini l'importanza di aiutarsi a vicenda. Sognate con Luce e i suoi nuovi amici. Buonanotte."

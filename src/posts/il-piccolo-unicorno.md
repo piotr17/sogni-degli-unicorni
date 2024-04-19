@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "Il Piccolo Unicorno"
-date: 2024-02-09T18:40:31.445402
 tags: ["Storia per bambini", "Lezione di condivisione", "Unicorno protagonista", "Amicizia e generosità"]
-metatitle: "Il Piccolo Unicorno: Favola Educativa per Bambini | Migliori Storie per l'Infanzia"
+metatitle: "Il Piccolo Unicorno Favola Educativa per Bambini | Migliori Storie per l'Infanzia"
 description: Scopri la storia di Luccicorino, un piccolo unicorno che impara l'importanza di condividere con gli amici. Un racconto incantevole che insegna ai bambini il valore dell'amicizia e della condivisione.
 style: Roald Dahl
 temp: 0.9

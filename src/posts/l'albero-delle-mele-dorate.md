@@ -1,7 +1,6 @@
 ---
 layout: post
 title: L'albero delle mele dorate
-date: 2023-11-04T15:53:50.137613
 tags: #Fiaba #Unicorno #MeleD'oro #Generosità
 metatitle: "L'albero delle mele dorate: una meravigliosa storia per bambini che insegna importanti valori"
 description: Un unicorno aiuta un contadino a far crescere un albero che produce mele d'oro. Scopri la magica storia di Giovanni e dell'unicorno che ha portato abbondanza e prosperità al suo villaggio. Una leggenda che insegna ai bambini il valore del lavoro, della gratitudine e della condivisione.

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "La canzone della buonanotte"
-date: 2023-12-16T09:34:07.248510
 tags: ["Storie per bambini", "Educazione emotiva", "Unicorni", "Ninne nanne"]
 metatitle: "La Canzone della Buonanotte: Storie per Bambini per un Sonno Tranquillo e Felice"
 description: Scopri la magica storia di Luna, la mamma unicorno che canta ninne nanne ai suoi cuccioli. Un racconto pieno di coraggio, empatia e amore, che insegna preziose lezioni di vita. Immergiti in un mondo di pura magia e dolci melodie.

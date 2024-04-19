@@ -1,7 +1,6 @@
 ---
 layout: post
 title: L'incontro con il drago
-date: 2023-11-04T15:53:56.682769
 tags: #Storia per bambini
 #Amicizia
 #Coraggio

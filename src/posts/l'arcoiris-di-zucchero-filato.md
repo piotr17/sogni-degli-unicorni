@@ -1,7 +1,6 @@
 ---
 layout: post
 title: L'arcoiris di zucchero filato
-date: 2023-11-04T15:53:57.983008
 tags: #UnicornoMagico #ArcobalenoZuccheroFilato #FestaNelBosco #MagiaCelestino
 metatitle: "L'arcoiris di zucchero filato: una dolce e colorata avventura per i bambini"
 description: Un unicorno magico di nome Celestino crea un arcobaleno di zucchero filato per una festa nel bosco incantato. Scopri come la sua gentilezza e la sua magia hanno reso il mondo un posto migliore.

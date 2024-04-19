@@ -1,11 +1,10 @@
 ---
 layout: pagina-da-colorare
 title: L'Unicorno E L'Arcobaleno
-date: 2024-02-09T18:30:53.001638
 tags: unicornidacolorare
 metatitle: L'Unicorno E L'Arcobaleno da colorare
 description: Scarica un bellissimo disegno da colorare basato sulla storia L'Unicorno E L'Arcobaleno
-image: /assets/images/l'unicorno-e-l'arcobaleno.png
-permalink: /unicorni-da-colorare/l'unicorno-e-l'arcobaleno.html
+image: /assets/images/l'unicorno-e-l'arcobaleno.webp
+permalink: /unicorni-da-colorare/l'unicorno-e-l'arcobaleno-da-colorare.html
 ---
 Scarica stampa e colora l'immagine del racconto L'Unicorno E L'Arcobaleno

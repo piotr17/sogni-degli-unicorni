@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Il Unicorno Generoso e il Leone Codardo
-date: 2023-11-11T18:28:47.740202
+title: Unicorno Generoso e il Leone Codardo
 tags: #StoriaPerBambini #Coraggio #Gentilezza #UnicornoGeneroso
 metatitle: "Storia per Bambini: Il Unicorno Generoso e il Leone Codardo | Racconto Educativo"
 description: "Scopri la storia dell'Unicorno Generoso e del Leone Codardo, un racconto che insegna l'importanza del coraggio e della gentilezza. Un viaggio tra miti e realtà, dove la paura si trasforma in forza. Leggi e impara con Ruggito e Bianco."

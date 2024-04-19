@@ -1,6 +1,5 @@
 ---
 title: Unicorno Malato 
-date: 2023-01-30T00:00:00.000000Z
 category: Racconto Fantastico
 tags: [unicorno, malattia, amicizia, guarigione]
 author: Luca Ricci

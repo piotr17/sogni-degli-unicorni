@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Il baby unicorno con le ali
-date: 2023-10-15T11:29:07.766454
 tags: [unicorno, fata, ali, volare, sogno, determinazione]
 metatitle: La storia del piccolo unicorno Arcobaleno che realizza il sogno di volare
 description: Il racconto tenere e motivante di Arcobaleno, un baby unicorno che grazie all'aiuto di una fata magica e alla sua determinazione riesce a realizzare il sogno di volare, dimostrando che i desideri possono diventare realtà.

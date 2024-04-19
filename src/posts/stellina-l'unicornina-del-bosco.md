@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Stellina l'Unicornina del Bosco
-date: 2023-11-04T15:30:48.903169
 tags: #Amicizia (Friendship)
 #Superamento dei pregiudizi (Overcoming prejudices)
 #Insegnamenti preziosi (Precious teachings)

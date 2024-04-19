@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "La leggenda dell'unicorno del sonno"
-date: 2023-12-16T09:36:00.481950
 tags: ["storia per bambini", "unicorno magico", "dono speciale", "amicizia e coraggio"]
 metatitle: "La Leggenda dell'Unicorno del Sonno: Storia Incantevole per Bambini | Racconti Educativi"
 description: Scopri la magica storia dell'Unicorno Addormentatore, Aurora, e del suo dono unico. Un racconto incantato che parla di amicizia, coraggio e sogni, perfetto per addormentare i tuoi bambini con dolci sogni.

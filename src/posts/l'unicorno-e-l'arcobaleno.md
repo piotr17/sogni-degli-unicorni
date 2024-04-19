@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "L'Unicorno e l'Arcobaleno"
-date: 2024-02-09T18:40:32.218389
 tags: ["#StoriaPerBambini", "#Unicorno", "#Arcobaleno", "#Gentilezza"]
 metatitle: "L'Unicorno e l'Arcobaleno: Favola Educativa per Bambini | Migliori Storie per l'Infanzia"
 description: Scopri la magica avventura di Celestino, l'unicorno gentile, nel suo viaggio per aiutare l'arcobaleno a ritrovare i suoi colori in un mondo di dolci e meraviglie. Una storia che insegna l'importanza della gentilezza, del coraggio e dell'aiuto reciproco.

@@ -1,6 +1,5 @@
 ---
 title: "La Mamma di Fuoco"
-date: 2023-04-11T19:50:34.204579Z
 category: 
 description: "Scopri la magica storia di Lilla, una piccola unicornina che, dopo un litigio con la sua mamma Luna, si addentra in un bosco misterioso e incontra l'affascinante arcobaleno nuvola e la malvagia strega Morgana. Un'avventura emozionante che mostra l'incredibile potere dell'amore di una madre, mentre Luna si trasforma in una forza inarrestabile per salvare Lilla dai pericoli. Immergiti in un mondo incantato e scopri il profondo legame tra madre e figlia."
 tags: ["regno incantato", "unicornina Lilla", "mamma Luna", "strega Morgana", "amore materno"]

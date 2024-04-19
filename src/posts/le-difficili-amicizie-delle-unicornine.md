@@ -1,6 +1,5 @@
 ---
 title: "Le difficili amicizie delle unicornine"
-date: 2023-06-24T16:30:55.844766Z
 category: post
 tags: [unicorni, amicizia, condivisione, rispetto, crescita]
 metatitle: Le sfide dell'amicizia tra le giovani unicornine Viola, Rosa e Fucsia

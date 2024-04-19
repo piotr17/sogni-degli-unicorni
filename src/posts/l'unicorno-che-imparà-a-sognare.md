@@ -1,6 +1,5 @@
 ---
 title: L'unicorno che imparò a sognare
-date: 2023-01-30T00:00:00.000000Z
 category: Racconto Fantastico
 tags: [unicorno, sogni, immaginazione, viaggio, fantasia]
 author: Luca Ricci

@@ -1,6 +1,5 @@
 ---
 title: "La fiaba dei tre Unicorni alla ricerca della frutta"
-date: 2023-04-15T14:34:08.512641Z
 category: 
 description: "Unisciti all'avventura di tre amici unicorni, Aurora, Celeste e Luce, nel loro magico viaggio alla scoperta dei frutti preferiti delle loro mamme. Attraverso paesaggi incantati e incontri con creature magiche, impareranno il valore dell'amicizia, condivisione e amore."
 tags: ["unicorni", "Aurora", "Celeste", "Luce", "frutti"]

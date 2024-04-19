@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "La Corsa dell'Unicorno"
-date: 2024-01-04T16:29:19.017954
 tags: ["Storie per bambini", "Lezioni di vita", "Unicorno", "Partecipazione e divertimento"]
 metatitle: "La Corsa dell'Unicorno: Storia per Bambini Ricca di Insegnamenti ed Emozioni"
 description: Scopri la storia di Luce, l'unicorno che impara l'importanza di partecipare e divertirsi, non solo vincere. Un racconto per bambini che insegna il valore del gioco e dello spirito sportivo.

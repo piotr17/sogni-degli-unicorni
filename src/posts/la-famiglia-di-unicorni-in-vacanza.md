@@ -1,6 +1,5 @@
 ---
 title: La famiglia di unicorni in vacanza
-date: 2023-02-01T00:00:00.000000Z
 category: Racconto Fantastico
 tags: [unicorni, famiglia, viaggio, città, avventura, amicizia]
 author: Luca Ricci

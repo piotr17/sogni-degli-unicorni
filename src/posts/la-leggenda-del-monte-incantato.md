@@ -1,7 +1,6 @@
 ---
 layout: post
 title: La leggenda del Monte Incantato
-date: 2023-11-04T15:53:45.263885
 tags: #FiabePerBambini
 #MagiaDeiUnicorni
 #AmoreESolidarietà

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: L'arcobaleno dell'amicizia
-date: 2023-11-04T15:53:46.901927
 tags: #UnicorniMagici
 #AmiciziaEAccettazione
 #DiversitàColori

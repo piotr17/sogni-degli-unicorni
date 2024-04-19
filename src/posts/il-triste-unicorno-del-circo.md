@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Il triste unicorno del circo
-date: 2023-10-15T11:29:07.766894
 tags: [unicorno, circo, amicizia, libertà, avventura]
 metatitle: La storia dell'unicorno triste salvato da una bambina trapezista
 description: Il racconto della fuga dal circo di un unicorno triste, salvato da una bambina trapezista di nome Sara. Insieme vivranno magiche avventure nella natura.

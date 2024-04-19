@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "L'Unicorno e il Drago"
-date: 2024-01-04T16:29:06.135642
 tags: ["favola", "unicorno", "drago", "amicizia"]
 metatitle: "La Magica Storia dell'Unicorno e del Drago: Favola Educativa per Bambini"
 description: Scopri la magica storia di un unicorno e un drago in un regno lontano. Un racconto che insegna l'importanza del dialogo e della comprensione, dimostrando che la vera forza non risiede solo nel potere fisico o magico. Un'avventura che trasmette valori di pace e armonia attraverso l'amicizia.

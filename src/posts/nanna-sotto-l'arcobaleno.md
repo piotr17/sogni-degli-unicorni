@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Nanna sotto l'arcobaleno"
-date: 2023-12-16T09:36:25.449208
 tags: ["Storia per bambini", "Unicorno colorato", "Amore e protezione", "Arcobaleno e cuccioli"]
 metatitle: "Storie per Bambini: Nanna sotto l'arcobaleno - Racconti Educativi e Divertenti"
 description: Scopri la magica storia di Luce, l'unicorno colorato che aiuta i cuccioli a dormire sotto un meraviglioso arcobaleno. Un racconto di amore, gentilezza e protezione che insegna l'importanza dell'amore e del sostegno.

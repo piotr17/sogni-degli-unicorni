@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Il villaggio incantato
-date: 2023-11-04T15:53:57.290823
 tags: #FiabePerBambini
 #UnicorniMagici
 #StorieDiMagia

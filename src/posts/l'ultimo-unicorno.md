@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "L'ultimo unicorno"
-date: 2023-11-23T13:28:29.364248
 tags: "#UnicornoSolitario #StoriaDiSperanza #MagiaEAmicizia #LuminoUnicorno"
 metatitle: "L'Ultimo Unicorno: Storia Fantastica per Bambini - Racconti Educativi e Divertenti"
 description: "Scopri la magica storia di Lumino, l'unicorno solitario, in un viaggio pieno di avventure e speranza. Un racconto che insegna l'importanza dell'amicizia e dell'amore, ricordando a tutti che, non importa quanto ci si senta soli, c'è sempre qualcuno che ci aspetta. Perfetto per i bambini, ma anche per chi è bambino dentro."

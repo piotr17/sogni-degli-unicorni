@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Il prato dei sogni d'oro"
-date: 2023-12-16T09:35:10.879073
 tags: ["favola per bambini", "unicorno magico", "rispetto per la natura", "sogni dorati"]
 metatitle: "Prato dei Sogni d'Oro: Storie per Bambini Ricche di Insegnamenti ed Emozioni"
 description: Scopri la magica storia di Pietro e il suo viaggio per trovare l'unicorno e il prato dorato. Un racconto che insegna il rispetto per la natura e le sue creature, pieno di sogni meravigliosi e sereni. Un'avventura incantevole per i più piccoli.
