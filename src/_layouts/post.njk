@@ -12,11 +12,8 @@ preloads:
     <h1 class="gradient-text">{{ title }}</h1>
 
     {% set definedDate = date %} {% include "partials/date.njk" %}
-
     {{ content | safe }}
   
-<!-- Include the link to color page -->
-{%- include "partials/post-image.njk" -%}
   </div>
 </article>
 
