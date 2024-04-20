@@ -4,10 +4,8 @@ title: "L'Unicorno che addormentava i fiori"
 date: 2024-04-20T10:32:21.731599
 tags: Unicorni
 metatitle: "Storie per Bambini: l'Unicorno che Addormentava i Fiori - Racconti Etici e Educativi"
-description: ""Scopri la magia dell'unicorno unico in un racconto per bambini ricco di valori. Immergiti in un bosco incantato, dove l'amore, il coraggio e l'amicizia trionfano sempre. Perfetto per insegnare l'importanza dei sogni e della gratitudine.""
-style: 
-Brothers Grimm (Jakob e Wilhelm Grimm)
-
+description: "Scopri la magia dell'unicorno unico in un racconto per bambini ricco di valori. Immergiti in un bosco incantato, dove l'amore, il coraggio e l'amicizia trionfano sempre. Perfetto per insegnare l'importanza dei sogni e della gratitudine."
+style: Brothers Grimm (Jakob e Wilhelm Grimm)
 temp: 0.7
 permalink: /storie/l'unicorno-che-addormentava-i-fiori.html
 image: /assets/images/l'unicorno-che-addormentava-i-fiori.png
