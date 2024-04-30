@@ -6,6 +6,7 @@ tags: unicornidacolorare
 metatitle: "Disegni per Bambini: l'Unicorno che Addormentava i Fiori Da Colorare"
 description: "Disegno da Colorare - l'Unicorno che Addormentava i Fiori"
 permalink: /unicorni-da-colorare/l'unicorno-che-addormentava-i-fiori.html
+image: /assets/images/l'unicorno-che-addormentava-i-fiori.webp
 ---
 Scarica stampa e colora l'immagine del racconto
         
