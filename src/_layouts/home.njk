@@ -39,6 +39,7 @@ layout: base
           {% set definedDate = post.date %} {% include "partials/date.njk" %}
           <p>{{ post.data.description }}</p>
         </li>
+        {% endif %}
     {% endfor %}
   </ul>
 </article>
