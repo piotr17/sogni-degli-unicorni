@@ -3,7 +3,7 @@ layout: post
 title: "L'unicorno di zucchero e panna"
 date: 2024-04-29T20:16:38.587281
 tags: Unicorni
-metatitle: "Storie per Bambini Insegnando Valori Importanti: L'Unicorno di Zucchero e Panna - Narratore Infantile Esperto""
+metatitle: "Storie per Bambini Insegnando Valori Importanti: L'Unicorno di Zucchero e Panna - Narratore Infantile Esperto"
 description: "Scopri la magica storia di Dolcetto, l'unicorno dolce come il miele con corno di cono gelato e zoccoli di cioccolata. Un racconto per bambini che insegna l'importanza dell'amicizia e che c'è sempre un posto per ognuno di noi nel mondo."
 style: Charles Peanut
 temp: 0.7
@@ -16,7 +16,7 @@ Dolcetto viveva in un bosco selvaggio pieno di alberi di liquirizia e fiumi di l
 Tutti gli abitanti del bosco erano affascinati da Dolcetto. Le creature del bosco amavano seguire la sua scia di brillantini e assaggiare i piccoli frammenti di cioccolato che cadevano dai suoi zoccoli. Ma nonostante Dolcetto avesse tanti amici, a volte si sentiva solo. Perché nonostante la sua dolcezza, non c'era nessuno come lui nel bosco.
 
 Un giorno, mentre Dolcetto camminava solitario nel bosco, vide un albero molto speciale. Era l'Albero del Desiderio, l'albero che potrebbe realizzare un solo desiderio a chiunque gli chiedesse. Senza pensarci due volte, Dolcetto corse verso l'albero e sussurrò il suo desiderio: "Voglio un amico come me".
-I giorni passarono e Dolcetto continuò la sua routine quotidiana. Ma un bel mattino, sentì un rumore provenire dall'Albero del Desiderio. Vide un piccolo unicorno con il corno fatto di cono gelatocome il suo, gli zoccoli di cioccolata, la coda di zucchero filato e i denti fatti di confetti. Era Dolcezza, l'unicorno che l'Albero del Desiderio aveva creato per essere l'amico di Dolcetto.
+I giorni passarono e Dolcetto continuò la sua routine quotidiana. Ma un bel mattino, sentì un rumore provenire dall'Albero del Desiderio. Vide un piccolo unicorno con il corno fatto di cono gelato come il suo, gli zoccoli di cioccolata, la coda di zucchero filato e i denti fatti di confetti. Era Dolcezza, l'unicorno che l'Albero del Desiderio aveva creato per essere l'amico di Dolcetto.
 
 Dolcetto era così felice di avere finalmente un amico come lui. Corse verso Dolcezza, il suo nuovo amico, e lo abbracciò. Da quel giorno, Dolcetto e Dolcezza divennero inseparabili. Camminavano insieme nel bosco, lasciando una doppia scia di brillantini ovunque andassero e condividendo risate e avventure.
 
