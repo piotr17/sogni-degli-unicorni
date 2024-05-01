@@ -4,22 +4,25 @@
 <html lang="{{ meta.lang }}">
   <head>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MK8MX85');</script>
-<!-- End Google Tag Manager -->
-    <!-- charset/http-equiv/viewport -->
+    <script>
+    (function(w,d,s,l,i){
+        w[l]=w[l]||[];
+        w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+        f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MK8MX85');
+    </script>
+    <!-- End Google Tag Manager -->
+    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/b140c813854f75d0146f0da88/69abe104fda058f751534ef95.js");</script>
-    
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4548604400396789"
+    <!-- Asynchronous scripts are already being used properly -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4548604400396789"
      crossorigin="anonymous"></script>    
-    <!-- title -->
+
     <title>
       {% if seo.title %} {{ seo.title }}
       {% elif title %}
@@ -29,92 +32,62 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       {% endif %}
     </title>
 
-    <!-- synchronous js / schema  -->
+    <!-- Including base schema for structured data -->
     {% include "schemas/base-schema.njk" %}
 
-    <!-- synchronous css / inline css  -->
+    <!-- Linking CSS with unique cache-busting query string -->
     <link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}" />
 
-    <!-- preloads -->
-    <link
-      rel="preload"
-      href="/assets/fonts/inter/inter-v7-latin-500.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="/assets/fonts/inter/inter-v7-latin-700.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
+    <!-- Preloading essential fonts -->
+    <link rel="preload" href="/assets/fonts/inter/inter-v7-latin-500.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/inter/inter-v7-latin-700.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2" as="font" type="font/woff2" crossorigin />
 
-    <!-- preloads in page data -->
-    {% if preloads -%}
-    <!-- prettier-ignore -->
-    <link rel="preload"
-            href="{{ preloads.href }}"
-            as="{{ preloads.as }}"
-            {% if preloads.type %}type={{ preloads.type }}{% endif %}{% if preloads.imagesrcset %}imagesrcset="{{ preloads.imagesrcset }}" {% endif %}
-            {% if preloads.crossorigin %}crossorigin{% endif %} />
-    {% endif %}
-
-    <!-- defered js  -->
+    <!-- Defer non-critical JavaScript to reduce blocking of page rendering -->
     <script type="module" src="/assets/scripts/app.js?{{ assetHash }}" defer></script>
 
-    <!-- everything else: meta tags, icons, open graph etc.  -->
+    <!-- Including meta information -->
     {% include "partials/meta-info.njk" %}
   </head>
 
   <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MK8MX85"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <!-- header -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MK8MX85"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Including the header from a partial file -->
     {% include "partials/header.njk" %}
 
-    <!-- content slot -->
+    <!-- Main content area -->
     <main id="main" class="flow">{{ content | safe }}</main>
 
-    <!-- footer -->
+    <!-- Including the footer from a partial file -->
     {% include "partials/footer.njk" %}
 
-    <!-- youtube if actvated in yaml -->
+    <!-- Conditional loading of YouTube scripts -->
     {% if youtube %}
     <script
       type="module"
       src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.4.0/lite-youtube.min.js"
     ></script>
     {% endif %}
+
+    <!-- Custom script for handling page-specific events -->
     <script>
       var tempValue = document.querySelector('article').dataset.temp;
-      
       function sendGA4Event() {
-      // Valore da passare alla dimensione personalizzata
-      // Invia l'evento a GA4
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        'tempValue': tempValue  // 'temp' è il nome della tua dimensione personalizzata
-      });
-    }
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({'tempValue': tempValue});
+      }
 
-    // Invia l'evento al caricamento della pagina
-    document.addEventListener('DOMContentLoaded', function() {
-      sendGA4Event();
-      console.log(dataLayer);
-      console.log("temp sent");
-    });
-    
+      document.addEventListener('DOMContentLoaded', function() {
+        sendGA4Event();
+        console.log(dataLayer);
+        console.log("temp sent");
+      });
     </script>
   </body>
 </html>
