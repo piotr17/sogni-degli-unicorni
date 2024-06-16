@@ -7,7 +7,7 @@ metatitle: "L'Unicorno e il Potere di Far Fiorire - Storie Magiche per Bambini"
 description: "Scopri la magica storia de L'Unicorno Unico e il Bosco Incantato, un racconto che insegna l'importanza della gentilezza e dell'amore nelle nostre azioni quotidiane. Un'emozionante avventura che illumina i cuori di grandi e piccoli."
 temp: 0.4
 permalink: /storie/l'unicorno-e-il-potere-di-far-fiorire.html
-image: /assets/images/l'unicorno-e-il-potere-di-far-fiorire.png
+image: /assets/images/l'unicorno-e-il-potere-di-far-fiorire.webp
 ---
 C'era una volta, in un bosco fiabesco,
 un unicorno unico, dal potere gigantesco.
