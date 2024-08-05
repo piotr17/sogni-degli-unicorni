@@ -23,7 +23,7 @@ layout: base
   {% for post in postslist %}
 
     <li class="card flow clickable-card overflow-hidden">
-    <img src="{{ post.data.image }}" alt="Anteprima di {{ post.data.title }}" class="responsive-image-preview">
+    <img src="{{ post.data.image }}" alt="Anteprima di {{ post.data.title }}" class="responsive-image-preview" loading="lazy">
 
       <h2>
         <a href="{{ post.url | url }}">{{ post.data.title }}</a>

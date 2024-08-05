@@ -10,10 +10,18 @@ preloads:
 <article class="region blog" data-temp="{{ temp }} ">
   <div class="wrapper flow prose">
     <h1 class="gradient-text">{{ title }}</h1>
-
     {% set definedDate = date %} {% include "partials/date.njk" %}
+    {% assign base_url = permalink | replace: '/storie/', '/unicorni-da-colorare/' %}
+    {% assign modified_url = base_url | replace: '.html', '-da-colorare.html' %}
+
+
+
+    <div class="">
+      <img class="" src="{{image}}" loading="lazy" />
+    </div>
+
     {{ content | safe }}
-  
+
   </div>
 </article>
 
