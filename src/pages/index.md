@@ -1,7 +1,7 @@
 ---
 permalink: /index.html
 title: 'I Sogni degli Unicorni'
-description: 'Una raccolta di racconti per bambini, prima della ninna o per passare momenti sereni.'
+description: 'Una raccolta di racconti per bambini, prima della ninna o da colorare per passare momenti sereni.'
 layout: 'home'
 blog:
   title: 'Blog'

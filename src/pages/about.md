@@ -1,7 +1,7 @@
 ---
 title: About
 permalink: /about/index.html
-description: Su come è nato questo progetto editoriale
+description: Come è nato il progetto editoriale di Storie di Unicorni per bambini
 layout: page
 youtube: true
 ---
