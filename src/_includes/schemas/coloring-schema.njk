@@ -1,0 +1,59 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "{{ meta.url }}{{ page.url }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ meta.url }}{{ page.url }}"
+  },
+  "headline": "{{ title }} da colorare",
+  "name": "{{ title }} da colorare",
+  "description": "{{ description or 'Disegno da colorare gratuito per bambini ispirato alla storia ' + title }}",
+  "genre": "Disegno da colorare per bambini",
+  {% if image %}
+  "image": {
+    "@type": "ImageObject",
+    "url": "{{ meta.url }}{{ image }}",
+    "width": 800,
+    "height": 600,
+    "caption": "{{ title }} da colorare - Disegno per bambini"
+  },
+  {% endif %}
+  "author": {
+    "@type": "Person",
+    "name": "{{ meta.authorName }}",
+    "url": "{{ meta.url }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ meta.siteName }}",
+    "url": "{{ meta.url }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ meta.url }}/assets/images/favicon/android-chrome-192x192.png"
+    }
+  },
+  "datePublished": "{{ date | toIsoString }}",
+  "dateModified": "{{ date | toIsoString }}",
+  "inLanguage": "{{ meta.locale }}",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Bambini",
+    "suggestedMinAge": 3,
+    "suggestedMaxAge": 10
+  },
+  "keywords": "{% if tags and tags.length > 0 %}{{ tags | join(', ') }}, {% endif %}disegni da colorare, unicorni, bambini, attività creative, stampa gratuita",
+  "about": {
+    "@type": "Thing",
+    "name": "Disegni da colorare",
+    "description": "Attività creative per bambini con disegni di unicorni"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "{{ meta.url }}#website"
+  },
+  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "usageInfo": "Uso gratuito per scopi non commerciali"
+}
+</script>

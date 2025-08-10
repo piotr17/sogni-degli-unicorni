@@ -26,5 +26,14 @@ module.exports = function(eleventyConfig) {
     // Configurazione per trasformare gli URL come desiderato
     eleventyConfig.addPassthroughCopy({"src/recensioni": "recensioni"});
 
+    // Collections per link incrociati
+    eleventyConfig.addCollection("racconti", function(collectionApi) {
+        return collectionApi.getFilteredByTag("storie").slice(0, 10);
+    });
+
+    eleventyConfig.addCollection("disegniDaColorare", function(collectionApi) {
+        return collectionApi.getFilteredByTag("unicornidacolorare").slice(0, 10);
+    });
+
     // Altre configurazioni di Eleventy possono andare qui
 };

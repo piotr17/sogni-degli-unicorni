@@ -1,0 +1,57 @@
+/* Link incrociati */
+.cross-links {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid #bae6fd;
+  margin: 3rem 0;
+}
+
+.cross-links h3 {
+  color: #0369a1;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.cross-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.8rem;
+}
+
+.cross-link-item {
+  background: white;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 3px solid #3b82f6;
+}
+
+.cross-link-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: #f8fafc;
+  border-left-color: #1d4ed8;
+}
+
+.cross-link-title {
+  display: block;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cross-links-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cross-links {
+    padding: 1.5rem;
+  }
+}

@@ -7,16 +7,76 @@ preloads:
   crossorigin: true
 ---
 
-<article class="region blog" data-temp="{{ temp }} ">
-  <div class="wrapper flow prose">
-    <h1 class="gradient-text">{{ title }}</h1>
-    {% set definedDate = date %} {% include "partials/date.njk" %}
+<!-- Schema.org per SEO -->
+{% include "schemas/story-schema.njk" %}
 
-   <div class="">
-      <img class="" src="{{image}}" loading="lazy" />
+<article class="region story-post" data-temp="{{ temp }}" itemscope itemtype="https://schema.org/CreativeWork">
+  <div class="wrapper flow prose">
+    
+    <!-- Header della storia -->
+    <header class="story-header">
+      <h1 class="gradient-text story-title" itemprop="name">{{ title }}</h1>
+      
+      <!-- Meta informazioni -->
+      <div class="story-meta">
+        {% set definedDate = date %} {% include "partials/date.njk" %}
+        {% if style %}
+          <span class="story-style">Stile: {{ style }}</span>
+        {% endif %}
+        <span class="reading-time">⏱️ Tempo di lettura: ~5 min</span>
+      </div>
+      
+      <!-- Descrizione per SEO -->
+      {% if description %}
+        <div class="story-description" itemprop="description">
+          <p>{{ description }}</p>
+        </div>
+      {% endif %}
+    </header>
+
+    <!-- Immagine principale -->
+    {% if image %}
+      <figure class="story-image">
+        <img src="{{ image }}" alt="{{ title }}" loading="lazy" itemprop="image" />
+      </figure>
+    {% endif %}
+
+    <!-- Contenuto della storia -->
+    <div class="story-content" itemprop="text">
+      {{ content | safe }}
     </div>
 
-    {{ content | safe }}
+    <!-- Link incrociati ai disegni da colorare -->
+    <section class="cross-links">
+      <h3>🎨 Disegni da colorare correlati</h3>
+      <div class="cross-links-grid">
+        {% for item in collections.disegniDaColorare %}
+          <a href="{{ item.url }}" class="cross-link-item">
+            <span class="cross-link-title">{{ item.data.title }}</span>
+          </a>
+        {% endfor %}
+      </div>
+    </section>
+
+    <!-- Footer della storia -->
+    <footer class="story-footer">
+      <div class="story-tags">
+        {% if tags and tags.length > 0 %}
+          <span class="tags-label">🏷️ Categorie:</span>
+          {% for tag in tags %}
+            {% if tag != "posts" %}
+              <span class="tag">{{ tag }}</span>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      </div>
+      
+      <!-- Call to action -->
+      <div class="story-cta">
+        <p>✨ <strong>Ti è piaciuta questa storia?</strong> Scopri altre magiche avventure degli unicorni!</p>
+        <a href="/storie/" class="btn btn-secondary">Leggi altre storie</a>
+      </div>
+    </footer>
 
   </div>
 </article>

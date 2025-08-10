@@ -1,10 +1,81 @@
 ---
-layout : base
+layout: base
 ---
 
-<article class="region">
+<!-- Schema.org per pagine da colorare -->
+{% include "schemas/coloring-schema.njk" %}
+
+<article class="region coloring-page" itemscope itemtype="https://schema.org/CreativeWork">
   <div class="wrapper flow prose">
-    <h1 class="gradient-text">{{ title }} da colorare</h1>
-    <img src="{{image}}" alt="{{title}} da colorare" />
- </div>
+    
+    <!-- Header della pagina da colorare -->
+    <header class="coloring-header">
+      <h1 class="gradient-text coloring-title" itemprop="name">{{ title }} da colorare</h1>
+      
+      <!-- Meta informazioni -->
+      <div class="coloring-meta">
+        <span class="coloring-type">🎨 Disegno da colorare</span>
+        <span class="coloring-age">👶 Età: 3-10 anni</span>
+        <span class="coloring-difficulty">⭐ Difficoltà: Facile</span>
+      </div>
+      
+      <!-- Descrizione -->
+      {% if description %}
+        <div class="coloring-description" itemprop="description">
+          <p>{{ description }}</p>
+        </div>
+      {% endif %}
+    </header>
+
+    <!-- Immagine da colorare -->
+    <figure class="coloring-image">
+      <img src="{{ image }}" alt="{{ title }} da colorare - Disegno per bambini" loading="lazy" itemprop="image" />
+      <figcaption>🖨️ Clicca sull'immagine per ingrandirla e stamparla</figcaption>
+    </figure>
+
+    <!-- Contenuto -->
+    <div class="coloring-content" itemprop="text">
+      {{ content | safe }}
+    </div>
+
+    <!-- Collegamento al racconto -->
+    {% set storySlug = title | lower | replace(" ", "-") | replace("'", "") %}
+    <div class="story-link">
+      <h3>📚 Leggi anche la storia!</h3>
+      <p>Questo disegno è ispirato al racconto <strong>{{ title }}</strong>. Vuoi leggere la storia completa?</p>
+      <a href="/{{ storySlug }}/" class="btn btn-story">Leggi "{{ title }}"</a>
+    </div>
+
+    <!-- Istruzioni per colorare -->
+    <div class="coloring-instructions">
+      <h3>🎨 Come colorare:</h3>
+      <ol>
+        <li>Clicca sull'immagine per ingrandirla</li>
+        <li>Salva l'immagine sul tuo dispositivo</li>
+        <li>Stampala su carta bianca</li>
+        <li>Usa i tuoi colori preferiti per dare vita al disegno!</li>
+      </ol>
+    </div>
+
+    <!-- Link incrociati ai racconti -->
+    <section class="cross-links">
+      <h3>📚 Racconti correlati</h3>
+      <div class="cross-links-grid">
+        {% for item in collections.racconti %}
+          <a href="{{ item.url }}" class="cross-link-item">
+            <span class="cross-link-title">{{ item.data.title }}</span>
+          </a>
+        {% endfor %}
+      </div>
+    </section>
+
+    <!-- Footer con CTA -->
+    <footer class="coloring-footer">
+      <div class="coloring-cta">
+        <p>✨ <strong>Ti piace colorare?</strong> Scopri altri disegni magici!</p>
+        <a href="/unicorni-da-colorare/" class="btn btn-secondary">Altri disegni da colorare</a>
+      </div>
+    </footer>
+
+  </div>
 </article>

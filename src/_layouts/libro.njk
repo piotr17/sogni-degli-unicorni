@@ -1,0 +1,46 @@
+---
+layout: base
+---
+
+<article class="region libro" data-temp="{{ temp }}">
+  <div class="wrapper flow prose">
+    <h1 class="gradient-text">{{ title }}</h1>
+    {% set definedDate = date %} {% include "partials/date.njk" %}
+
+    <!-- Primo pulsante Acquista - sopra il contenuto -->
+    <div class="cta-container cta-top">
+      <a href="{{ purchaseUrl | default('#') }}" class="btn btn-primary btn-purchase" target="_blank" rel="noopener">
+        🛒 Acquista Ora
+      </a>
+      {% if price %}
+        <span class="price">{{ price }}</span>
+      {% endif %}
+    </div>
+
+    <!-- Immagine del libro -->
+    <div class="book-image">
+      <img src="{{ image }}" alt="{{ title }}" loading="lazy" />
+    </div>
+
+    <!-- Descrizione sotto l'immagine -->
+    {% if description %}
+      <div class="book-description">
+        <p>{{ description }}</p>
+      </div>
+    {% endif %}
+
+    <!-- Contenuto principale -->
+    {{ content | safe }}
+
+    <!-- Secondo pulsante Acquista - sotto il contenuto -->
+    <div class="cta-container cta-bottom">
+      <a href="{{ purchaseUrl | default('#') }}" class="btn btn-primary btn-purchase" target="_blank" rel="noopener">
+        🛒 Acquista Ora
+      </a>
+      {% if price %}
+        <span class="price">{{ price }}</span>
+      {% endif %}
+    </div>
+
+  </div>
+</article>

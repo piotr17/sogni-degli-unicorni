@@ -3,7 +3,7 @@
     {% for item in navigation.top %}
     <li>
       <a
-        class="nav"
+        class="nav{% if item.highlight %} nav-highlight{% endif %}"
         href="{{ item.url }}"
         {{
         helpers.getLinkActiveState(item.url,
@@ -11,7 +11,7 @@
         |
         safe
         }}
-        >{{ item.text }}</a
+        >{{ item.text }}{% if item.highlight %}<span class="nav-badge">NUOVO</span>{% endif %}</a
       >
     </li>
     {% endfor %}

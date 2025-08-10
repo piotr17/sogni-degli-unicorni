@@ -1,0 +1,207 @@
+/* Layout per pagine da colorare */
+.coloring-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Header */
+.coloring-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #fbbf24;
+}
+
+.coloring-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.coloring-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.coloring-type {
+  background: #fef3c7;
+  color: #92400e;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-weight: 500;
+}
+
+.coloring-age {
+  background: #ddd6fe;
+  color: #5b21b6;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-weight: 500;
+}
+
+.coloring-difficulty {
+  background: #d1fae5;
+  color: #065f46;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-weight: 500;
+}
+
+.coloring-description {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #f59e0b;
+  margin: 2rem 0;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #374151;
+}
+
+/* Immagine da colorare */
+.coloring-image {
+  text-align: center;
+  margin: 3rem 0;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.coloring-image img {
+  max-width: 100%;
+  height: auto;
+  border: 2px dashed #d1d5db;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.coloring-image img:hover {
+  transform: scale(1.02);
+}
+
+.coloring-image figcaption {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* Collegamento alla storia */
+.story-link {
+  background: linear-gradient(135deg, #e0f2fe 0%, #b3e5fc 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #0284c7;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.story-link h3 {
+  color: #0369a1;
+  margin-bottom: 1rem;
+}
+
+.story-link p {
+  margin-bottom: 1.5rem;
+  color: #374151;
+}
+
+.btn-story {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(2, 132, 199, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-story:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.4);
+}
+
+/* Istruzioni */
+.coloring-instructions {
+  background: #f8fafc;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid #e2e8f0;
+  margin: 3rem 0;
+}
+
+.coloring-instructions h3 {
+  color: #475569;
+  margin-bottom: 1rem;
+}
+
+.coloring-instructions ol {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.coloring-instructions li {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.coloring-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 2px solid #fbbf24;
+}
+
+.coloring-cta {
+  background: linear-gradient(135deg, #fff8f0 0%, #ffe8d0 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid #ffd0a0;
+}
+
+.coloring-cta p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #374151;
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .coloring-meta {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .coloring-image {
+    padding: 1rem;
+  }
+  
+  .story-link, .coloring-instructions, .coloring-cta {
+    padding: 1.5rem;
+  }
+}

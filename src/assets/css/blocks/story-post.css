@@ -1,0 +1,175 @@
+/* Layout migliorato per i racconti */
+.story-post {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Header della storia */
+.story-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #e0e7ff;
+}
+
+.story-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.story-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.story-style {
+  background: #f3f4f6;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-weight: 500;
+}
+
+.reading-time {
+  background: #e0f2fe;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-weight: 500;
+  color: #0369a1;
+}
+
+.story-description {
+  background: linear-gradient(135deg, #f8f9ff 0%, #e8f0ff 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #6366f1;
+  margin: 2rem 0;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #374151;
+}
+
+/* Immagine della storia */
+.story-image {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.story-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenuto della storia */
+.story-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.story-content h1 {
+  color: #6366f1;
+  font-size: 2rem;
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+}
+
+.story-content p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.story-content p:first-letter {
+  font-size: 3rem;
+  font-weight: bold;
+  float: left;
+  line-height: 1;
+  margin: 0.1rem 0.5rem 0 0;
+  color: #6366f1;
+}
+
+/* Footer della storia */
+.story-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e0e7ff;
+}
+
+.story-tags {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.tags-label {
+  font-weight: 600;
+  color: #374151;
+  margin-right: 0.5rem;
+}
+
+.tag {
+  display: inline-block;
+  background: #f3f4f6;
+  color: #6b7280;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  margin: 0.2rem;
+}
+
+/* Call to action */
+.story-cta {
+  background: linear-gradient(135deg, #fff8f0 0%, #ffe8d0 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid #ffd0a0;
+}
+
+.story-cta p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #374151;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .story-meta {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .story-content p:first-letter {
+    font-size: 2.5rem;
+  }
+  
+  .story-cta {
+    padding: 1.5rem;
+  }
+}
