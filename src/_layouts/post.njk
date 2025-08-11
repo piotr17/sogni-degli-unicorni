@@ -46,14 +46,34 @@ preloads:
       {{ content | safe }}
     </div>
 
+    <!-- Collegamento al disegno da colorare specifico -->
+    {% set storySlug = title | lower | replace(" ", "-") | replace("'", "") | replace(":", "") | replace(",", "") %}
+    {% set relatedColoring = null %}
+    {% for coloring in collections.posts %}
+      {% set coloringSlugCompare = coloring.data.title | lower | replace(" ", "-") | replace("'", "") | replace(":", "") | replace(",", "") %}
+      {% if coloringSlugCompare == storySlug and coloring.data.tags and "unicornidacolorare" in coloring.data.tags %}
+        {% set relatedColoring = coloring %}
+      {% endif %}
+    {% endfor %}
+    
+    {% if relatedColoring %}
+    <div class="coloring-link">
+      <h3>🎨 Colora questa storia!</h3>
+      <p>Vuoi colorare i personaggi di questa storia? Abbiamo il disegno perfetto per te!</p>
+      <a href="{{ relatedColoring.url }}" class="btn btn-coloring">Colora "{{ title }}"</a>
+    </div>
+    {% endif %}
+
     <!-- Link incrociati ai disegni da colorare -->
     <section class="cross-links">
-      <h3>🎨 Disegni da colorare correlati</h3>
+      <h3>🎨 Altri disegni da colorare</h3>
       <div class="cross-links-grid">
         {% for item in collections.disegniDaColorare %}
+          {% if item.url != relatedColoring.url %}
           <a href="{{ item.url }}" class="cross-link-item">
             <span class="cross-link-title">{{ item.data.title }}</span>
           </a>
+          {% endif %}
         {% endfor %}
       </div>
     </section>

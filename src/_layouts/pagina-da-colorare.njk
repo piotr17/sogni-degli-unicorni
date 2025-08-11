@@ -39,12 +39,28 @@ layout: base
     </div>
 
     <!-- Collegamento al racconto -->
-    {% set storySlug = title | lower | replace(" ", "-") | replace("'", "") %}
+    {% set storySlug = title | lower | replace(" ", "-") | replace("'", "") | replace(":", "") | replace(",", "") %}
+    {% set relatedStory = null %}
+    {% for story in collections.posts %}
+      {% set storySlugCompare = story.data.title | lower | replace(" ", "-") | replace("'", "") | replace(":", "") | replace(",", "") %}
+      {% if storySlugCompare == storySlug and story.data.tags and "storie" in story.data.tags %}
+        {% set relatedStory = story %}
+      {% endif %}
+    {% endfor %}
+    
+    {% if relatedStory %}
     <div class="story-link">
       <h3>📚 Leggi anche la storia!</h3>
       <p>Questo disegno è ispirato al racconto <strong>{{ title }}</strong>. Vuoi leggere la storia completa?</p>
-      <a href="/{{ storySlug }}/" class="btn btn-story">Leggi "{{ title }}"</a>
+      <a href="{{ relatedStory.url }}" class="btn btn-story">Leggi "{{ title }}"</a>
     </div>
+    {% else %}
+    <div class="story-link">
+      <h3>📚 Scopri le nostre storie!</h3>
+      <p>Esplora il magico mondo degli unicorni con i nostri racconti.</p>
+      <a href="/storie/" class="btn btn-story">Tutte le storie</a>
+    </div>
+    {% endif %}
 
     <!-- Istruzioni per colorare -->
     <div class="coloring-instructions">
@@ -56,18 +72,6 @@ layout: base
         <li>Usa i tuoi colori preferiti per dare vita al disegno!</li>
       </ol>
     </div>
-
-    <!-- Link incrociati ai racconti -->
-    <section class="cross-links">
-      <h3>📚 Racconti correlati</h3>
-      <div class="cross-links-grid">
-        {% for item in collections.racconti %}
-          <a href="{{ item.url }}" class="cross-link-item">
-            <span class="cross-link-title">{{ item.data.title }}</span>
-          </a>
-        {% endfor %}
-      </div>
-    </section>
 
     <!-- Footer con CTA -->
     <footer class="coloring-footer">
