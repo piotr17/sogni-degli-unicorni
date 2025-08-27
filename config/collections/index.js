@@ -35,5 +35,12 @@ module.exports = function(eleventyConfig) {
         return collectionApi.getFilteredByTag("unicornidacolorare").slice(0, 10);
     });
 
+    // Collection per recensioni
+    eleventyConfig.addCollection("recensioni", function(collectionApi) {
+        return collectionApi.getAll().filter(item => {
+            return item.inputPath.includes('/recensioni/') && item.data.layout === 'review';
+        }).sort((a, b) => new Date(b.date) - new Date(a.date));
+    });
+
     // Altre configurazioni di Eleventy possono andare qui
 };

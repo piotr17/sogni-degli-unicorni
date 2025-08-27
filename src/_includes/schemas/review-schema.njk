@@ -1,0 +1,38 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "@id": "{{ meta.url }}{{ page.url }}",
+  "itemReviewed": {
+    "@type": "Product",
+    "name": "{{ title }}",
+    {% if coverImage or image %}
+    "image": "{{ meta.url }}{{ coverImage or image }}",
+    {% endif %}
+    "description": "{{ description or title }}"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "{{ meta.authorName }}",
+    "url": "{{ meta.url }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ meta.siteName }}",
+    "url": "{{ meta.url }}"
+  },
+  {% if stars %}
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": {{ stars }},
+    "bestRating": 5,
+    "worstRating": 1
+  },
+  {% endif %}
+  "datePublished": "{{ date | toIsoString }}",
+  "dateModified": "{{ date | toIsoString }}",
+  "reviewBody": "{{ description or 'Recensione dettagliata del prodotto' }}",
+  "inLanguage": "{{ meta.locale }}",
+  "url": "{{ meta.url }}{{ page.url }}"
+}
+</script>

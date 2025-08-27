@@ -12,6 +12,10 @@ module.exports = {
       text: '📚 Libro Volume 1',
       url: '/sogni-degli-unicorni-volume-1/',
       highlight: true
+    },
+    {
+      text: '⭐ Recensioni',
+      url: '/recensioni/'
     }
   ],
   bottom: [

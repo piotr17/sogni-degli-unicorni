@@ -1,0 +1,64 @@
+/* Header responsive */
+.site-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: inherit;
+  z-index: 1001;
+}
+
+.logo svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* Desktop navigation */
+@media (min-width: 769px) {
+  .navbar ul {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .site-head {
+    padding: 0.5rem 0;
+  }
+  
+  .logo {
+    font-size: 1.1rem;
+  }
+  
+  .logo svg {
+    width: 28px;
+    height: 28px;
+  }
+}

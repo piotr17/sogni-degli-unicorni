@@ -2,27 +2,69 @@
 layout: base
 ---
 
-<article class="region">
+<!-- Schema.org per recensioni -->
+{% include "schemas/review-schema.njk" %}
+
+<article class="region single-review" itemscope itemtype="https://schema.org/Review">
   <div class="wrapper flow prose">
-    <h1 class="gradient-text">{{ title }}</h1>
-    <div class="review-image">
+    
+    <header class="review-header">
+      <h1 class="gradient-text review-title" itemprop="name">{{ title }}</h1>
+      
+      {% if stars %}
+        <div class="review-rating" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+          <div class="stars-display">
+            {% for i in range(1, 6) %}
+              {% if i <= stars %}
+                <span class="star filled">⭐</span>
+              {% else %}
+                <span class="star empty">☆</span>
+              {% endif %}
+            {% endfor %}
+          </div>
+          <span class="rating-text">{{ stars }}/5 stelle</span>
+          <meta itemprop="ratingValue" content="{{ stars }}">
+          <meta itemprop="bestRating" content="5">
+        </div>
+      {% endif %}
+      
+      {% if description %}
+        <p class="review-summary" itemprop="description">{{ description }}</p>
+      {% endif %}
+    </header>
 
-      <img src="{{coverImage}}" alt="title" />
+    {% if coverImage or image %}
+      <figure class="review-image">
+        <img src="{{ coverImage or image }}" alt="{{ title }}" loading="lazy" itemprop="image" />
+      </figure>
+    {% endif %}
+
+    {% if affiliateLink %}
+      <div class="affiliate-button-top">
+        <a href="{{ affiliateLink }}" target="_blank" rel="noopener nofollow" class="btn btn-affiliate">
+          🛒 Acquista su {{ affiliateName or 'Amazon' }}
+        </a>
+      </div>
+    {% endif %}
+
+    <div class="review-content" itemprop="reviewBody">
+      {{ content | safe }}
     </div>
 
-    <div class="affiliate-button-top">
-      <a href="{{ affiliateLink }}" target="_blank" rel="noopener">
-        <button>Acquista su {{affiliateName }}</button>
-      </a>
-    </div>
+    {% if affiliateLink %}
+      <div class="affiliate-button-bottom">
+        <a href="{{ affiliateLink }}" target="_blank" rel="noopener nofollow" class="btn btn-affiliate">
+          🛒 Acquista su {{ affiliateName or 'Amazon' }}
+        </a>
+      </div>
+    {% endif %}
 
-    {{ content | safe }}
-
-    <div class="affiliate-button-bottom">
-      <a href="{{ affiliateLink }}" target="_blank" rel="noopener">
-        <button>Acquista su {{ affiliateName }}</button>  
-      </a>
-    </div>
+    <footer class="review-footer">
+      <div class="review-cta">
+        <p>✨ <strong>Cerchi altre recensioni?</strong> Scopri tutti i prodotti che consiglio!</p>
+        <a href="/recensioni/" class="btn btn-secondary">Tutte le recensioni</a>
+      </div>
+    </footer>
 
   </div>
 </article>

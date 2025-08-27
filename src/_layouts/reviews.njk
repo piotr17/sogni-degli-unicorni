@@ -2,41 +2,50 @@
 layout: base
 ---
 
-<header class="section spot-color-secondary">
-  <div class="section__inner region">
-    <div class="wrapper flow">
-      <section class="prose text-center">
-        <h1 class="fade-in">{{ title }}</h1> 
-      </section>
+<article class="region reviews-index">
+  <div class="wrapper flow prose">
+    
+    <header class="reviews-header">
+      <h1 class="gradient-text">⭐ Recensioni</h1>
+      <p class="reviews-intro">Scopri i prodotti che amo e che consiglio per bambini e famiglie. Recensioni oneste e dettagliate per aiutarti nelle tue scelte.</p>
+    </header>
+
+    <!-- Griglia delle recensioni -->
+    <div class="reviews-grid">
+      {% for review in collections.recensioni %}
+        <article class="review-card">
+          {% if review.data.image %}
+            <div class="review-image">
+              <img src="{{ review.data.image }}" alt="{{ review.data.title }}" loading="lazy" />
+            </div>
+          {% endif %}
+          
+          <div class="review-content">
+            <h3 class="review-title">{{ review.data.title }}</h3>
+            
+            {% if review.data.stars %}
+              <div class="review-stars">
+                {% for i in range(1, 6) %}
+                  {% if i <= review.data.stars %}
+                    <span class="star filled">⭐</span>
+                  {% else %}
+                    <span class="star empty">☆</span>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            {% endif %}
+            
+            {% if review.data.description %}
+              <p class="review-excerpt">{{ review.data.description }}</p>
+            {% endif %}
+            
+            <a href="{{ review.url }}" class="btn btn-review">Leggi recensione</a>
+          </div>
+        </article>
+      {% endfor %}
     </div>
+
+    {{ content | safe }}
+
   </div>
-
-  {% include 'svg/divider-edgy.svg' %}
-</header>
-Sono io?
-<article class="wrapper region">
-
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-
-  {% set postslist = collections.recensioni %}
-  
-  {% for post in postslist %}
-ciao
-    <li class="card flow clickable-card overflow-hidden">
-
-      <h2> 
-        <a href="{{ post.url }}">{{ post.data.title }}</a>
-      </h2>
-
-      {% set definedDate = post.date %}
-      {% include "partials/date.njk" %}
-
-      <p>{{ post.data.description }}</p>
-
-    </li>
-
-  {% endfor %}
-
-  </ul>
-
 </article>
