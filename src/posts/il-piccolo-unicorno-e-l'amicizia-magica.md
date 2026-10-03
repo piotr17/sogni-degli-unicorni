@@ -7,6 +7,7 @@ description: "Scopri la magica avventura del Piccolo Unicorno Leo nella Foresta 
 style: Beatrix Potter
 temp: 0.7
 permalink : /storie/il-piccolo-unicorno-e-l'amicizia-magica.html
+date: 2023-12-20
 ---
 # Il Piccolo Unicorno nella Foresta Incantata
 

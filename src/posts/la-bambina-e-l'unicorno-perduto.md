@@ -6,9 +6,10 @@ metatitle: "La bambina e l'unicorno perduto: una magica avventura per i piccoli 
 description: "Una scoperta magica nel bosco: la storia di Sofia e il suo unicorno
 
 Scopri la meravigliosa avventura di Sofia nel bosco, dove ha fatto una scoperta incredibile: un cucciolo di unicorno ferito. Segui il coraggioso viaggio di Sofia per prendersi cura di questa creatura magica e dimostrare ai suoi genitori che la magia esiste davvero. Un racconto che insegna ai bambini l'importanza della fiducia, della perseveranza e della capacità di credere nell'impossibile. Scopri la magia che può accadere quando apriamo il nostro cuore alla meraviglia del mondo che ci circonda."
-style: Charles Peanut
+style: Charles M. Schulz
 
 temp: 0.8
+date: 2023-11-04
 ---
 ## Una scoperta magica nel bosco
 

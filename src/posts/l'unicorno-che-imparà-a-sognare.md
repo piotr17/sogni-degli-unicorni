@@ -5,6 +5,7 @@ tags: [unicorno, sogni, immaginazione, viaggio, fantasia]
 author: Luca Ricci
 metatitle: La storia dell'unicorno che impara dallo zio a sognare e viaggiare con la mente
 description: Il racconto di un piccolo unicorno che impara dal saggio zio l'arte di sognare e viaggiare con l'immaginazione, scoprendo la capacità della mente di creare mondi magici.  
+date: 2023-01-31
 ---
 Un giorno un piccolo Unicorno, fece visita al saggio zio.
 Lo zio viveva in una montagna più alta delle altre e grazie a questo privilegio, vedeva parti del mondo agli altri precluse.

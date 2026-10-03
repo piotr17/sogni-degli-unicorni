@@ -6,5 +6,6 @@ metatitle: La Canzone Della Buonanotte da colorare
 description: Scarica un bellissimo disegno da colorare basato sulla storia La Canzone Della Buonanotte
 image: /assets/images/la-canzone-della-buonanotte.webp
 permalink: /unicorni-da-colorare/la-canzone-della-buonanotte-da-colorare.html
+date: 2023-12-16
 ---
 Scarica stampa e colora l'immagine del racconto La Canzone Della Buonanotte

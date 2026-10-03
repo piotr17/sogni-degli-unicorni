@@ -4,10 +4,11 @@ title: "La Corsa dell'Unicorno"
 tags: ["Storie per bambini", "Lezioni di vita", "Unicorno", "Partecipazione e divertimento"]
 metatitle: "La Corsa dell'Unicorno: Storia per Bambini Ricca di Insegnamenti ed Emozioni"
 description: Scopri la storia di Luce, l'unicorno che impara l'importanza di partecipare e divertirsi, non solo vincere. Un racconto per bambini che insegna il valore del gioco e dello spirito sportivo.
-style: Hans Cristian Handersen
+style: Hans Christian Andersen
 
 temp: 0.1
 permalink: /storie/la-corsa-dell'unicorno.html
+date: 2024-01-04
 ---
 # Un unicorno impara che non è sempre importante vincere, ma partecipare e divertirsi
 

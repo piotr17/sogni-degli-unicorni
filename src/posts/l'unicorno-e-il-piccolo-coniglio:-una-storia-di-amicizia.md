@@ -6,6 +6,7 @@ metatitle: "Storia per Bambini: L'Unicorno e il Piccolo Coniglio - Un Racconto d
 description: "Scopri la magica storia di Celeste, l'unicorno solitario, e Pelù, il coniglietto spaventato. Un viaggio pieno di avventure nel cuore di un fitto bosco, dove imparano il valore dell'amicizia, della collaborazione e della gentilezza. Un racconto per bambini che insegna l'importanza di superare le paure insieme."
 style: Beatrix Potter
 temp: 0.9
+date: 2023-11-23
 ---
 # Il viaggio di Unicorno e Coniglietto
 Nel cuore di un fitto bosco viveva un unicorno dal candido manto. Il suo nome era Celeste, e la sua vita trascorreva tranquilla, ma molto solitaria. Non aveva amici con cui giocare o condividere le proprie avventure. Nonostante fosse sempre circondato da un magnifico scenario verde, sentiva un senso di vuoto che non riusciva a riempire.

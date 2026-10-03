@@ -6,6 +6,7 @@ metatitle: "Unicorno e Leone: Scopri l'Amicizia Speciale nel Nostro Racconto per
 description: Scopri la magica storia di amicizia tra Bianca, l'unicorno solitario, e Re Ruggero, il leone generoso. Un racconto incantevole che insegna il valore dell'amicizia e il rispetto per le differenze. Un'avventura nella foresta che catturerà l'immaginazione dei bambini.
 style: Gianni Rodari
 temp: 0.8
+date: 2023-11-11
 ---
 # Il Leone e l'Unicorno: un'Amicizia Incantevole
 

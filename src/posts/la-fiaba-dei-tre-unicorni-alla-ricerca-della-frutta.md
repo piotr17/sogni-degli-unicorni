@@ -4,6 +4,7 @@ category:
 description: "Unisciti all'avventura di tre amici unicorni, Aurora, Celeste e Luce, nel loro magico viaggio alla scoperta dei frutti preferiti delle loro mamme. Attraverso paesaggi incantati e incontri con creature magiche, impareranno il valore dell'amicizia, condivisione e amore."
 tags: ["unicorni", "Aurora", "Celeste", "Luce", "frutti"]
 author: Luca Ricci 
+date: 2023-04-15
 ---
 
 C'era una volta, in un regno incantato, un gruppo di tre unicorni amici tra loro: Aurora, Celeste e Luce. I tre erano inseparabili e vivevano numerose avventure insieme. Un giorno, le loro mamme assegnarono loro un compito molto speciale: dovevano portare loro un frutto che fosse il loro preferito. Ma le mamme non avevano dato nessuna indicazione ai piccoli unicorni, lasciando a loro la responsabilità di capire quale fosse il frutto prediletto.

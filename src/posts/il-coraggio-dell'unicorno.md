@@ -7,6 +7,7 @@ description: Scopri la storia di Bianco, l'unicorno che supera le sue paure. Un 
 style: Beatrix Potter
 temp: 0.6
 permalink: /storie/il-coraggio-dell'unicorno.html
+date: 2024-02-09
 ---
 # Un unicorno supera le sue paure
 

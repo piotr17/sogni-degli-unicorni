@@ -6,6 +6,7 @@ metatitle: "Racconti per Bambini: Sogni d'Oro - Storie Educativi per la Crescita
 description: Scopri la magica storia di Luna, la mamma unicorno, e il suo dono speciale per il piccolo Stellino - una piuma dorata che allontana i sogni cattivi. Un racconto incantato che insegna l'amore materno e il potere dei sogni sereni.
 style: Beatrix Potter
 temp: 0.9
+date: 2023-12-16
 ---
 # Il dono della mamma unicorno: la piuma dorata magica
 

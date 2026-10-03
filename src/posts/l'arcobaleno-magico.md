@@ -4,10 +4,11 @@ title: "L'Arcobaleno Magico"
 tags: ["Unicorno", "Mondo Grigio", "Diversità", "Gioia"]
 metatitle: "Scopri l'Incanto del Racconto per Bambini: L'Arcobaleno Magico - Storie Educative e Divertenti"
 description: Scopri la magica storia dell'unicorno che trasforma un mondo grigio in un arcobaleno di colori. Un racconto che celebra la diversità e la gioia, insegnando l'importanza di ogni colore e di ogni essere. Un viaggio incantato per grandi e piccini.
-style: Hans Cristian Handersen
+style: Hans Christian Andersen
 
 temp: 0.5
 permalink: /storie/l'arcobaleno-magico.html
+date: 2024-01-04
 ---
 # Il Unicorno e il Mondo Grigio
 

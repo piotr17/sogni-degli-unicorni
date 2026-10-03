@@ -5,6 +5,7 @@ tags: [unicorno, viaggio, casa, rifugio, speranza]
 author: Luca Ricci
 metatitle: Il viaggio di un unicorno stanco alla ricerca di un riparo
 description: Racconto di un unicorno esausto che intraprende un lungo viaggio nella foresta per ritrovare la propria casa, non arrendendosi mai finché non la ritrova.
+date: 2023-03-18
 ---
 C'era una volta un bellissimo unicorno che viveva in una magnifica foresta. Aveva una lunga criniera argentata, gli zoccoli bianchi come la neve e una lunga corna dorata. Era un unicorno felice e libero, ma ultimamente aveva perso la forza che lo aveva sempre accompagnato. Era diventato molto stanco e non riusciva a trovare la sua casa.
 

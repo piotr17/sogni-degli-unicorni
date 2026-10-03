@@ -4,9 +4,10 @@ title: "La magica amicizia dell'Unicorno"
 tags: storie
 metatitle: "La Magica Amicizia dell'Unicorno: Storia Educativa per Bambini | Racconti Fantastici per l'Insegnamento dei Valori"
 description: "Scopri la magica storia del Piccolo Unicorno e del Coniglietto Perduto. Un'avventura incantata nella foresta che insegna il valore dell'amicizia e l'importanza di aiutarsi a vicenda. Perfetta per stimolare l'immaginazione dei bambini e insegnare loro preziose lezioni di vita."
-style: Dr. Seuss (Theodor Seuss Geisel)
+style: Dr. Seuss
 temp: 0.7
 link-disegno : /blog/la-magica-amicizia-dell'unicorno-da-colorare/
+date: 2023-12-26
 ---
 # Il Piccolo Unicorno e il Coniglietto Perduto
 

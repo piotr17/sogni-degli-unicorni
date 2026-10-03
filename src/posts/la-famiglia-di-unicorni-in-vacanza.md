@@ -5,6 +5,7 @@ tags: [unicorni, famiglia, viaggio, città, avventura, amicizia]
 author: Luca Ricci
 metatitle: La vacanza in città della famiglia di unicorni alla scoperta di nuove amicizie
 description: Racconto fantastico del viaggio in treno di una famiglia di unicorni verso la città, dove il piccolo unicorno farà nuove scoperte e stringerà una nuova amici
+date: 2023-02-01
 ---
 
 Era una bella mattina in cui tutta la famiglia di unicorni si preparava a vivere un'esperienza fuori dal comune. Dopo anni di vita nei magici boschi della montagna, il piccolo unicorno aveva finalmente convinto i suoi genitori a partire per un lungo viaggio verso un posto incredibile e misterioso che lui aveva sempre sognato di visitare: la città!

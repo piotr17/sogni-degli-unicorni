@@ -7,6 +7,7 @@ description: "Scopri la magica storia del piccolo unicorno Fiocco e della farfal
 style: Gianni Rodari
 temp: 1
 link-disegno : /blog/la-magica-amicizia-dell'unicorno-e-la-farfalla-da-colorare/
+date: 2023-12-26
 ---
 # Il Piccolo Unicorno e la Farfalla Colorata
 

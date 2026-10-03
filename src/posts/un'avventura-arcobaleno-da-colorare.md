@@ -6,5 +6,6 @@ metatitle: Un'Avventura Arcobaleno da colorare
 description: Scarica un bellissimo disegno da colorare basato sulla storia Un'Avventura Arcobaleno
 image: /assets/images/un'avventura-arcobaleno.png
 permalink: /unicorni-da-colorare/un'avventura-arcobaleno-da-colorare.html
+date: 2024-04-19
 ---
 Scarica stampa e colora l'immagine del racconto Un'Avventura Arcobaleno

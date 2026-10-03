@@ -5,10 +5,10 @@ date: 2024-05-14T14:48:04.994572
 tags: Unicorni
 metatitle: "Libro per Bambini: L'Unicorno Sussurratore di Stelle - Storia Educativa ed Etica | Storie per Bambini"
 description: "Scopri la magica storia dell'Unicorno Sussurrante di Dr.Seuss. Un racconto per bambini che insegna il valore del coraggio e della comprensione, mostrando come anche il buio può nascondere una luce meravigliosa. Perfetto per incoraggiare la crescita dei più piccoli"
-style: Dr. Seuss Theodor Seuss Geisel
+style: Dr. Seuss
 temp: 0.4
 permalink: /storie/l'unicorno-sussurratore-di-stelle.html
-image: /assets/images/l'unicorno-sussurratore-di-stelle.png
+image: /assets/images/l'unicorno-sussurratore-di-stelle.webp
 ---
 In un lontano, oscuro bosco incantato, dove l'erba irridescente brillava sotto la luna, e i fiori sussurravano storie della vecchia foresta, viveva un unicorno unico. Unica nel suo genere, perché, a differenza degli altri unicorni, aveva una capacità speciale. Avvicinava la sua corna luccicante di stelle al cielo notturno e sussurrava alle stelle. Con la sua magia, lasciava scivolare il comfort come un dolce fremito attraverso la foresta, portando serenità agli animaletti del bosco e guidandoli dolcemente nel sonno. Il suo nome era Vela, la stella guida per tutti gli abitanti del bosco.
 

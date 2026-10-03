@@ -7,6 +7,7 @@ description: Scopri la storia di Luccicorino, un piccolo unicorno che impara l'i
 style: Roald Dahl
 temp: 0.9
 permalink: /storie/il-piccolo-unicorno.html
+date: 2024-02-09
 ---
 # Un piccolo unicorno impara l'importanza di condividere con gli amici
 

@@ -5,10 +5,10 @@ date: 2024-04-29T20:16:38.587281
 tags: Unicorni
 metatitle: "Storie per Bambini Insegnando Valori Importanti: L'Unicorno di Zucchero e Panna - Narratore Infantile Esperto"
 description: "Scopri la magica storia di Dolcetto, l'unicorno dolce come il miele con corno di cono gelato e zoccoli di cioccolata. Un racconto per bambini che insegna l'importanza dell'amicizia e che c'è sempre un posto per ognuno di noi nel mondo."
-style: Charles Peanut
+style: Charles M. Schulz
 temp: 0.7
 permalink: /storie/l'unicorno-di-zucchero-e-panna.html
-image: /assets/images/l'unicorno-di-zucchero-e-panna.png
+image: /assets/images/l'unicorno-di-zucchero-e-panna.webp
 ---
 C'era una volta un unicorno speciale, un unicorno che non si vedrà mai altrove. Il suo nome era Dolcetto, l'unicorno con il corno fatto di cono gelato, gli zoccoli di cioccolata, la coda di zucchero filato e i denti fatti di confetti. Non era un unicorno ordinario, perché tutto il suo corpo era dolce come il miele.
 Dolcetto viveva in un bosco selvaggio pieno di alberi di liquirizia e fiumi di limonata. Camminava per il bosco, lasciando una scia di brillantini ovunque andasse. Il suo corno di cono gelato glitterava al sole e si poteva sentire il profumo del cioccolato dai suoi zoccoli. La sua coda di zucchero filato sembrava un arcobaleno fluttuante nell'aria e i denti di confetti brillavano di mille colori.

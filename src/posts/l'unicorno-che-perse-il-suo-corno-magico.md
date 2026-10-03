@@ -4,8 +4,9 @@ title: L'unicorno che perse il suo corno magico
 tags: [unicorno, magia, avventura, corno, bosco]
 metatitle: La storia dell'unicorno Arcobaleno che perde e ritrova il suo corno magico
 description: Il racconto di Arcobaleno, un unicorno che perde il suo corno magico e si imbarca in un'avventura nel bosco incantato per ritrovarlo e riavere i suoi poteri.
-style: Rodari
+style: Gianni Rodari
 temp: 0.8  
+date: 2023-10-15
 ---
 ## Un unicorno in cerca del suo corno magico
 

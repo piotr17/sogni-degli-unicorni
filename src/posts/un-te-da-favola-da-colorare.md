@@ -6,5 +6,6 @@ metatitle: Un Te Da Favola da colorare
 description: Scarica un bellissimo disegno da colorare basato sulla storia Un Te Da Favola
 image: /assets/images/un-te-da-favola.webp
 permalink: /unicorni-da-colorare/un-te-da-favola-da-colorare.html
+date: 2024-04-19
 ---
 Scarica stampa e colora l'immagine del racconto Un Te Da Favola

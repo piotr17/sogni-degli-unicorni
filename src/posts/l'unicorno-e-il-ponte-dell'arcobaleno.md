@@ -4,9 +4,10 @@ title: "L'Unicorno e il Ponte dell'Arcobaleno"
 tags: ["Storia per bambini", "Unicorni", "Lavoro di squadra", "Ponte Arcobaleno"]
 metatitle: "Storia per Bambini: L'Unicorno e il Ponte dell'Arcobaleno - Racconto Educativo e Divertente"
 description: Scopri la magica storia di Arcobaleno, l'unicorno che costruisce un ponte arcobaleno nel Regno degli Unicorni. Un racconto che celebra l'importanza del lavoro di squadra e la superazione delle sfide. Un viaggio incantato tra colori e sogni, dove l'immaginazione non ha limiti.
-style: Lewis Carroll (Charles Lutwidge Dodgson)
+style: Lewis Carroll
 temp: 0.7
 permalink: /storie/l'unicorno-e-il-ponte-dell'arcobaleno.html
+date: 2024-01-18
 ---
 # Un unicorno aiuta a costruire un ponte arcobaleno
 

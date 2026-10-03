@@ -4,8 +4,9 @@ title: "La canzone della buonanotte"
 tags: ["Storie per bambini", "Educazione emotiva", "Unicorni", "Ninne nanne"]
 metatitle: "La Canzone della Buonanotte: Storie per Bambini per un Sonno Tranquillo e Felice"
 description: Scopri la magica storia di Luna, la mamma unicorno che canta ninne nanne ai suoi cuccioli. Un racconto pieno di coraggio, empatia e amore, che insegna preziose lezioni di vita. Immergiti in un mondo di pura magia e dolci melodie.
-style: Lewis Carroll (Charles Lutwidge Dodgson)
+style: Lewis Carroll
 temp: 1
+date: 2023-12-16
 ---
 # Una mamma unicorno canta una ninna nanna per i suoi cuccioli
 

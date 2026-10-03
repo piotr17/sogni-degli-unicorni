@@ -4,6 +4,7 @@ category:
 description: "Scopri la magica storia dell'unicorno viola, capace di volare e riempire il cielo di brillanti colori, che intraprende una straordinaria avventura alla ricerca di altri unicorni per creare insieme un'opera d'arte sorprendente: l'arcobaleno. Unisciti al viaggio di amicizia e fantastici paesaggi in questo mondo incantato!"
 tags: ["unicorno viola", "arte nel cielo", "ricerca di altri unicorni", "unicorni multicolori", "arcobaleno"]
 author: Luca Ricci 
+date: 2023-04-08
 ---
 
 C'era una volta, in un mondo incantato, un piccolo unicorno che viveva su una montagna verde e rigogliosa. Era un unicorno speciale, con un corno luminoso e color viola. Era famoso per la sua capacità di volare tra le nuvole e lasciare dietro di sé una scia di brillanti colori viola ogni volta che solcava i cieli.

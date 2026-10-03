@@ -6,6 +6,7 @@ metatitle: "Storie per Bambini: Nanna sotto l'arcobaleno - Racconti Educativi e 
 description: Scopri la magica storia di Luce, l'unicorno colorato che aiuta i cuccioli a dormire sotto un meraviglioso arcobaleno. Un racconto di amore, gentilezza e protezione che insegna l'importanza dell'amore e del sostegno.
 style: Antoine de Saint-Exupéry
 temp: 0.1
+date: 2023-12-16
 ---
 # Un unicorno colorato accompagna un gruppo di cuccioli a dormire sotto un meraviglioso e caldo arcobaleno
 

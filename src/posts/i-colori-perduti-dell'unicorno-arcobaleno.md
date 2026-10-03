@@ -4,10 +4,11 @@ title: "I colori perduti dell'Unicorno Arcobaleno"
 tags: ["#StoriaPerBambini", "#UnicornoArcobaleno", "#MondoIncantato", "#ColoriPerduti"]
 metatitle: "Scopri i Colori Perduti dell'Unicorno Arcobaleno - Storie per Bambini Educativi e Divertenti"
 description: Scopri la magica avventura dell'Unicorno Arcobaleno nel suo viaggio per ritrovare i colori perduti dell'arcobaleno. Una storia di amicizia, coraggio e perseveranza che insegna l'importanza dell'aiuto reciproco.
-style: Hans Cristian Handersen
+style: Hans Christian Andersen
 
 temp: 0.4
 permalink: /storie/i-colori-perduti-dell'unicorno-arcobaleno.html
+date: 2024-01-04
 ---
 # Unicorno Arcobaleno aiuta i suoi amici a trovare i colori perduti dell'arcobaleno.
 

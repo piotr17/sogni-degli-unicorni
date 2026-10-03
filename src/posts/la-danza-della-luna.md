@@ -4,8 +4,9 @@ title: "La danza della luna"
 tags: ["Storie per bambini", "Unicorni", "Mondo incantato", "Messaggi positivi"]
 metatitle: "La Danza della Luna: Storia per Bambini Ricca di Insegnamenti e Valori"
 description: Scopri il mondo incantato di Arcobaleno, dove gli unicorni danzano sotto i raggi argentei della luna e sognano di un mondo pieno di amore e felicità. Un racconto magico che parla di amicizia, speranza e sogni, perfetto per i più piccoli.
-style: Dr. Seuss (Theodor Seuss Geisel)
+style: Dr. Seuss
 temp: 0.3
+date: 2023-12-16
 ---
 # Sotto i raggi argentei della luna, un gruppo di unicorni danza delicatamente prima di coricarsi su un prato di velluto per la nanna.
 

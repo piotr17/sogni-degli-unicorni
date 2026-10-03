@@ -5,7 +5,7 @@ date: 2024-06-16T08:34:11.869337
 tags: Unicorni
 metatitle: "Scopri le Avventure di L'Unicorno Viaggiatore Solitario - Storie per Bambini"
 description: "Scopri la favola incantata de Il Viaggio dell'Unicorno Solitario. Segui Luno, un magico unicorno, nel suo viaggio di scoperta e amicizia. Una storia emozionante che insegna il valore della compagnia e dell'amicizia. Ideale per i più piccoli!"
-style: Hans Cristian Handersen
+style: Hans Christian Andersen
 
 temp: 0.8
 permalink: /storie/l'unicorno-viaggiatore-solitario.html
