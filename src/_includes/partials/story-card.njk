@@ -1,0 +1,12 @@
+{#- card di una storia: `story` è un elemento di collezione -#}
+<li>
+  <article class="card">
+    <div class="card__band"></div>
+    <div class="card__body">
+      <span class="card__meta">{{ story.date | formatDate('D MMM YYYY') }} · {{ story.templateContent | readingMinutes }} min ad alta voce</span>
+      <h3><a href="{{ story.url }}">{{ story.data.title | plainText }}</a></h3>
+      {%- if story.data.description %}<p>{{ story.data.description | plainText }}</p>{% endif %}
+      <span class="card__more" aria-hidden="true">Leggi la storia →</span>
+    </div>
+  </article>
+</li>

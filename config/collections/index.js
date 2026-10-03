@@ -9,7 +9,15 @@ const recensioni = collectionApi =>
     .filter(item => item.inputPath.includes('/recensioni/') && item.data.layout === 'review')
     .sort((a, b) => b.date - a.date);
 
+/** Every story (layout post), oldest first. */
+const storie = collectionApi => collectionApi.getAll().filter(item => item.data.layout === 'post' && item.url).sort((a, b) => a.date - b.date);
+
+/** Every coloring page, oldest first. */
+const disegni = collectionApi => collectionApi.getFilteredByTag('unicornidacolorare');
+
 module.exports = {
   disegniDaColorare,
-  recensioni
+  recensioni,
+  storie,
+  disegni
 };

@@ -1,46 +1,32 @@
 ---
 layout: base
 ---
-
-<article class="region libro" data-temp="{{ temp }}">
-  <div class="wrapper flow prose">
-    <h1 class="gradient-text">{{ title }}</h1>
-    {% set definedDate = date %} {% include "partials/date.njk" %}
-
-    <!-- Primo pulsante Acquista - sopra il contenuto -->
-    <div class="cta-container cta-top">
-      <a href="{{ purchaseUrl | default('#') }}" class="btn btn-primary btn-purchase" target="_blank" rel="noopener">
-        🛒 Acquista Ora
-      </a>
-      {% if price %}
-        <span class="price">{{ price }}</span>
-      {% endif %}
-    </div>
-
-    <!-- Immagine del libro -->
-    <div class="book-image">
-      <img src="{{ image }}" alt="{{ title }}" loading="lazy" />
-    </div>
-
-    <!-- Descrizione sotto l'immagine -->
-    {% if description %}
-      <div class="book-description">
-        <p>{{ description }}</p>
+<article>
+  <header class="page-head page-head--burro">
+    <div class="shell">
+      {% include "partials/breadcrumb.njk" %}
+      <div class="hero__grid">
+        <div>
+          <span class="kicker">Il libro · {{ price }}</span>
+          <h1>{{ title }}</h1>
+          {%- if description %}<p>{{ description }}</p>{% endif %}
+          <div class="button-row" style="margin-top:var(--space-l)">
+            <a class="button button--ink" href="{{ purchaseUrl }}" rel="sponsored noopener" target="_blank">Acquista su Amazon →</a>
+            <a class="button" href="/storie/">Leggi qualche storia gratis</a>
+          </div>
+        </div>
+        <div class="hero__art">
+          <span class="sticker">17 storie + 17 disegni</span>
+          <img class="book-band__cover" style="width:100%" src="{{ image }}" alt="Copertina di {{ title }}" width="240" height="342" fetchpriority="high" />
+        </div>
       </div>
-    {% endif %}
-
-    <!-- Contenuto principale -->
-    {{ content | safe }}
-
-    <!-- Secondo pulsante Acquista - sotto il contenuto -->
-    <div class="cta-container cta-bottom">
-      <a href="{{ purchaseUrl | default('#') }}" class="btn btn-primary btn-purchase" target="_blank" rel="noopener">
-        🛒 Acquista Ora
-      </a>
-      {% if price %}
-        <span class="price">{{ price }}</span>
-      {% endif %}
     </div>
+  </header>
 
+  <div class="shell section">
+    <div class="prose">{{ content | demoteHeadings | safe }}</div>
+    <div class="button-row" style="margin-top:var(--space-l)">
+      <a class="button button--ink" href="{{ purchaseUrl }}" rel="sponsored noopener" target="_blank">Acquista su Amazon · {{ price }}</a>
+    </div>
   </div>
 </article>

@@ -1,50 +1,69 @@
 ---
 layout: base
 ---
+{%- set stories = collections.storie | reverse -%}
+{%- set drawings = collections.disegni | reverse -%}
+{%- set featured = drawings[0] -%}
 
-<header class="section spot-color-primary">
-  <div class="section__inner">
-    <div class="wrapper flow region">
-      <h1 class="text-center">{{ title }}</h1>
+<section class="hero">
+  <div class="shell">
+    <div class="hero__grid">
+      <div>
+        <span class="kicker">Fiabe della buonanotte · 3–8 anni</span>
+        <h1>Storie di <em>unicorni</em> da leggere a letto e da colorare</h1>
+        <p class="hero__lede">{{ content | plainText }}</p>
+        <div class="button-row">
+          <a class="button button--ink" href="/storie/">Leggi una storia</a>
+          <a class="button button--menta" href="/unicorni-da-colorare/">Disegni da colorare</a>
+        </div>
+      </div>
+      {%- if featured %}
+      <a class="hero__art" href="{{ featured.url }}" aria-label="Disegno da colorare: {{ featured.data.title | plainText }}">
+        <span class="sticker">Gratis da stampare</span>
+        <div class="frame"><img src="{{ featured.data.image }}" alt="Disegno da colorare: {{ featured.data.title | plainText }}" width="1024" height="1024" fetchpriority="high" /></div>
+      </a>
+      {%- endif %}
+    </div>
+
+    <div class="facts" role="list">
+      <div role="listitem"><b>{{ stories.length }}</b><span>storie</span></div>
+      <div role="listitem"><b>{{ drawings.length }}</b><span>disegni gratis</span></div>
+      <div role="listitem"><b>3–8</b><span>anni</span></div>
+      <div role="listitem"><b>~5′</b><span>a storia</span></div>
     </div>
   </div>
-  {% include 'svg/divider-waves.svg' %}
-</header>
+</section>
 
-<article class="region">
-  <div class="wrapper flow prose">
-    {{ content | safe }}
+<section class="section">
+  <div class="shell">
+    <div class="section-head">
+      <div>
+        <span class="kicker">01 — Le ultime storie</span>
+        <h2>Per stasera</h2>
+        <p>Racconti brevi e gentili, ognuno con un piccolo insegnamento: l'amicizia, il coraggio, la gentilezza.</p>
+      </div>
+      <a class="button" href="/storie/">Tutte le storie →</a>
+    </div>
+    <ul class="cards">
+      {%- for story in stories.slice(0, 6) %}{% include "partials/story-card.njk" %}{% endfor %}
+    </ul>
   </div>
-</article>
+</section>
 
-<article class="region" style="--region-space-top: var(--space-s)">
-  <div class="wrapper flow prose">
-    <h2>{{ blog.title }}</h2>
-    <!-- blog intro text is optional. -->
-    {% if blog.intro %}
-    <p>{{ blog.intro }}</p>
-    {% endif %}
+<section class="section section--tint">
+  <div class="shell">
+    <div class="section-head">
+      <div>
+        <span class="kicker">02 — Da colorare</span>
+        <h2>Prendi i pastelli</h2>
+        <p>Ogni storia ha il suo disegno: si stampa con un clic, su un normale foglio A4.</p>
+      </div>
+      <a class="button" href="/unicorni-da-colorare/">Tutti i disegni →</a>
+    </div>
+    <ul class="cards">
+      {%- for drawing in drawings.slice(1, 7) %}{% include "partials/coloring-card.njk" %}{% endfor %}
+    </ul>
   </div>
-  <!-- TODO: duplicate of partials/blog.njk -->
+</section>
 
-  <ul class="wrapper grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-{% set postslist = collections.posts | reverse %}
-{% set filteredPosts = [] %} 
-
-{% for post in postslist %}
-  {% if not post.data.tags or 'unicornidacolorare' not in post.data.tags %}
-    {% set filteredPosts = filteredPosts.concat(post) %}
-  {% endif %}
-{% endfor %}
-
-{% for post in filteredPosts.slice(0, 4) %}
-  <li class="card flow clickable-card overflow-hidden">
-    <h3>
-      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-    </h3>
-    {% set definedDate = post.date %} {% include "partials/date.njk" %}
-    <p>{{ post.data.description }}</p>
-  </li>
-{% endfor %}
-  </ul>
-</article>
+{% include "partials/book-band.njk" %}

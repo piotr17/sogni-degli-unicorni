@@ -1,0 +1,149 @@
+{#- Testata SEO di ogni pagina: title, description, canonical, robots, Open Graph, Twitter, JSON-LD.
+    I tipi di pagina sono riconosciuti dal layout: home, post (storia), pagina-da-colorare, libro. -#}
+{%- set isHome = page.url == '/' -%}
+{%- set isStory = layout == 'post' -%}
+{%- set isColoring = layout == 'pagina-da-colorare' -%}
+{%- set isBook = layout == 'libro' -%}
+{%- set pageUrl = page.url | absUrl -%}
+{%- set fallbackDescription = ('Disegno da colorare gratis per bambini: ' + title + '. Scaricalo e stampalo, ispirato alle storie degli unicorni.') if isColoring else meta.siteDescription -%}
+{%- set desc = (seo.description or description) | metaDescription(fallbackDescription) -%}
+{#- una storia senza illustrazione propria si condivide con il suo disegno da colorare -#}
+{%- set pageImage = image -%}
+{%- if isStory and not image -%}
+  {%- set storyColoring = collections.posts | relatedColoring({ fileSlug: page.fileSlug, data: { title: title } }) -%}
+  {%- if storyColoring %}{% set pageImage = storyColoring.data.image %}{% endif -%}
+{%- endif -%}
+{%- set shareImage = (pageImage or meta.meta_data.opengraph_default) | absUrl -%}
+{%- set shareTitle = (title + (' da colorare' if isColoring else '')) | plainText -%}
+
+<title>{{ {seo: seo, metatitle: metatitle, title: title, layout: layout} | pageTitle(isHome) }}</title>
+<meta name="description" content="{{ desc }}" />
+<link rel="canonical" href="{{ pageUrl }}" />
+{%- if noindex %}
+<meta name="robots" content="noindex, follow" />
+{%- else %}
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+{%- endif %}
+<meta name="theme-color" content="#fbf7f0" />
+<meta name="format-detection" content="telephone=no" />
+
+<meta property="og:site_name" content="{{ meta.siteName }}" />
+<meta property="og:locale" content="{{ meta.locale }}" />
+<meta property="og:type" content="{{ 'article' if (isStory or isColoring) else ('book' if isBook else 'website') }}" />
+<meta property="og:url" content="{{ pageUrl }}" />
+<meta property="og:title" content="{{ shareTitle }}" />
+<meta property="og:description" content="{{ desc }}" />
+<meta property="og:image" content="{{ shareImage }}" />
+<meta property="og:image:alt" content="{{ shareTitle }}" />
+{%- if isStory or isColoring %}
+<meta property="article:published_time" content="{{ page.date | toIsoString }}" />
+{%- endif %}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ shareTitle }}" />
+<meta name="twitter:description" content="{{ desc }}" />
+<meta name="twitter:image" content="{{ shareImage }}" />
+
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="alternate" type="application/rss+xml" title="{{ meta.siteName }}" href="/feed.xml" />
+
+{#- ------------------------------------------------------------ JSON-LD -#}
+{%- set org = {
+  "@type": "Organization",
+  "@id": meta.url + "/#organization",
+  "name": meta.siteName,
+  "url": meta.url + "/",
+  "logo": meta.url + "/android-chrome-512x512.png"
+} -%}
+{%- set graph = [] -%}
+
+{%- if isHome -%}
+  {%- set graph = graph.concat([org, {
+    "@type": "WebSite",
+    "@id": meta.url + "/#website",
+    "url": meta.url + "/",
+    "name": meta.siteName,
+    "description": meta.siteDescription,
+    "inLanguage": meta.lang,
+    "publisher": {"@id": meta.url + "/#organization"}
+  }]) -%}
+{%- endif -%}
+
+{%- if isStory -%}
+  {%- set graph = graph.concat([{
+    "@type": ["Article", "ShortStory"],
+    "@id": pageUrl + "#story",
+    "headline": title | plainText,
+    "description": desc,
+    "url": pageUrl,
+    "mainEntityOfPage": pageUrl,
+    "image": (pageImage | absUrl) if pageImage else undefined,
+    "datePublished": page.date | toIsoString,
+    "inLanguage": meta.lang,
+    "genre": "Fiaba della buonanotte",
+    "keywords": (tags | reject("equalto", "posts") | join(", ")) if tags else undefined,
+    "audience": {"@type": "PeopleAudience", "suggestedMinAge": 3, "suggestedMaxAge": 8},
+    "timeRequired": "PT" + (content | readingMinutes) + "M",
+    "author": {"@id": meta.url + "/#organization"},
+    "publisher": org
+  }]) -%}
+{%- endif -%}
+
+{%- if isColoring and image -%}
+  {%- set graph = graph.concat([{
+    "@type": "ImageObject",
+    "@id": pageUrl + "#image",
+    "name": shareTitle,
+    "description": desc,
+    "contentUrl": image | absUrl,
+    "url": pageUrl,
+    "width": 1024,
+    "height": 1024,
+    "encodingFormat": "image/webp",
+    "datePublished": page.date | toIsoString,
+    "creator": org,
+    "creditText": meta.siteName,
+    "copyrightNotice": "© " + meta.siteName,
+    "license": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "acquireLicensePage": meta.url + "/uso-dei-disegni/",
+    "isFamilyFriendly": true
+  }]) -%}
+{%- endif -%}
+
+{%- if isBook -%}
+  {%- set graph = graph.concat([{
+    "@type": "Book",
+    "@id": pageUrl + "#book",
+    "name": title | plainText,
+    "description": desc,
+    "image": image | absUrl,
+    "url": pageUrl,
+    "inLanguage": meta.lang,
+    "author": org,
+    "bookFormat": "https://schema.org/Paperback",
+    "numberOfPages": pages if pages else undefined,
+    "audience": {"@type": "PeopleAudience", "suggestedMinAge": 3, "suggestedMaxAge": 8},
+    "offers": {
+      "@type": "Offer",
+      "url": purchaseUrl,
+      "price": (price | replace("€", "") | replace(",", ".") | trim) if price else undefined,
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock"
+    }
+  }]) -%}
+{%- endif -%}
+
+{%- set crumbs = {title: title, layout: layout} | breadcrumbs(page.url) -%}
+{%- if crumbs.length > 1 -%}
+  {%- set items = [] -%}
+  {%- for crumb in crumbs -%}
+    {%- set items = items.concat([{"@type": "ListItem", "position": loop.index, "name": crumb.name, "item": crumb.url | absUrl}]) -%}
+  {%- endfor -%}
+  {%- set graph = graph.concat([{"@type": "BreadcrumbList", "itemListElement": items}]) -%}
+{%- endif -%}
+
+{%- if graph.length %}
+<script type="application/ld+json">{{ {"@context": "https://schema.org", "@graph": graph} | dump | safe }}</script>
+{%- endif %}

@@ -1,78 +1,68 @@
 ---
 layout: base
 ---
+{%- set relatedStory = collections.posts | relatedStory({ fileSlug: page.fileSlug, data: { title: title, storia: storia } }) -%}
+{%- set name = title | plainText -%}
 
-<!-- Schema.org per pagine da colorare -->
-{% include "schemas/coloring-schema.njk" %}
+<div class="coloring-page">
+  <header class="article-head">
+    <div class="shell">
+      {% include "partials/breadcrumb.njk" %}
+      <span class="kicker">Disegno da colorare · gratis</span>
+      <h1>{{ name }} da colorare</h1>
+      <p class="lede">
+        {%- if relatedStory -%}
+        Il disegno della storia <a href="{{ relatedStory.url }}">{{ relatedStory.data.title | plainText }}</a>: stampalo su un foglio A4 e dai vita all'unicorno con i tuoi colori preferiti.
+        {%- else -%}
+        Un unicorno tutto da colorare: stampalo su un foglio A4 e dagli vita con i tuoi colori preferiti.
+        {%- endif -%}
+      </p>
+    </div>
+  </header>
 
-<article class="region coloring-page" itemscope itemtype="https://schema.org/CreativeWork">
-  <div class="wrapper flow prose">
-    
-    <!-- Header della pagina da colorare -->
-    <header class="coloring-header">
-      <h1 class="gradient-text coloring-title" itemprop="name">{{ title }} da colorare</h1>
-      
-      <!-- Meta informazioni -->
-      <div class="coloring-meta">
-        <span class="coloring-type">🎨 Disegno da colorare</span>
-        <span class="coloring-age">👶 Età: 3-10 anni</span>
-        <span class="coloring-difficulty">⭐ Difficoltà: Facile</span>
-      </div>
-      
-      <!-- Descrizione -->
-      {% if description %}
-        <div class="coloring-description" itemprop="description">
-          <p>{{ description }}</p>
-        </div>
-      {% endif %}
-    </header>
-
-    <!-- Immagine da colorare -->
-    <figure class="coloring-image">
-      <img src="{{ image }}" alt="{{ title }} da colorare - Disegno per bambini" loading="lazy" itemprop="image" />
-      <figcaption>🖨️ Clicca sull'immagine per ingrandirla e stamparla</figcaption>
+  <div class="shell coloring">
+    <figure class="coloring__art">
+      <div class="frame"><img src="{{ image }}" alt="Disegno da colorare di {{ name }}: unicorno in bianco e nero con contorni spessi" width="1024" height="1024" fetchpriority="high" /></div>
     </figure>
 
-    <!-- Contenuto -->
-    <div class="coloring-content" itemprop="text">
-      {{ content | safe }}
-    </div>
-
-    <!-- Collegamento al racconto -->
-    {% set relatedStory = collections.posts | relatedStory({ fileSlug: page.fileSlug, data: { title: title, storia: storia } }) %}
-
-    {% if relatedStory %}
-    <div class="story-link">
-      <h3>📚 Leggi anche la storia!</h3>
-      <p>Questo disegno è ispirato al racconto <strong>{{ title }}</strong>. Vuoi leggere la storia completa?</p>
-      <a href="{{ relatedStory.url }}" class="btn btn-story">Leggi "{{ relatedStory.data.title }}"</a>
-    </div>
-    {% else %}
-    <div class="story-link">
-      <h3>📚 Scopri le nostre storie!</h3>
-      <p>Esplora il magico mondo degli unicorni con i nostri racconti.</p>
-      <a href="/storie/" class="btn btn-story">Tutte le storie</a>
-    </div>
-    {% endif %}
-
-    <!-- Istruzioni per colorare -->
-    <div class="coloring-instructions">
-      <h3>🎨 Come colorare:</h3>
-      <ol>
-        <li>Clicca sull'immagine per ingrandirla</li>
-        <li>Salva l'immagine sul tuo dispositivo</li>
-        <li>Stampala su carta bianca</li>
-        <li>Usa i tuoi colori preferiti per dare vita al disegno!</li>
-      </ol>
-    </div>
-
-    <!-- Footer con CTA -->
-    <footer class="coloring-footer">
-      <div class="coloring-cta">
-        <p>✨ <strong>Ti piace colorare?</strong> Scopri altri disegni magici!</p>
-        <a href="/unicorni-da-colorare/" class="btn btn-secondary">Altri disegni da colorare</a>
+    <div class="coloring__panel no-print">
+      <div class="panel">
+        <h2>Stampalo subito</h2>
+        <p style="margin-bottom:var(--space-m)">Esce solo il disegno, a pagina intera.</p>
+        <button class="button button--ink" type="button" onclick="window.print()">Stampa il disegno</button>
+        <a class="button" href="{{ image }}" download>Scarica l'immagine</a>
       </div>
-    </footer>
-
+      {%- if relatedStory %}
+      <div class="panel panel--cielo">
+        <h2>Prima, la storia</h2>
+        <p style="margin-bottom:var(--space-m)">Leggete insieme <strong>{{ relatedStory.data.title | plainText }}</strong>, poi si colora.</p>
+        <a class="button" href="{{ relatedStory.url }}">Leggi la storia →</a>
+      </div>
+      {%- endif %}
+      <div class="panel">
+        <h2>Consigli per colorare</h2>
+        <ol>
+          <li>Carta bianca da 80–100 g, così i pennarelli non passano.</li>
+          <li>Per i più piccoli: pastelli a cera, si tengono meglio in mano.</li>
+          <li>Iniziate dall'unicorno, lo sfondo per ultimo.</li>
+        </ol>
+        <p style="margin-top:var(--space-s)"><a href="/uso-dei-disegni/">Puoi usarlo anche a scuola o all'asilo</a></p>
+      </div>
+    </div>
   </div>
-</article>
+
+  <section class="section no-print">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <span class="kicker">Ancora pastelli?</span>
+          <h2>Altri disegni da colorare</h2>
+        </div>
+        <a class="button" href="/unicorni-da-colorare/">Tutti i disegni →</a>
+      </div>
+      <ul class="cards">
+        {%- for drawing in collections.disegni | nearbyColorings(page.url, 6) %}{% include "partials/coloring-card.njk" %}{% endfor %}
+      </ul>
+    </div>
+  </section>
+</div>

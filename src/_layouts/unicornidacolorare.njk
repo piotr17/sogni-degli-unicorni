@@ -1,35 +1,20 @@
 ---
 layout: base
 ---
-
-<header class="section spot-color-secondary">
-  <div class="section__inner region">
-    <div class="wrapper flow">
-      <section class="prose text-center">
-        <h1 class="fade-in">{{ title }}</h1> 
-      </section>
-    </div>
+<header class="page-head page-head--menta">
+  <div class="shell">
+    {% include "partials/breadcrumb.njk" %}
+    <span class="kicker">{{ collections.disegni.length }} disegni · gratis</span>
+    <h1>{{ title }}</h1>
+    {%- if lede %}<p>{{ lede }}</p>{% endif %}
   </div>
-
-  {% include 'svg/divider-edgy.svg' %}
 </header>
 
-<article class="wrapper region">
-
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-{% set postslist = collections.unicornidacolorare %}
-  {% for post in postslist %}
-    <li class="card flow clickable-card overflow-hidden">
-      <img src="{{ post.data.image }}" alt="Anteprima di {{ post.data.title }} da colorare" class="responsive-image-preview" loading="lazy">
-      <h2>
-        <a href="{{ post.url | url }}">{{ post.data.title }} da colorare</a>
-      </h2>
-      {% set definedDate = post.date %}
-      {% include "partials/date.njk" %}
-      <p>{{ post.data.description }}</p>
-    </li>
-  {% endfor %}
-
-  </ul>
-</article>
-
+<section class="section">
+  <div class="shell">
+    <ul class="cards">
+      {%- for drawing in collections.disegni | reverse %}{% set eager = loop.index <= 3 %}{% include "partials/coloring-card.njk" %}{% endfor %}
+    </ul>
+    <p class="kicker" style="margin-top:var(--space-l)"><a href="/uso-dei-disegni/">Come puoi usare i disegni (casa, scuola, asilo) →</a></p>
+  </div>
+</section>

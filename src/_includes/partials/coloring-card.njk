@@ -1,0 +1,12 @@
+{#- card di un disegno: `drawing` è un elemento di collezione; `eager` per le prime immagini visibili -#}
+<li>
+  <article class="card">
+    <div class="card__media">
+      <img src="{{ drawing.data.image }}" alt="Disegno da colorare: {{ drawing.data.title | plainText }}" width="1024" height="1024" loading="{{ 'eager' if eager else 'lazy' }}" decoding="async" />
+    </div>
+    <div class="card__body">
+      <span class="card__meta">Da stampare · gratis</span>
+      <h3><a href="{{ drawing.url }}">{{ drawing.data.title | plainText }}</a></h3>
+    </div>
+  </article>
+</li>

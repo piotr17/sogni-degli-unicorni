@@ -23,7 +23,17 @@ const {
   minifyJs,
   mdInline,
   relatedColoring,
-  relatedStory
+  relatedStory,
+  breadcrumbs,
+  demoteHeadings,
+  pageTitle,
+  metaDescription,
+  absoluteUrl,
+  readingMinutes,
+  plainText,
+  relatedStories,
+  storyNeighbours,
+  nearbyColorings
 } = require('./config/filters/index.js');
 
 // module import shortcodes
@@ -34,7 +44,7 @@ const {
 } = require('./config/shortcodes/index.js');
 
 // module import collections
-const {disegniDaColorare, recensioni} = require('./config/collections/index.js');
+const {disegniDaColorare, recensioni, storie, disegni} = require('./config/collections/index.js');
 
 // plugins
 const markdownLib = require('./config/plugins/markdown.js');
@@ -78,6 +88,16 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('values', Object.values);
   eleventyConfig.addFilter('relatedColoring', relatedColoring);
   eleventyConfig.addFilter('relatedStory', relatedStory);
+  eleventyConfig.addFilter('breadcrumbs', breadcrumbs);
+  eleventyConfig.addFilter('demoteHeadings', demoteHeadings);
+  eleventyConfig.addFilter('pageTitle', pageTitle);
+  eleventyConfig.addFilter('metaDescription', metaDescription);
+  eleventyConfig.addFilter('absUrl', absoluteUrl);
+  eleventyConfig.addFilter('readingMinutes', readingMinutes);
+  eleventyConfig.addFilter('plainText', plainText);
+  eleventyConfig.addFilter('relatedStories', relatedStories);
+  eleventyConfig.addFilter('storyNeighbours', storyNeighbours);
+  eleventyConfig.addFilter('nearbyColorings', nearbyColorings);
   eleventyConfig.addFilter('entries', Object.entries);
 
   // 	--------------------- Custom shortcodes ---------------------
@@ -96,6 +116,8 @@ module.exports = eleventyConfig => {
 
   // 	--------------------- Custom collections -----------------------
   eleventyConfig.addCollection('disegniDaColorare', disegniDaColorare);
+  eleventyConfig.addCollection('storie', storie);
+  eleventyConfig.addCollection('disegni', disegni);
   eleventyConfig.addCollection('recensioni', recensioni);
 
   // 	--------------------- Plugins ---------------------

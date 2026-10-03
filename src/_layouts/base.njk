@@ -1,94 +1,54 @@
-{% set assetHash = global.random() %}
-
 <!DOCTYPE html>
 <html lang="{{ meta.lang }}">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% include "partials/seo.njk" %}
+
+    <link rel="preload" href="/assets/fonts/fraunces/fraunces-var-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/atkinson/atkinson-next-var-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="/assets/css/global.css?v={{ build.version }}" />
+    <meta name="p:domain_verify" content="322e76a5fc0efd6fbec8100a5054513a" />
+
     <!-- Google Tag Manager -->
     <script>
-    (function(w,d,s,l,i){
-        w[l]=w[l]||[];
-        w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
-        var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
-        j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-        f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MK8MX85');
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+        var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-MK8MX85');
     </script>
-    <!-- End Google Tag Manager -->
-    
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Asynchronous scripts are already being used properly -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4548604400396789"
-     crossorigin="anonymous"></script>    
-
-    <title>
-      {% if seo.title %} {{ seo.title }}
-      {% elif title %}
-      {{ title }}
-      {% else %}
-      {{ meta.siteName }}
-      {% endif %}
-    </title>
-
-    <!-- Including base schema for structured data -->
-    {% include "schemas/base-schema.njk" %}
-
-    <!-- Linking CSS with unique cache-busting query string -->
-    <link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}" />
-
-    <!-- Preloading essential fonts -->
-    <link rel="preload" href="/assets/fonts/inter/inter-v7-latin-500.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/assets/fonts/inter/inter-v7-latin-700.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2" as="font" type="font/woff2" crossorigin />
-
-    <!-- Defer non-critical JavaScript to reduce blocking of page rendering -->
-    <script type="module" src="/assets/scripts/app.js?{{ assetHash }}" defer></script>
-
-    <!-- Including meta information -->
-    {% include "partials/meta-info.njk" %}
-    <meta name="p:domain_verify" content="322e76a5fc0efd6fbec8100a5054513a"/>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4548604400396789" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MK8MX85"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MK8MX85" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <a href="#main" class="skip-link">{{ meta.skipContent }}</a>
 
-    <!-- Including the header from a partial file -->
     {% include "partials/header.njk" %}
-
-    <!-- Main content area -->
-    <main id="main" class="flow">{{ content | safe }}</main>
-
-    <!-- Including the footer from a partial file -->
+    <main id="main">{{ content | safe }}</main>
     {% include "partials/footer.njk" %}
 
-    <!-- Conditional loading of YouTube scripts -->
-    {% if youtube %}
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.4.0/lite-youtube.min.js"
-    ></script>
-    {% endif %}
-
-    <!-- Custom script for handling page-specific events -->
     <script>
-      var tempValue = document.querySelector('article').dataset.temp;
-      function sendGA4Event() {
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({'tempValue': tempValue});
-      }
-
-      document.addEventListener('DOMContentLoaded', function() {
-        sendGA4Event();
-        console.log(dataLayer);
-        console.log("temp sent");
-      });
+      // menu mobile
+      (function () {
+        var toggle = document.querySelector('.nav-toggle');
+        var nav = document.getElementById('mainnav');
+        if (!toggle || !nav) return;
+        toggle.addEventListener('click', function () {
+          var open = toggle.getAttribute('aria-expanded') !== 'true';
+          toggle.setAttribute('aria-expanded', open);
+          nav.dataset.open = open;
+        });
+      })();
+      {%- if temp is defined %}
+      // temperatura di generazione della storia, letta da GA4
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({tempValue: '{{ temp }}'});
+      {%- endif %}
     </script>
   </body>
 </html>

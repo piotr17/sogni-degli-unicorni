@@ -1,51 +1,39 @@
 ---
 layout: base
 ---
+<header class="page-head page-head--cielo">
+  <div class="shell">
+    {% include "partials/breadcrumb.njk" %}
+    <h1>{{ title }}</h1>
+    {%- if description %}<p>{{ description }}</p>{% endif %}
+  </div>
+</header>
 
-<article class="region reviews-index">
-  <div class="wrapper flow prose">
-    
-    <header class="reviews-header">
-      <h1 class="gradient-text">⭐ Recensioni</h1>
-      <p class="reviews-intro">Scopri i prodotti che amo e che consiglio per bambini e famiglie. Recensioni oneste e dettagliate per aiutarti nelle tue scelte.</p>
-    </header>
-
-    <!-- Griglia delle recensioni -->
-    <div class="reviews-grid">
-      {% for review in collections.recensioni %}
-        <article class="review-card">
-          {% if review.data.image %}
-            <div class="review-image">
-              <img src="{{ review.data.image }}" alt="{{ review.data.title }}" loading="lazy" />
-            </div>
-          {% endif %}
-          
-          <div class="review-content">
-            <h3 class="review-title">{{ review.data.title }}</h3>
-            
-            {% if review.data.stars %}
-              <div class="review-stars">
-                {% for i in range(1, 6) %}
-                  {% if i <= review.data.stars %}
-                    <span class="star filled">⭐</span>
-                  {% else %}
-                    <span class="star empty">☆</span>
-                  {% endif %}
-                {% endfor %}
-              </div>
-            {% endif %}
-            
-            {% if review.data.description %}
-              <p class="review-excerpt">{{ review.data.description }}</p>
-            {% endif %}
-            
-            <a href="{{ review.url }}" class="btn btn-review">Leggi recensione</a>
+<section class="section">
+  <div class="shell">
+    {%- if collections.recensioni.length %}
+    <ul class="cards">
+      {%- for review in collections.recensioni %}
+      <li>
+        <article class="card">
+          {%- if review.data.image %}<div class="card__media"><img src="{{ review.data.image }}" alt="" width="400" height="400" loading="lazy" /></div>{% else %}<div class="card__band"></div>{% endif %}
+          <div class="card__body">
+            {%- if review.data.stars %}<span class="card__meta stars" aria-label="{{ review.data.stars }} stelle su 5">{% for i in range(1, 6) %}{{ '★' if i <= review.data.stars else '☆' }}{% endfor %}</span>{% endif %}
+            <h3><a href="{{ review.url }}">{{ review.data.title }}</a></h3>
+            {%- if review.data.description %}<p>{{ review.data.description }}</p>{% endif %}
+            <span class="card__more" aria-hidden="true">Leggi la recensione →</span>
           </div>
         </article>
-      {% endfor %}
+      </li>
+      {%- endfor %}
+    </ul>
+    {%- else %}
+    <div class="panel" style="max-width:40rem">
+      <h2>Le prime recensioni arrivano presto</h2>
+      <p>Libri, giochi e idee per la buonanotte che abbiamo provato davvero. Nel frattempo, c'è una storia che vi aspetta.</p>
+      <p style="margin-top:var(--space-m)"><a class="button button--ink" href="/storie/">Leggi una storia →</a></p>
     </div>
-
+    {%- endif %}
     {{ content | safe }}
-
   </div>
-</article>
+</section>

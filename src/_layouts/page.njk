@@ -1,10 +1,15 @@
 ---
 layout: base
 ---
-
-<article class="region">
-  <div class="wrapper flow prose">
-    <h1 class="gradient-text">{{ title }}</h1>
-    {{ content | safe }}
+<article>
+  <header class="page-head page-head--{{ tint or "cielo" }}">
+    <div class="shell">
+      {% include "partials/breadcrumb.njk" %}
+      <h1>{{ title }}</h1>
+      {%- if lede %}<p>{{ lede }}</p>{% endif %}
+    </div>
+  </header>
+  <div class="shell section">
+    <div class="prose">{{ content | demoteHeadings | safe }}</div>
   </div>
 </article>

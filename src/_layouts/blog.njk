@@ -1,39 +1,21 @@
 ---
 layout: base
 ---
-
-<header class="section spot-color-secondary">
-  <div class="section__inner region">
-    <div class="wrapper flow">
-      <section class="prose text-center">
-        <h1 class="fade-in">{{ title }}</h1>
-      </section>
-    </div>
+<header class="page-head page-head--rosa">
+  <div class="shell">
+    {% include "partials/breadcrumb.njk" %}
+    <span class="kicker">{{ collections.storie.length }} storie</span>
+    <h1>{{ title }}</h1>
+    {%- if lede %}<p>{{ lede }}</p>{% endif %}
   </div>
-
-  {% include 'svg/divider-edgy.svg' %}
 </header>
 
-<article class="wrapper region">
-  <ul class="grid mt-l-xl" role="list" data-rows="masonry" data-layout="50-50">
-{% set postslist = collections.posts | reverse %}
-{% set filteredPosts = [] %} 
+<section class="section">
+  <div class="shell">
+    <ul class="cards">
+      {%- for story in collections.storie | reverse %}{% include "partials/story-card.njk" %}{% endfor %}
+    </ul>
+  </div>
+</section>
 
-{% for post in postslist %}
-  {% if not post.data.tags or 'unicornidacolorare' not in post.data.tags %}
-    {% set filteredPosts = filteredPosts.concat(post) %}
-  {% endif %}
-{% endfor %}
-
-{% for post in filteredPosts %}
-  <li class="card flow clickable-card overflow-hidden">
-    <h3>
-      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-    </h3>
-    {% set definedDate = post.date %} {% include "partials/date.njk" %}
-    <p>{{ post.data.description }}</p>
-  </li>
-{% endfor %}
-  </ul>
-</article>
-
+{% include "partials/book-band.njk" %}

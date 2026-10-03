@@ -1,4 +1,6 @@
 ---
+noindex: true
+excludeFromSitemap: true
 title: Legal notice
 seo:
   title: Legal notice

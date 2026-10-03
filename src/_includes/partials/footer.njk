@@ -1,48 +1,26 @@
-{% set activePage = page.url | url %}
-
-<footer class="site-foot" role="contentinfo">
-  <div class="wrapper">
-    <div class="site-foot__inner">
-      <nav id="footernav" class="site-foot__inner" aria-label="Footer">
-
-        &copy; {% year %} <a href="/" {% if activePage === '/' %} aria-current="page" {% endif %}>{{ meta.siteName }} <small>{% packageVersion %}</small> </a>
-
-        {% for item in navigation.bottom %}
-
-        <a
-          href="{{ item.url }}"
-          {{
-          helpers.getLinkActiveState(item.url,
-          page.url)
-          |
-          safe
-          }}
-          >{{ item.text }}</a
-        >
-
-        {% endfor %}
-      </nav>
-
-      <nav id="social" class="site-foot__inner" aria-label="Social links">
-        {% for item in social %}
-
-        {% if item.platform == "rss" %}
-        <a href="{{ meta.url }}/{{ locale }}{{ item.url }}" rel="alternate" type="application/rss+xml">
-        {% else %}
-        <a href="{{ item.url }}" rel="me">
-          {% endif %}
-          <span class="sr-only">{{ item.platform }}</span>
-          <div aria-hidden="true">{% include 'icons/social-' + item.icon %}</div>
-          </a
-          >
-        {% endfor %}
-
-
-        </nav>
-    </div>
+<footer class="site-foot">
+  <div class="shell site-foot__grid">
+    <p class="site-foot__claim">Buonanotte, piccoli sognatori.<br />Ci vediamo nella prossima storia.</p>
+    <nav aria-label="Esplora">
+      <h2>Esplora</h2>
+      <ul>
+        <li><a href="/storie/">Tutte le storie</a></li>
+        <li><a href="/unicorni-da-colorare/">Disegni da colorare</a></li>
+        <li><a href="/sogni-degli-unicorni-volume-1/">Il libro: Volume 1</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Informazioni">
+      <h2>Informazioni</h2>
+      <ul>
+        {%- for item in navigation.bottom %}
+        <li><a href="{{ item.url }}">{{ item.text }}</a></li>
+        {%- endfor %}
+        <li><a href="/feed.xml">Feed RSS</a></li>
+      </ul>
+    </nav>
   </div>
-
-  <!-- lang menu -->
+  <div class="shell site-foot__base">
+    <span>© {% year %} {{ meta.siteName }}</span>
+    <span>Storie della buonanotte per bambini da 3 a 8 anni</span>
+  </div>
 </footer>
-
-

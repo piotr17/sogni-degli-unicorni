@@ -1,98 +1,66 @@
 ---
 layout: base
-preloads:
-  href: '/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2'
-  as: 'font'
-  type: 'font/woff2'
-  crossorigin: true
 ---
+{%- set relatedColoring = collections.posts | relatedColoring({ fileSlug: page.fileSlug, data: { title: title } }) -%}
+{%- set neighbours = collections.storie | storyNeighbours(page.url) -%}
 
-<!-- Schema.org per SEO -->
-{% include "schemas/story-schema.njk" %}
-
-<article class="region story-post" data-temp="{{ temp }}" itemscope itemtype="https://schema.org/CreativeWork">
-  <div class="wrapper flow prose">
-    
-    <!-- Header della storia -->
-    <header class="story-header">
-      <h1 class="gradient-text story-title" itemprop="name">{{ title }}</h1>
-      
-      <!-- Meta informazioni -->
-      <div class="story-meta">
-        {% set definedDate = date %} {% include "partials/date.njk" %}
-        {% if style %}
-          <span class="story-style">Stile: {{ style }}</span>
-        {% endif %}
-        <span class="reading-time">⏱️ Tempo di lettura: ~5 min</span>
-      </div>
-      
-      <!-- Descrizione per SEO -->
-      {% if description %}
-        <div class="story-description" itemprop="description">
-          <p>{{ description }}</p>
-        </div>
-      {% endif %}
-    </header>
-
-    <!-- Immagine principale -->
-    {% if image %}
-      <figure class="story-image">
-        <img src="{{ image }}" alt="{{ title }}" loading="lazy" itemprop="image" />
-      </figure>
-    {% endif %}
-
-    <!-- Contenuto della storia -->
-    <div class="story-content" itemprop="text">
-      {{ content | safe }}
+<article class="story">
+  <header class="article-head">
+    <div class="shell">
+      {% include "partials/breadcrumb.njk" %}
+      <span class="kicker">Storia della buonanotte</span>
+      <h1>{{ title | plainText }}</h1>
+      {%- if description %}<p class="lede">{{ description | plainText }}</p>{% endif %}
+      <ul class="chips" aria-label="Informazioni sulla storia">
+        <li class="chip"><time datetime="{{ page.date | toIsoString }}">{{ page.date | formatDate('D MMMM YYYY') }}</time></li>
+        <li class="chip">{{ content | readingMinutes }} min ad alta voce</li>
+        {%- if style %}<li class="chip">Nello stile di {{ style }}</li>{% endif %}
+      </ul>
     </div>
+  </header>
 
-    <!-- Collegamento al disegno da colorare specifico -->
-    {% set relatedColoring = collections.posts | relatedColoring({ fileSlug: page.fileSlug, data: { title: title } }) %}
+  <div class="shell">
+    {%- if image %}
+    <figure class="article-cover frame">
+      <img src="{{ image }}" alt="Illustrazione della storia {{ title | plainText }}" width="1024" height="1024" fetchpriority="high" />
+    </figure>
+    {%- endif %}
 
-    {% if relatedColoring %}
-    <div class="coloring-link">
-      <h3>🎨 Colora questa storia!</h3>
-      <p>Vuoi colorare i personaggi di questa storia? Abbiamo il disegno perfetto per te!</p>
-      <a href="{{ relatedColoring.url }}" class="btn btn-coloring">Colora "{{ title }}"</a>
-    </div>
-    {% endif %}
+    <div class="prose">{{ content | demoteHeadings | safe }}</div>
+    <p class="end-mark" aria-hidden="true">✦ ✦ ✦</p>
 
-    <!-- Link incrociati ai disegni da colorare -->
-    <section class="cross-links">
-      <h3>🎨 Altri disegni da colorare</h3>
-      <div class="cross-links-grid">
-        {% for item in collections.disegniDaColorare %}
-          {% if item.url != relatedColoring.url %}
-          <a href="{{ item.url }}" class="cross-link-item">
-            <span class="cross-link-title">{{ item.data.title }}</span>
-          </a>
-          {% endif %}
-        {% endfor %}
+    {%- if relatedColoring %}
+    <aside class="callout no-print" aria-labelledby="coloring-title">
+      <img src="{{ relatedColoring.data.image }}" alt="" width="144" height="144" loading="lazy" />
+      <div>
+        <span class="kicker">Dopo la storia</span>
+        <h2 id="coloring-title">Colora {{ title | plainText }}</h2>
+        <p>Il disegno di questa storia, gratis e pronto da stampare.</p>
+        <a class="button button--ink" href="{{ relatedColoring.url }}">Vai al disegno da colorare →</a>
       </div>
-    </section>
+    </aside>
+    {%- endif %}
 
-    <!-- Footer della storia -->
-    <footer class="story-footer">
-      <div class="story-tags">
-        {% if tags and tags.length > 0 %}
-          <span class="tags-label">🏷️ Categorie:</span>
-          {% for tag in tags %}
-            {% if tag != "posts" %}
-              <span class="tag">{{ tag }}</span>
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-      </div>
-      
-      <!-- Call to action -->
-      <div class="story-cta">
-        <p>✨ <strong>Ti è piaciuta questa storia?</strong> Scopri altre magiche avventure degli unicorni!</p>
-        <a href="/storie/" class="btn btn-secondary">Leggi altre storie</a>
-      </div>
-    </footer>
-
+    <nav class="pager no-print" aria-label="Altre storie">
+      {%- if neighbours.prev %}<a class="prev" href="{{ neighbours.prev.url }}" rel="prev"><span>← Storia precedente</span><b>{{ neighbours.prev.data.title | plainText }}</b></a>{% endif %}
+      {%- if neighbours.next %}<a class="next" href="{{ neighbours.next.url }}" rel="next"><span>Storia successiva →</span><b>{{ neighbours.next.data.title | plainText }}</b></a>{% endif %}
+    </nav>
   </div>
 </article>
 
+<section class="section no-print">
+  <div class="shell">
+    <div class="section-head">
+      <div>
+        <span class="kicker">Se ti è piaciuta</span>
+        <h2>Altre storie per stasera</h2>
+      </div>
+      <a class="button" href="/storie/">Tutte le storie →</a>
+    </div>
+    <ul class="cards">
+      {%- for story in collections.storie | relatedStories(page.url, 3) %}{% include "partials/story-card.njk" %}{% endfor %}
+    </ul>
+  </div>
+</section>
 
-
+{% include "partials/book-band.njk" %}

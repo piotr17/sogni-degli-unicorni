@@ -1,4 +1,6 @@
 ---
+noindex: true
+excludeFromSitemap: true
 tags: libri
 stars: 5
 title: Test di recensione
