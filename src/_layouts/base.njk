@@ -10,6 +10,22 @@
     <link rel="stylesheet" href="/assets/css/global.css?v={{ build.version }}" />
     <meta name="p:domain_verify" content="322e76a5fc0efd6fbec8100a5054513a" />
 
+    <!-- Consent Mode v2: tutto negato finché il visitatore non sceglie nel banner di Google
+         (Privacy e messaggi di AdSense), che aggiorna questi valori da solo. Deve stare prima di GTM. -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied',
+        functionality_storage: 'granted',
+        security_storage: 'granted',
+        wait_for_update: 500
+      });
+      gtag('set', 'ads_data_redaction', true);
+    </script>
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
