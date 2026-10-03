@@ -103,6 +103,13 @@ module.exports = eleventyConfig => {
   // 	--------------------- Custom shortcodes ---------------------
   eleventyConfig.addNunjucksAsyncShortcode('imagePlaceholder', imageShortcodePlaceholder);
   eleventyConfig.addShortcode('youtube', liteYoutube);
+  // email protetta dallo spam: l'indirizzo intero non compare mai nell'HTML (vedi base.njk)
+  eleventyConfig.addShortcode('email', (label = '') => {
+    const [user, domain] = require('./src/_data/meta.js').authorEmail.split('@');
+    const reversed = `${user}@${domain}`.split('').reverse().join('');
+    const text = label || `${user} [at] ${domain}`;
+    return `<a class="email" href="#" data-e="${reversed}" rel="nofollow">${text}</a>`;
+  });
   eleventyConfig.addShortcode('include_raw', includeRaw);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, stephanie eckles
   eleventyConfig.addShortcode('packageVersion', () => `v${packageVersion}`);

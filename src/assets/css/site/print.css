@@ -44,7 +44,7 @@
     aspect-ratio: auto;
   }
 
-  .prose > p:first-of-type::first-letter {
+  .story .prose > p:first-of-type::first-letter {
     background: none;
     border: 0;
   }

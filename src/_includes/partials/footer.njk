@@ -15,12 +15,13 @@
         {%- for item in navigation.bottom %}
         <li><a href="{{ item.url }}">{{ item.text }}</a></li>
         {%- endfor %}
+        <li><a href="#" data-consent>Preferenze cookie</a></li>
         <li><a href="/feed.xml">Feed RSS</a></li>
       </ul>
     </nav>
   </div>
   <div class="shell site-foot__base">
     <span>© {% year %} {{ meta.siteName }}</span>
-    <span>Storie della buonanotte per bambini da 3 a 8 anni</span>
+    <span>Un progetto di Luca Ricci · {% email %}</span>
   </div>
 </footer>

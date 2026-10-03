@@ -44,6 +44,21 @@
           nav.dataset.open = open;
         });
       })();
+      // email anti-spam: l'indirizzo si compone solo al clic
+      document.addEventListener('click', function (e) {
+        var link = e.target.closest('a.email');
+        if (!link) return;
+        e.preventDefault();
+        window.location.href = 'mailto:' + link.dataset.e.split('').reverse().join('');
+      });
+      // riapre il banner del consenso di Google (Privacy e messaggi di AdSense)
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('[data-consent]')) return;
+        e.preventDefault();
+        window.googlefc = window.googlefc || {};
+        window.googlefc.callbackQueue = window.googlefc.callbackQueue || [];
+        window.googlefc.callbackQueue.push(function () { window.googlefc.showRevocationMessage(); });
+      });
       {%- if temp is defined %}
       // temperatura di generazione della storia, letta da GA4
       window.dataLayer = window.dataLayer || [];

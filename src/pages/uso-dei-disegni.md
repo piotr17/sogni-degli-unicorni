@@ -19,4 +19,4 @@ Tutti i disegni da colorare del sito sono **gratuiti** e puoi stamparli tutte le
 - rivenderli, stampati o in digitale, né inserirli in libri o prodotti in vendita;
 - ripubblicare i file su altri siti senza indicare la fonte.
 
-I disegni sono distribuiti con licenza [Creative Commons BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.it): uso non commerciale, citando *I Sogni degli Unicorni*. Per altri usi chiedici prima il permesso.
+I disegni sono distribuiti con licenza [Creative Commons BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.it): uso non commerciale, citando *I Sogni degli Unicorni*. Per altri usi chiedici prima il permesso: {% email "scrivici un'email" %}.

@@ -6,6 +6,8 @@ module.exports = {
   ],
   bottom: [
     {text: 'Come usare i disegni', url: '/uso-dei-disegni/'},
-    {text: 'Privacy', url: '/privacy/'}
+    {text: 'Privacy', url: '/privacy/'},
+    {text: 'Cookie policy', url: '/cookie-policy/'},
+    {text: 'Note legali', url: '/note-legali/'}
   ]
 };
