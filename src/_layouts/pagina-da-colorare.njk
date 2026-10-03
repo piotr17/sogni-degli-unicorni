@@ -39,20 +39,13 @@ layout: base
     </div>
 
     <!-- Collegamento al racconto -->
-    {% set storySlug = title | lower | replace(" ", "-") | replace("'", "") | replace(":", "") | replace(",", "") %}
-    {% set relatedStory = null %}
-    {% for story in collections.posts %}
-      {% set storySlugCompare = story.data.title | lower | replace(" ", "-") | replace("'", "") | replace(":", "") | replace(",", "") %}
-      {% if storySlugCompare == storySlug and story.data.tags and "storie" in story.data.tags %}
-        {% set relatedStory = story %}
-      {% endif %}
-    {% endfor %}
-    
+    {% set relatedStory = collections.posts | relatedStory({ fileSlug: page.fileSlug, data: { title: title, storia: storia } }) %}
+
     {% if relatedStory %}
     <div class="story-link">
       <h3>📚 Leggi anche la storia!</h3>
       <p>Questo disegno è ispirato al racconto <strong>{{ title }}</strong>. Vuoi leggere la storia completa?</p>
-      <a href="{{ relatedStory.url }}" class="btn btn-story">Leggi "{{ title }}"</a>
+      <a href="{{ relatedStory.url }}" class="btn btn-story">Leggi "{{ relatedStory.data.title }}"</a>
     </div>
     {% else %}
     <div class="story-link">

@@ -99,7 +99,43 @@ const mdInline = (content, opts) => {
   return inline ? md.renderInline(content) : md.render(content);
 };
 
+const COLORING_SUFFIX = '-da-colorare';
+
+const hasTag = (item, tag) => [].concat(item.data.tags || []).includes(tag);
+
+/** Legacy key: the title-based slug the layouts used before the explicit link. */
+const titleKey = title =>
+  String(title || '')
+    .trim()
+    .toLowerCase()
+    .replace(/[\s'’:,-]+/g, '');
+
+/** Key of the story a coloring page belongs to: `storia` front matter, else its file slug without the suffix. */
+const coloringStoryKey = item =>
+  item.data.storia || item.fileSlug.replace(new RegExp(`${COLORING_SUFFIX}$`), '');
+
+/** Finds the coloring page of a story (explicit `storia` link, then file slug, then title). */
+const relatedColoring = (items, story) => {
+  const colorings = items.filter(item => hasTag(item, 'unicornidacolorare'));
+  return (
+    colorings.find(item => coloringStoryKey(item) === story.fileSlug) ||
+    colorings.find(item => titleKey(item.data.title) === titleKey(story.data.title))
+  );
+};
+
+/** Finds the story a coloring page was drawn from (explicit `storia` link, then file slug, then title). */
+const relatedStory = (items, coloring) => {
+  const stories = items.filter(item => item.data.layout === 'post');
+  const key = coloringStoryKey(coloring);
+  return (
+    stories.find(item => item.fileSlug === key) ||
+    stories.find(item => titleKey(item.data.title) === titleKey(coloring.data.title))
+  );
+};
+
 module.exports = {
+  relatedColoring,
+  relatedStory,
   limit,
   toHtml,
   where,

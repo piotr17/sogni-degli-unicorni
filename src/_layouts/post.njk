@@ -47,15 +47,8 @@ preloads:
     </div>
 
     <!-- Collegamento al disegno da colorare specifico -->
-    {% set storySlug = title | lower | replace(" ", "-") | replace("'", "") | replace(":", "") | replace(",", "") %}
-    {% set relatedColoring = null %}
-    {% for coloring in collections.posts %}
-      {% set coloringSlugCompare = coloring.data.title | lower | replace(" ", "-") | replace("'", "") | replace(":", "") | replace(",", "") %}
-      {% if coloringSlugCompare == storySlug and coloring.data.tags and "unicornidacolorare" in coloring.data.tags %}
-        {% set relatedColoring = coloring %}
-      {% endif %}
-    {% endfor %}
-    
+    {% set relatedColoring = collections.posts | relatedColoring({ fileSlug: page.fileSlug, data: { title: title } }) %}
+
     {% if relatedColoring %}
     <div class="coloring-link">
       <h3>🎨 Colora questa storia!</h3>

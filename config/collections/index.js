@@ -1,46 +1,15 @@
-const path = require('path');
-const fs = require('fs');
+/** Latest coloring pages, used for the cross links under each story. */
+const disegniDaColorare = collectionApi =>
+  collectionApi.getFilteredByTag('unicornidacolorare').reverse().slice(0, 10);
 
-module.exports = function(eleventyConfig) {
-    // Aggiungi una collezione personalizzata
-    eleventyConfig.addCollection("recensioni", function(collectionApi) {
-        // Trova tutti i file nella cartella 'recensioni'
-        let recensioniDir = path.resolve(__dirname, 'src/recensioni');
-        let recensioniFiles = fs.readdirSync(recensioniDir);
+/** Reviews in src/recensioni, newest first. */
+const recensioni = collectionApi =>
+  collectionApi
+    .getAll()
+    .filter(item => item.inputPath.includes('/recensioni/') && item.data.layout === 'review')
+    .sort((a, b) => b.date - a.date);
 
-        let recensioniItems = recensioniFiles.map(filename => {
-            let filePath = path.join(recensioniDir, filename);
-            let fileContents = fs.readFileSync(filePath, 'utf8');
-
-            // Crea un oggetto per ogni file con le informazioni necessarie
-            return {
-                url: `/recensioni/${path.basename(filename, path.extname(filename))}.html`,
-                // Qui puoi aggiungere altre proprietà basate sul contenuto del file se necessario, come title o date
-                data: fileContents
-            };
-        });
-
-        return recensioniItems;
-    });
-
-    // Configurazione per trasformare gli URL come desiderato
-    eleventyConfig.addPassthroughCopy({"src/recensioni": "recensioni"});
-
-    // Collections per link incrociati
-    eleventyConfig.addCollection("racconti", function(collectionApi) {
-        return collectionApi.getFilteredByTag("storie").slice(0, 10);
-    });
-
-    eleventyConfig.addCollection("disegniDaColorare", function(collectionApi) {
-        return collectionApi.getFilteredByTag("unicornidacolorare").slice(0, 10);
-    });
-
-    // Collection per recensioni
-    eleventyConfig.addCollection("recensioni", function(collectionApi) {
-        return collectionApi.getAll().filter(item => {
-            return item.inputPath.includes('/recensioni/') && item.data.layout === 'review';
-        }).sort((a, b) => new Date(b.date) - new Date(a.date));
-    });
-
-    // Altre configurazioni di Eleventy possono andare qui
+module.exports = {
+  disegniDaColorare,
+  recensioni
 };

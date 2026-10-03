@@ -21,7 +21,9 @@ const {
   stripHtml,
   minifyCss,
   minifyJs,
-  mdInline
+  mdInline,
+  relatedColoring,
+  relatedStory
 } = require('./config/filters/index.js');
 
 // module import shortcodes
@@ -32,7 +34,7 @@ const {
 } = require('./config/shortcodes/index.js');
 
 // module import collections
-const {getAllPosts} = require('./config/collections/index.js');
+const {disegniDaColorare, recensioni} = require('./config/collections/index.js');
 
 // plugins
 const markdownLib = require('./config/plugins/markdown.js');
@@ -74,6 +76,8 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('md', mdInline);
   eleventyConfig.addFilter('keys', Object.keys);
   eleventyConfig.addFilter('values', Object.values);
+  eleventyConfig.addFilter('relatedColoring', relatedColoring);
+  eleventyConfig.addFilter('relatedStory', relatedStory);
   eleventyConfig.addFilter('entries', Object.entries);
 
   // 	--------------------- Custom shortcodes ---------------------
@@ -91,7 +95,8 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(require('./config/template-languages/js-config.js'));
 
   // 	--------------------- Custom collections -----------------------
-  eleventyConfig.addCollection('posts', getAllPosts);
+  eleventyConfig.addCollection('disegniDaColorare', disegniDaColorare);
+  eleventyConfig.addCollection('recensioni', recensioni);
 
   // 	--------------------- Plugins ---------------------
   eleventyConfig.addPlugin(EleventyRenderPlugin);
