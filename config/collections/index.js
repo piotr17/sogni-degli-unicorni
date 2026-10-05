@@ -15,9 +15,14 @@ const storie = collectionApi => collectionApi.getAll().filter(item => item.data.
 /** Every coloring page, oldest first. */
 const disegni = collectionApi => collectionApi.getFilteredByTag('unicornidacolorare');
 
+/** Games and tools of La scuola degli unicorni (layout gioco), oldest first. */
+const giochi = collectionApi =>
+  collectionApi.getAll().filter(item => item.data.layout === 'gioco' && item.url).sort((a, b) => a.date - b.date);
+
 module.exports = {
   disegniDaColorare,
   recensioni,
   storie,
-  disegni
+  disegni,
+  giochi
 };

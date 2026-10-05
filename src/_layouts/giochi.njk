@@ -1,0 +1,40 @@
+---
+layout: base
+---
+{#- Pagina della sezione /giochi-didattici/: i giochi raggruppati per materia, nell'ordine di scuola.materie -#}
+<header class="page-head page-head--cielo">
+  <div class="shell">
+    {% include "partials/breadcrumb.njk" %}
+    <span class="kicker">{{ scuola.nome }} · {{ collections.giochi.length }} {{ 'gioco' if collections.giochi.length == 1 else 'giochi' }} · gratis</span>
+    <h1>{{ h1 or title }}</h1>
+    {%- if lede %}<p>{{ lede }}</p>{% endif %}
+  </div>
+</header>
+
+{%- for materia in scuola.materie %}
+{%- set games = collections.giochi | where('data.materia', materia.nome) %}
+{%- if games.length %}
+<section class="section{% if loop.index is even %} section--tint{% endif %}" aria-labelledby="materia-{{ materia.nome | slugify }}">
+  <div class="shell">
+    <div class="section-head">
+      <div>
+        <h2 id="materia-{{ materia.nome | slugify }}">Giochi di {{ materia.nome | lower }}</h2>
+        <p>{{ materia.descrizione }}</p>
+      </div>
+    </div>
+    <ul class="cards">
+      {%- for game in games %}{% include "partials/gioco-card.njk" %}{% endfor %}
+    </ul>
+  </div>
+</section>
+{%- endif %}
+{%- endfor %}
+
+<section class="section">
+  <div class="shell">
+    <div class="prose">{{ content | demoteHeadings | safe }}</div>
+    <div class="button-row" style="margin-top:var(--space-l)">
+      <a class="button" href="/storie/">Finiti i compiti? Una storia della buonanotte →</a>
+    </div>
+  </div>
+</section>

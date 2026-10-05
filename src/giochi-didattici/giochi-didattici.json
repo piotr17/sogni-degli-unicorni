@@ -1,0 +1,4 @@
+{
+  "layout": "gioco",
+  "permalink": "/giochi-didattici/{{ page.fileSlug }}/"
+}

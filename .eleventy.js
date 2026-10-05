@@ -44,7 +44,7 @@ const {
 } = require('./config/shortcodes/index.js');
 
 // module import collections
-const {disegniDaColorare, recensioni, storie, disegni} = require('./config/collections/index.js');
+const {disegniDaColorare, recensioni, storie, disegni, giochi} = require('./config/collections/index.js');
 
 // plugins
 const markdownLib = require('./config/plugins/markdown.js');
@@ -126,6 +126,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addCollection('storie', storie);
   eleventyConfig.addCollection('disegni', disegni);
   eleventyConfig.addCollection('recensioni', recensioni);
+  eleventyConfig.addCollection('giochi', giochi);
 
   // 	--------------------- Plugins ---------------------
   eleventyConfig.addPlugin(EleventyRenderPlugin);
@@ -140,6 +141,9 @@ module.exports = eleventyConfig => {
     eleventyConfig.addPassthroughCopy(path)
   );
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  // i giochi della scuola degli unicorni sono pagine HTML autonome, copiate così come sono
+  eleventyConfig.addPassthroughCopy('src/giochi-didattici/*/gioca.html');
+  eleventyConfig.ignores.add('src/giochi-didattici/*/gioca.html');
   // social icons to root directory
   eleventyConfig.addPassthroughCopy({
     'src/assets/images/favicon/*': '/'

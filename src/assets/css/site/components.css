@@ -825,3 +825,63 @@ figure {
   background: var(--paper-deep);
   padding: 0.05em 0.3em;
 }
+
+/* ------------------------------------------------------------------ giochi per la scuola */
+
+.table-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+}
+.prose .pitagorica {
+  display: table; /* le altre tabelle di .prose sono block: qui scorre .table-scroll */
+  width: 100%;
+  min-width: 26rem;
+  table-layout: fixed;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  font-size: 1rem;
+}
+.prose .pitagorica caption {
+  caption-side: bottom;
+  padding-top: var(--space-xs);
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  color: var(--ink-soft);
+}
+.prose .pitagorica :is(th, td) {
+  text-align: center;
+  padding: 0.45em 0.2em;
+  border: 1px solid var(--ink);
+}
+.prose .pitagorica th {
+  font-size: 1rem;
+  text-transform: none;
+  letter-spacing: 0;
+  background: var(--cielo);
+}
+.prose .pitagorica thead th:first-child {
+  background: var(--burro);
+}
+/* i quadrati (2 × 2, 3 × 3...) sulla diagonale */
+.prose .pitagorica tbody tr:nth-child(1) td:nth-of-type(1),
+.prose .pitagorica tbody tr:nth-child(2) td:nth-of-type(2),
+.prose .pitagorica tbody tr:nth-child(3) td:nth-of-type(3),
+.prose .pitagorica tbody tr:nth-child(4) td:nth-of-type(4),
+.prose .pitagorica tbody tr:nth-child(5) td:nth-of-type(5),
+.prose .pitagorica tbody tr:nth-child(6) td:nth-of-type(6),
+.prose .pitagorica tbody tr:nth-child(7) td:nth-of-type(7),
+.prose .pitagorica tbody tr:nth-child(8) td:nth-of-type(8),
+.prose .pitagorica tbody tr:nth-child(9) td:nth-of-type(9),
+.prose .pitagorica tbody tr:nth-child(10) td:nth-of-type(10) {
+  background: var(--rosa);
+  font-weight: 700;
+}
+
+.faq dt {
+  font-weight: 700;
+  margin-top: var(--space-m);
+}
+.faq dd {
+  margin: var(--space-2xs) 0 0;
+  color: var(--ink-soft);
+}

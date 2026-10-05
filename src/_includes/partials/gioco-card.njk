@@ -1,0 +1,12 @@
+{#- card di un gioco della scuola degli unicorni: `game` è un elemento della collezione giochi -#}
+<li>
+  <article class="card">
+    <div class="card__band"></div>
+    <div class="card__body">
+      <span class="card__meta">{{ game.data.materia }} · classe {{ game.data.classi }}</span>
+      <h3><a href="{{ game.url }}">{{ game.data.title | plainText }}</a></h3>
+      {%- if game.data.lede %}<p>{{ game.data.lede | plainText }}</p>{% endif %}
+      <span class="card__more" aria-hidden="true">Gioca →</span>
+    </div>
+  </article>
+</li>

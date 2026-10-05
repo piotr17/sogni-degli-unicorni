@@ -1,0 +1,61 @@
+---
+layout: base
+---
+{#- Pagina di un gioco: è la pagina indicizzata. Il gioco vero (`app`) si apre a schermo intero
+    su un URL a parte, con noindex. -#}
+<article>
+  <header class="page-head page-head--cielo">
+    <div class="shell">
+      {% include "partials/breadcrumb.njk" %}
+      <span class="kicker">{{ materia }} · classe {{ classi }} · gratis</span>
+      <h1>{{ h1 or title }}</h1>
+      {%- if lede %}<p>{{ lede }}</p>{% endif %}
+      <div class="button-row" style="margin-top:var(--space-l)">
+        <a class="button button--ink" href="{{ app }}">Gioca subito →</a>
+        <a class="button" href="{{ scuola.url }}">Tutti i giochi</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="shell section">
+    <div class="prose">{{ content | demoteHeadings | safe }}</div>
+    <div class="button-row no-print" style="margin-top:var(--space-l)">
+      <a class="button button--ink" href="{{ app }}">Gioca a {{ title | plainText }} →</a>
+    </div>
+  </div>
+
+  {%- if faq %}
+  <section class="section section--tint" aria-labelledby="domande">
+    <div class="shell">
+      <div class="prose">
+        <h2 id="domande">Domande frequenti</h2>
+        <dl class="faq">
+          {%- for item in faq %}
+          <dt>{{ item.domanda }}</dt>
+          <dd>{{ item.risposta }}</dd>
+          {%- endfor %}
+        </dl>
+      </div>
+    </div>
+  </section>
+  {%- endif %}
+
+  {%- set siblings = [] -%}
+  {%- for game in collections.giochi %}{% if game.url != page.url %}{% set siblings = siblings.concat([game]) %}{% endif %}{% endfor -%}
+  {%- if siblings.length %}
+  <section class="section no-print">
+    <div class="shell">
+      <div class="section-head">
+        <div>
+          <span class="kicker">{{ scuola.nome }}</span>
+          <h2>Altri giochi per la scuola</h2>
+        </div>
+        <a class="button" href="{{ scuola.url }}">Tutti i giochi →</a>
+      </div>
+      <ul class="cards">
+        {%- for game in siblings.slice(0, 6) %}{% include "partials/gioco-card.njk" %}{% endfor %}
+      </ul>
+    </div>
+  </section>
+  {%- endif %}
+</article>

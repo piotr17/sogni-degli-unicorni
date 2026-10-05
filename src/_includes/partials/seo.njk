@@ -1,9 +1,12 @@
 {#- Testata SEO di ogni pagina: title, description, canonical, robots, Open Graph, Twitter, JSON-LD.
-    I tipi di pagina sono riconosciuti dal layout: home, post (storia), pagina-da-colorare, libro. -#}
+    I tipi di pagina sono riconosciuti dal layout: home, post (storia), pagina-da-colorare, libro,
+    giochi (sezione giochi didattici) e gioco. -#}
 {%- set isHome = page.url == '/' -%}
 {%- set isStory = layout == 'post' -%}
 {%- set isColoring = layout == 'pagina-da-colorare' -%}
 {%- set isBook = layout == 'libro' -%}
+{%- set isGames = layout == 'giochi' -%}
+{%- set isGame = layout == 'gioco' -%}
 {%- set pageUrl = page.url | absUrl -%}
 {%- set fallbackDescription = ('Disegno da colorare gratis per bambini: ' + title + '. Scaricalo e stampalo, ispirato alle storie degli unicorni.') if isColoring else meta.siteDescription -%}
 {%- set desc = (seo.description or description) | metaDescription(fallbackDescription) -%}
@@ -133,6 +136,58 @@
       "availability": "https://schema.org/InStock"
     }
   }]) -%}
+{%- endif -%}
+
+{%- if isGames -%}
+  {%- set listItems = [] -%}
+  {%- for game in collections.giochi -%}
+    {%- set listItems = listItems.concat([{"@type": "ListItem", "position": loop.index, "url": game.url | absUrl, "name": game.data.title | plainText}]) -%}
+  {%- endfor -%}
+  {%- set graph = graph.concat([{
+    "@type": "CollectionPage",
+    "@id": pageUrl + "#collection",
+    "name": (h1 or title) | plainText,
+    "description": desc,
+    "url": pageUrl,
+    "inLanguage": meta.lang,
+    "isPartOf": {"@type": "WebSite", "@id": meta.url + "/#website", "name": meta.siteName, "url": meta.url + "/"},
+    "audience": {"@type": "EducationalAudience", "educationalRole": "student"},
+    "mainEntity": {"@type": "ItemList", "numberOfItems": listItems.length, "itemListElement": listItems}
+  }]) -%}
+{%- endif -%}
+
+{%- if isGame -%}
+  {%- set graph = graph.concat([{
+    "@type": ["WebApplication", "LearningResource"],
+    "@id": pageUrl + "#game",
+    "name": title | plainText,
+    "headline": (h1 or title) | plainText,
+    "description": desc,
+    "url": pageUrl,
+    "image": (image | absUrl) if image else undefined,
+    "datePublished": page.date | toIsoString,
+    "inLanguage": meta.lang,
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires JavaScript",
+    "isAccessibleForFree": true,
+    "isFamilyFriendly": true,
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
+    "learningResourceType": "Gioco didattico",
+    "educationalLevel": "Scuola primaria, classe " + classi,
+    "about": {"@type": "Thing", "name": argomento} if argomento else undefined,
+    "teaches": argomento,
+    "audience": {"@type": "EducationalAudience", "educationalRole": "student", "suggestedMinAge": eta[0], "suggestedMaxAge": eta[1]} if eta else undefined,
+    "author": {"@id": meta.url + "/#organization"},
+    "publisher": org
+  }]) -%}
+  {%- if faq -%}
+    {%- set questions = [] -%}
+    {%- for item in faq -%}
+      {%- set questions = questions.concat([{"@type": "Question", "name": item.domanda, "acceptedAnswer": {"@type": "Answer", "text": item.risposta} }]) -%}
+    {%- endfor -%}
+    {%- set graph = graph.concat([{"@type": "FAQPage", "@id": pageUrl + "#faq", "mainEntity": questions}]) -%}
+  {%- endif -%}
 {%- endif -%}
 
 {%- set crumbs = {title: title, layout: layout} | breadcrumbs(page.url) -%}

@@ -66,4 +66,22 @@ layout: base
   </div>
 </section>
 
+{%- if collections.giochi.length %}
+<section class="section">
+  <div class="shell">
+    <div class="section-head">
+      <div>
+        <span class="kicker">03 — {{ scuola.nome }}</span>
+        <h2>Giochi per la scuola</h2>
+        <p>Piccoli giochi didattici per ripassare quello che si fa alle elementari, dalla prima alla quinta.</p>
+      </div>
+      <a class="button" href="{{ scuola.url }}">Tutti i giochi →</a>
+    </div>
+    <ul class="cards">
+      {%- for game in (collections.giochi | reverse).slice(0, 3) %}{% include "partials/gioco-card.njk" %}{% endfor %}
+    </ul>
+  </div>
+</section>
+{%- endif %}
+
 {% include "partials/book-band.njk" %}

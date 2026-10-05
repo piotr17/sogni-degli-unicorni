@@ -253,6 +253,7 @@ const breadcrumbs = (data, url) => {
   if (data.layout === 'pagina-da-colorare')
     return [home, {name: 'Disegni da colorare', url: '/unicorni-da-colorare/'}, {name: `${title} da colorare`, url}];
   if (data.layout === 'review') return [home, {name: 'Recensioni', url: '/recensioni/'}, {name: title, url}];
+  if (data.layout === 'gioco') return [home, {name: 'Giochi per la scuola', url: '/giochi-didattici/'}, {name: title, url}];
   return [home, {name: title, url}];
 };
 

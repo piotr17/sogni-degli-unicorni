@@ -22,10 +22,13 @@ Alla prima visita un banner ti permette di accettare, rifiutare o scegliere per 
 | Categoria | Fornitore | Cookie | Durata | Consenso |
 | --- | --- | --- | --- | --- |
 | Tecnici: preferenze sul consenso | Google (piattaforma per il consenso) | `FCCDCF`, `FCNEC` | Fino a 13 mesi | Non richiesto |
+| Tecnici: progressi dei giochi | Questo sito (archivio locale del browser) | `tabelline:v1`, `tabelline:storico:v1` | Finché non li cancelli | Non richiesto |
 | Statistiche | Google Analytics 4 | `_ga`, `_ga_<ID>` | Fino a 14 mesi | Richiesto |
 | Statistiche | Hotjar | `_hjSessionUser_<ID>`, `_hjSession_<ID>` e altri `_hj*` | Da 30 minuti a 365 giorni | Richiesto |
 | Pubblicità | Google AdSense | `__gads`, `__gpi`, `__eoi`, `IDE` e altri di Google | Fino a 13 mesi | Richiesto |
 | Pubblicità | Google Ads (Conversion Linker) | `_gcl_au` | 90 giorni | Richiesto |
+
+I giochi della sezione [Giochi per la scuola](/giochi-didattici/) salvano scelte e progressi solo nell'archivio locale del tuo browser (localStorage): non vengono inviati a noi né a terzi e li puoi cancellare dal gioco stesso o dalle impostazioni del browser.
 
 Google Tag Manager non salva cookie propri: carica gli strumenti qui sopra rispettando le tue scelte. I link verso Amazon non salvano cookie su questo sito: eventuali cookie di Amazon vengono impostati su amazon.it dopo il clic.
 
