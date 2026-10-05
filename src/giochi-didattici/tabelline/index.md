@@ -9,6 +9,10 @@ argomento: Tabelline
 classi: "2ª e 3ª"
 eta: [7, 9]
 app: /giochi-didattici/tabelline/gioca.html
+image: /assets/images/gioco-tabelline-a-colori.jpg
+imageAlt: "Il gioco Tabelline a colori: le tabelline dall'1 al 10 in cerchi colorati, con la 3, la 7 e la 8 scelte per giocare"
+imageWidth: 1200
+imageHeight: 630
 date: 2026-10-04
 faq:
   - domanda: "In che classe si studiano le tabelline?"

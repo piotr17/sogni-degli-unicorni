@@ -7,12 +7,25 @@ layout: base
   <header class="page-head page-head--cielo">
     <div class="shell">
       {% include "partials/breadcrumb.njk" %}
-      <span class="kicker">{{ materia }} · classe {{ classi }} · gratis</span>
-      <h1>{{ h1 or title }}</h1>
-      {%- if lede %}<p>{{ lede }}</p>{% endif %}
-      <div class="button-row" style="margin-top:var(--space-l)">
-        <a class="button button--ink" href="{{ app }}">Gioca subito →</a>
-        <a class="button" href="{{ scuola.url }}">Tutti i giochi</a>
+      <div class="game-head{% if image %} game-head--art{% endif %}">
+        <div>
+          <span class="kicker">{{ materia }} · classe {{ classi }} · gratis</span>
+          <h1>{{ h1 or title }}</h1>
+          {%- if lede %}<p>{{ lede }}</p>{% endif %}
+          <div class="button-row" style="margin-top:var(--space-l)">
+            <a class="button button--ink" href="{{ app }}">Gioca subito →</a>
+            <a class="button" href="{{ scuola.url }}">Tutti i giochi</a>
+          </div>
+        </div>
+        {%- if image %}
+        {#- lo screenshot è anche l'immagine di condivisione (JPG); nella pagina si usa il WebP gemello -#}
+        <a class="game-head__art frame" href="{{ app }}" tabindex="-1">
+          <picture>
+            <source srcset="{{ image | replace('.jpg', '.webp') }}" type="image/webp" />
+            <img src="{{ image }}" alt="{{ imageAlt or title }}" width="{{ imageWidth }}" height="{{ imageHeight }}" fetchpriority="high" />
+          </picture>
+        </a>
+        {%- endif %}
       </div>
     </div>
   </header>

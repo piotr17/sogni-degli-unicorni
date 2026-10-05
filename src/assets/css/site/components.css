@@ -828,6 +828,32 @@ figure {
 
 /* ------------------------------------------------------------------ giochi per la scuola */
 
+.game-head--art {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+  gap: var(--space-l);
+  align-items: center;
+}
+.game-head__art {
+  display: block;
+  background: var(--white);
+  box-shadow: var(--shadow-lift);
+}
+.game-head__art img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1200 / 630;
+  display: block;
+}
+@media (max-width: 50em) {
+  .game-head--art {
+    grid-template-columns: 1fr;
+  }
+}
+.card__media--wide img {
+  aspect-ratio: 1200 / 630;
+}
+
 .table-scroll {
   overflow-x: auto;
   max-width: 100%;

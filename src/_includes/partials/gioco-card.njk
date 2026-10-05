@@ -1,7 +1,16 @@
 {#- card di un gioco della scuola degli unicorni: `game` è un elemento della collezione giochi -#}
 <li>
   <article class="card">
+    {%- if game.data.image %}
+    <div class="card__media card__media--wide">
+      <picture>
+        <source srcset="{{ game.data.image | replace('.jpg', '.webp') }}" type="image/webp" />
+        <img src="{{ game.data.image }}" alt="{{ game.data.imageAlt or game.data.title }}" width="{{ game.data.imageWidth }}" height="{{ game.data.imageHeight }}" loading="lazy" decoding="async" />
+      </picture>
+    </div>
+    {%- else %}
     <div class="card__band"></div>
+    {%- endif %}
     <div class="card__body">
       <span class="card__meta">{{ game.data.materia }} · classe {{ game.data.classi }}</span>
       <h3><a href="{{ game.url }}">{{ game.data.title | plainText }}</a></h3>

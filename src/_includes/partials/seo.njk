@@ -18,6 +18,7 @@
 {%- endif -%}
 {%- set shareImage = (pageImage or meta.meta_data.opengraph_default) | absUrl -%}
 {%- set shareTitle = (title + (' da colorare' if isColoring else '')) | plainText -%}
+{%- set shareAlt = (imageAlt or shareTitle) | plainText -%}
 
 <title>{{ {seo: seo, metatitle: metatitle, title: title, layout: layout} | pageTitle(isHome) }}</title>
 <meta name="description" content="{{ desc }}" />
@@ -37,7 +38,11 @@
 <meta property="og:title" content="{{ shareTitle }}" />
 <meta property="og:description" content="{{ desc }}" />
 <meta property="og:image" content="{{ shareImage }}" />
-<meta property="og:image:alt" content="{{ shareTitle }}" />
+{%- if pageImage and imageWidth %}
+<meta property="og:image:width" content="{{ imageWidth }}" />
+<meta property="og:image:height" content="{{ imageHeight }}" />
+{%- endif %}
+<meta property="og:image:alt" content="{{ shareAlt }}" />
 {%- if isStory or isColoring %}
 <meta property="article:published_time" content="{{ page.date | toIsoString }}" />
 {%- endif %}
@@ -45,6 +50,7 @@
 <meta name="twitter:title" content="{{ shareTitle }}" />
 <meta name="twitter:description" content="{{ desc }}" />
 <meta name="twitter:image" content="{{ shareImage }}" />
+<meta name="twitter:image:alt" content="{{ shareAlt }}" />
 
 <link rel="icon" href="/favicon.ico" sizes="any" />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -165,6 +171,7 @@
     "description": desc,
     "url": pageUrl,
     "image": (image | absUrl) if image else undefined,
+    "screenshot": {"@type": "ImageObject", "url": image | absUrl, "width": imageWidth, "height": imageHeight, "caption": shareAlt} if image else undefined,
     "datePublished": page.date | toIsoString,
     "inLanguage": meta.lang,
     "applicationCategory": "EducationalApplication",

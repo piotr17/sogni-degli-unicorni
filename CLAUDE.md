@@ -100,6 +100,7 @@ Regole:
 - `metatitle` (≤ 62 caratteri) con la query principale ("Gioco delle tabelline online…"), `description` di 140-158 caratteri, `h1` descrittivo; `title` è il nome breve usato in card e breadcrumb.
 - **Link interni**: menu principale, footer, sezione "03 — La scuola degli unicorni" in home (ultimi 3 giochi), "Altri giochi per la scuola" in fondo a ogni gioco, e dentro ogni app il marchio verso `/giochi-didattici/` più i link alla pagina del gioco e agli altri giochi. Dall'indice si rimanda alle storie.
 - Breadcrumb: Home › Giochi per la scuola › <gioco> (filtro `breadcrumbs`, layout `gioco`).
+- Immagine: lo screenshot (`image`) diventa `og:image` con dimensioni e `og:image:alt` / `twitter:image:alt` da `imageAlt`, `image` e `screenshot` nello schema `WebApplication`, voce nella sitemap delle immagini, immagine in testa alla pagina (`fetchpriority="high"`, è l'elemento più grande) e nelle card dei giochi.
 - La sitemap include indice e pagine dei giochi da sola; le app non ci finiscono (sono copiate, non generate).
 
 ### Aggiungere un gioco
@@ -118,6 +119,10 @@ Regole:
    classi: "2ª e 3ª"
    eta: [7, 9]
    app: /giochi-didattici/tabelline/gioca.html
+   image: /assets/images/gioco-tabelline-a-colori.jpg   # screenshot, vedi sotto
+   imageAlt: "Descrizione di cosa si vede nello screenshot"
+   imageWidth: 1200
+   imageHeight: 630
    date: 2026-10-04
    faq:
      - domanda: "…"
@@ -128,8 +133,9 @@ Regole:
 2. Metti il gioco in `src/giochi-didattici/<argomento>/gioca.html`: viene copiato in `dist` così com'è (passthrough) ed escluso dai template, quindi può contenere `{{ }}` senza problemi.
 3. Nell'`<head>` del gioco: `<meta name="robots" content="noindex, follow">`, `<title><Gioco> · La scuola degli unicorni</title>`, una description e le favicon del sito (`/favicon.ico`, `/favicon.svg`, `/apple-touch-icon.png`).
 4. Nella schermata iniziale del gioco: il marchio `.brand` (icona unicorno di `src/_includes/svg/unicorn-mark.svg` + "La scuola degli unicorni", link a `/giochi-didattici/`) e in fondo i link "Istruzioni…" (pagina del gioco) e "Altri giochi". Copiali da `tabelline/gioca.html`.
-5. Se il gioco salva qualcosa nel browser, aggiungi le chiavi nella tabella della cookie policy.
-6. `npm run build` e controlla `dist/giochi-didattici/`.
+5. **Screenshot del gioco** come immagine di condivisione: schermata iniziale con qualche scelta già fatta (si capisce subito cos'è), viewport 1200×630 a densità 2 con il Puppeteer in `node_modules`, ridotta con `sharp` a 1200×630. Salvala due volte in `src/assets/images/gioco-<argomento>.jpg` (Open Graph, social, WhatsApp, sitemap delle immagini; meno di 300 KB) e `.webp` con lo stesso nome (mostrato nella pagina e nelle card con `<picture>`). Il nome del file contiene la parola chiave e `imageAlt` descrive cosa si vede.
+6. Se il gioco salva qualcosa nel browser, aggiungi le chiavi nella tabella della cookie policy.
+7. `npm run build` e controlla `dist/giochi-didattici/`.
 
 ### Come devono essere i giochi
 
